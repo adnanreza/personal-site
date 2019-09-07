@@ -10,16 +10,16 @@ const Navbar = () => {
         </Link>
         <ul id='nav-mobile' className='right hide-on-med-and-down'>
           <li>
-            <Link to='sass.html'>Teaching</Link>
+            <Link to='/Teaching'>Teaching</Link>
           </li>
           <li>
-            <Link to='badges.html'>Experience</Link>
+            <Link to='/Experience'>Experience</Link>
           </li>
           <li>
-            <Link to='collapsible.html'>Projects</Link>
+            <Link to='/Projects'>Projects</Link>
           </li>
           <li>
-            <Link to='collapsible.html'>Contacts</Link>
+            <Link to='/Contact'>Contact</Link>
           </li>
         </ul>
       </div>

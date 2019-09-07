@@ -17,22 +17,22 @@ const Footer = () => {
             <ul>
               <li>
                 <Link className='grey-text text-lighten-3' to='#!'>
-                  Link 1
+                  Teaching
                 </Link>
               </li>
               <li>
                 <Link className='grey-text text-lighten-3' to='#!'>
-                  Link 2
+                  Experience
                 </Link>
               </li>
               <li>
                 <Link className='grey-text text-lighten-3' to='#!'>
-                  Link 3
+                  Projects
                 </Link>
               </li>
               <li>
                 <Link className='grey-text text-lighten-3' to='#!'>
-                  Link 4
+                  Contact
                 </Link>
               </li>
             </ul>
