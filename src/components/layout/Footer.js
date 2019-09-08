@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className='page-footer'>
+    <footer className='page-footer blue lighten-1'>
       <div className='container'>
         <div className='row'>
           <div className='col l6 s12'>
@@ -16,22 +16,22 @@ const Footer = () => {
             <h5 className='white-text'>Links</h5>
             <ul>
               <li>
-                <Link className='grey-text text-lighten-3' to='#!'>
+                <Link className='grey-text text-lighten-3' to='/Teaching'>
                   Teaching
                 </Link>
               </li>
               <li>
-                <Link className='grey-text text-lighten-3' to='#!'>
+                <Link className='grey-text text-lighten-3' to='/Experience'>
                   Experience
                 </Link>
               </li>
               <li>
-                <Link className='grey-text text-lighten-3' to='#!'>
+                <Link className='grey-text text-lighten-3' to='/Projects'>
                   Projects
                 </Link>
               </li>
               <li>
-                <Link className='grey-text text-lighten-3' to='#!'>
+                <Link className='grey-text text-lighten-3' to='/Contact'>
                   Contact
                 </Link>
               </li>
