@@ -33,6 +33,7 @@ const Resume = props => {
             subheading='Vancouver, BC'
             buttons={buttonsContact}
             body={summary}
+            list={false}
           ></ResumeBlock>
         </div>
         <div className='col s9'>
@@ -55,11 +56,13 @@ const Resume = props => {
             heading='Programmer Analyst - University of British Columbia'
             subheading='June 2018 - July 2019'
             body={accomplishmentsPA}
+            list={true}
           ></ResumeBlock>
           <ResumeBlock
             heading='Graduate Teaching Assistant - University of British Columbia'
             subheading='September 2015 - April 2018'
             body={accomplishmentsGTA}
+            list={true}
           ></ResumeBlock>
         </div>
       </div>
