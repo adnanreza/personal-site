@@ -9,6 +9,7 @@ import Home from './components/pages/Home';
 import Teaching from './components/pages/Teaching';
 import Projects from './components/pages/Projects';
 import Experience from './components/pages/Experience';
+import Resume from './components/pages/Resume';
 import Contact from './components/pages/Contact';
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
           <Route exact path='/Teaching' component={Teaching}></Route>
           <Route exact path='/Experience' component={Experience}></Route>
           <Route exact path='/Projects' component={Projects}></Route>
+          <Route exact path='/Resume' component={Resume}></Route>
           <Route exact path='/Contact' component={Contact}></Route>
         </Switch>
         <Footer></Footer>

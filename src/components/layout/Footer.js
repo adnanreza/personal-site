@@ -31,6 +31,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link className='grey-text text-lighten-3' to='/Resume'>
+                  Resume
+                </Link>
+              </li>
+              <li>
                 <Link className='grey-text text-lighten-3' to='/Contact'>
                   Contact
                 </Link>

@@ -1,34 +1,35 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
 import SampleImage from '../layout/office.jpg';
 
 const Home = () => (
   <Fragment>
-    <div className='row'>
-      <div className='col s10 m6'>
-        <div className='card'>
-          <div className='card-image waves-effect waves-block waves-light'>
-            <img className='activator' src={SampleImage} />
-          </div>
-          <div className='card-content'>
-            <span className='card-title activator grey-text text-darken-4'>
-              Card Title<i className='material-icons right'>more_vert</i>
-            </span>
-            <p>
-              <a href='#'>This is a link</a>
-            </p>
-          </div>
-          <div className='card-reveal'>
-            <span className='card-title grey-text text-darken-4'>
-              Card Title<i className='material-icons right'>close</i>
-            </span>
-            <p>
-              Here is some more information about this product that is only
-              revealed once clicked on.
-            </p>
-          </div>
+    <div className='container'>
+      <div class='section center-align'>
+        <h2>Adnan Reza</h2>
+        <h5>Software Engineer and Computer Science Educator</h5>
+        <br />
+        <div className='row'>
+          <a
+            href='https://github.com/adnanreza'
+            class='waves-effect waves-light btn'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <i class='fab fa-github'></i>{' '}
+            <span class='network-name'>Github</span>
+          </a>{' '}
+          <a
+            href='https://www.linkedin.com/in/adnanreza'
+            class='waves-effect waves-light btn'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <i class='fab fa-linkedin'></i>{' '}
+            <span class='network-name'>Linkedin</span>
+          </a>
         </div>
       </div>
+      <div class='divider'></div>
     </div>
   </Fragment>
 );
