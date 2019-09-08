@@ -11,7 +11,7 @@ const Home = () => (
         <div className='row'>
           <a
             href='https://github.com/adnanreza'
-            class='waves-effect waves-light btn'
+            class='waves-effect waves-light btn black'
             target='_blank'
             rel='noopener noreferrer'
           >
@@ -20,7 +20,7 @@ const Home = () => (
           </a>{' '}
           <a
             href='https://www.linkedin.com/in/adnanreza'
-            class='waves-effect waves-light btn'
+            class='waves-effect waves-light btn black'
             target='_blank'
             rel='noopener noreferrer'
           >

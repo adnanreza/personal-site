@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className='blue lighten-1' style={{ padding: '0 2rem' }}>
+    <nav className='black' style={{ padding: '0 2rem' }}>
       <div className='nav-wrapper'>
         <Link to='/' className='brand-logo'>
           Adnan Reza
