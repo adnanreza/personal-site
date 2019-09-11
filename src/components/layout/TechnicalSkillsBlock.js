@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const TechnicalSkillsBlock = props => {
+const TechnicalSkillsBlock = ({ body, heading }) => {
   return (
     <div class='card blue-grey darken-1'>
       <div class='card-content white-text'>
@@ -12,8 +12,8 @@ const TechnicalSkillsBlock = props => {
             </span>
           </div>
           <div className='col s11'>
-            <span class='card-title'>{props.heading}</span>
-            <ul>{props.body}</ul>
+            <span class='card-title'>{heading}</span>
+            <ul>{body}</ul>
           </div>
         </div>
       </div>
@@ -22,7 +22,8 @@ const TechnicalSkillsBlock = props => {
 };
 
 TechnicalSkillsBlock.propTypes = {
-  heading: PropTypes.string.isRequired
+  heading: PropTypes.string.isRequired,
+  body: PropTypes.string
 };
 
 export default TechnicalSkillsBlock;
