@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SampleImage from '../layout/office.jpg';
 
-const RevealCard = props => {
+const RevealCard = ({ img }) => {
   return (
     <div className='card'>
       <div className='card-image waves-effect waves-block waves-light'>
-        <img className='activator' src={SampleImage} alt='' />
+        <img className='activator' src={img} alt='' />
       </div>
       <div className='card-content'>
         <span className='card-title activator grey-text text-darken-4'>
