@@ -1,4 +1,6 @@
 import React, { Fragment } from 'react';
+import BasicCard from '../layout/BasicCard';
+import RevealCard from '../layout/RevealCard';
 import SampleImage from '../layout/office.jpg';
 
 const Home = () => (
@@ -29,7 +31,26 @@ const Home = () => (
           </a>
         </div>
       </div>
-      <div class='divider'></div>
+      <hr />
+      {/**Content */}
+      <div class='row'>
+        <div class='col s6'>
+          <BasicCard></BasicCard>
+        </div>
+        <div class='col s6'>
+          <RevealCard></RevealCard>
+        </div>
+        <div class='col s6'></div>
+      </div>
+      <div class='row'>
+        <div class='col s6'>
+          <RevealCard></RevealCard>
+        </div>
+        <div class='col s6'>
+          <BasicCard></BasicCard>
+        </div>
+      </div>
+      {/**Content */}
     </div>
   </Fragment>
 );
