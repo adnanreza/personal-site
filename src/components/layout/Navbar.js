@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <nav>
-      <div className='nav-wrapper'>
-        <Link to='/' className='brand-logo'>
+      <div className='nav-wrapper black'>
+        <Link to='/' className='brand-logo' style={{ padding: '0 20px' }}>
           Adnan Reza
         </Link>
         <Link to='#' data-target='mobile-demo' className='sidenav-trigger'>
