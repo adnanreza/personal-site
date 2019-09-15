@@ -22,7 +22,7 @@ const Navbar = () => {
             <Link to='/Projects'>Projects</Link>
           </li>
           <li>
-            <Link to='/Resume'>Resume</Link>
+            <Link to='/Resume'>Résumé</Link>
           </li>
           <li>
             <Link to='/Contact'>Contact</Link>
@@ -39,7 +39,7 @@ const Navbar = () => {
             <Link to='/Projects'>Projects</Link>
           </li>
           <li>
-            <Link to='/Resume'>Resume</Link>
+            <Link to='/Resume'>Résumé</Link>
           </li>
           <li>
             <Link to='/Contact'>Contact</Link>
