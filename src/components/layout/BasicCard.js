@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const BasicCard = ({ title, text, links }) => {
+const BasicCard = ({ title, text, cardColor, links }) => {
   return (
     <div className='card blue-grey darken-1'>
       <div className='card-content white-text'>
@@ -9,10 +9,10 @@ const BasicCard = ({ title, text, links }) => {
         <p>{text}</p>
       </div>
       {links && (
-        <a className='card-action'>
+        <div class='card-action'>
           <a href='#'>This is a link</a>
           <a href='#'>This is a link</a>
-        </a>
+        </div>
       )}
     </div>
   );

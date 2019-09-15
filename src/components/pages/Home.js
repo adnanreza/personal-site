@@ -1,10 +1,12 @@
 import React, { Fragment } from 'react';
 import BasicCard from '../layout/BasicCard';
 import RevealCard from '../layout/RevealCard';
-import SampleImage from '../layout/office.jpg';
+import ImageCard from '../layout/ImageCard';
+import BackgroundImg from '../layout/lake.jpg';
 import ExpImage from '../layout/exp.png';
 import TeachingImage from '../layout/chalkboard.jpg';
 
+const homeText = 'Computer Scientist';
 const experienceText =
   "I'm currently working as a Programmer Analyst at UBC IT. I've recently worked as a Web Developer for PCPE, UBC Health where I was responsible for designing the Patients In Education website. I've also worked as a Web Developer for CALP at UBC. Previously, I co-founded Matroid Tech, where I focued on Full Stack Web Development.";
 const teachingText =
@@ -12,8 +14,9 @@ const teachingText =
 
 const Home = () => (
   <Fragment>
-    <div className='container'>
+    <div className='container' style={{ width: '90%' }}>
       <div className='section center-align'>
+        {/*
         <h2>Adnan Reza</h2>
         <h5>Software Engineer and Computer Science Educator</h5>
         <br />
@@ -37,8 +40,11 @@ const Home = () => (
             <span className='network-name'>Linkedin</span>
           </a>
         </div>
+*/}
+        <BasicCard title='Adnan Reza' text={homeText} links={true}></BasicCard>
       </div>
       <hr />
+
       {/**Cards */}
       <div className='row'>
         <div className='col s6'>
