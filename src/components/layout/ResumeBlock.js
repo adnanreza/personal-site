@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ResumeBlock = ({ heading, subheading, buttons, body, list }) => {
+const ResumeBlock = ({ heading, subheading, buttons, body, list, links }) => {
   const array = Array.from(body);
 
   return (
@@ -26,10 +26,12 @@ const ResumeBlock = ({ heading, subheading, buttons, body, list }) => {
           <div>{body}</div>
         )}
       </div>
-      <div className='card-action'>
-        <a href='#'>This is a link</a>
-        <a href='#'>This is a link</a>
-      </div>
+      {links && (
+        <div className='card-action'>
+          <a href='#'>This is a link</a>
+          <a href='#'>This is a link</a>
+        </div>
+      )}
     </div>
   );
 };

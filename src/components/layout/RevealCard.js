@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const RevealCard = ({ title, text, img }) => {
+const RevealCard = ({ title, text, img, link }) => {
   return (
     <div className='card'>
       <div className='card-image waves-effect waves-block waves-light'>
@@ -13,7 +14,7 @@ const RevealCard = ({ title, text, img }) => {
           <i className='material-icons right'>more_vert</i>
         </span>
         <p>
-          <a href='#'>This is a link</a>
+          <Link to={`${link}`}>More info...</Link>
         </p>
       </div>
       <div className='card-reveal'>

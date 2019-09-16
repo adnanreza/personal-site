@@ -1,14 +1,11 @@
 import React, { Fragment } from 'react';
-import BasicCard from '../layout/BasicCard';
+import { Link } from 'react-router-dom';
 import RevealCard from '../layout/RevealCard';
-import ImageCard from '../layout/ImageCard';
-import BackgroundImg from '../layout/lake.jpg';
-import ExpImage from '../layout/exp.png';
-import TeachingImage from '../layout/chalkboard.jpg';
-import ProjectImage from '../layout/code.jpg';
-import ResearchImage from '../layout/algo.jpg';
+import ExpImage from '../layout/4.png';
+import TeachingImage from '../layout/1.jpg';
+import ProjectImage from '../layout/3.jpg';
+import ResearchImage from '../layout/2.jpg';
 
-const homeText = 'Computer Scientist';
 const experienceText =
   "I'm currently working as a Programmer Analyst at UBC IT. I've recently worked as a Web Developer for PCPE, UBC Health where I was responsible for designing the Patients In Education website. I've also worked as a Web Developer for CALP at UBC. Previously, I co-founded Matroid Tech, where I focued on Full Stack Web Development.";
 const teachingText =
@@ -35,6 +32,10 @@ const Home = () => (
             <i className='fab fa-github'></i>{' '}
             <span className='network-name'>Github</span>
           </a>{' '}
+          <Link to='/Resume' className='waves-effect waves-light btn black'>
+            <i className='far fa-file'></i>{' '}
+            <span className='network-name'>Résumé</span>
+          </Link>{' '}
           <a
             href='https://www.linkedin.com/in/adnanreza'
             className='waves-effect waves-light btn black'
@@ -55,6 +56,7 @@ const Home = () => (
             title='Experience'
             text={experienceText}
             img={ExpImage}
+            link='/Experience'
           ></RevealCard>
         </div>
         <div className='col s6'>
@@ -62,6 +64,7 @@ const Home = () => (
             title='Teaching'
             text={teachingText}
             img={TeachingImage}
+            link='/Teaching'
           ></RevealCard>
         </div>
         <div className='col s6'></div>
@@ -72,6 +75,7 @@ const Home = () => (
             title='Projects'
             text={projectsText}
             img={ProjectImage}
+            link='/Projects'
           ></RevealCard>
         </div>
         <div className='col s6'>
@@ -79,6 +83,7 @@ const Home = () => (
             title='Research'
             text={researchText}
             img={ResearchImage}
+            link='/Research'
           ></RevealCard>
         </div>
       </div>
