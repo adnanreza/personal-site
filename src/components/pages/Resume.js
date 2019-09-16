@@ -92,6 +92,12 @@ const Resume = props => {
             list={true}
           ></ResumeBlock>
           <ResumeBlock
+            heading='Web Developer - UBC Health'
+            subheading='January 2017 - April 2017'
+            body={accomplishmentsWDUBC}
+            list={true}
+          ></ResumeBlock>
+          <ResumeBlock
             heading='Academic Guide - UBC Extended Learning'
             subheading='January 2017 - December 2017'
             body={accomplishmentsAG}
