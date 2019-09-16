@@ -29,6 +29,8 @@ const Resume = props => {
   );
   const summary =
     'Full stack software engineer with 2 years of professional experience in several programming languages, frameworks, and environments. Skilled in translating business requirements into robust technical solutions that are delivered on time. Currently seeking a position working with the latest JavaScript web stack, including React/Redux/GraphQL Node.js, Express, MongoDB, PostgreSQL/MySQL.';
+  const langFramework = 'HTML5, CSS3, JavaScript ES6, React, Redux, Node';
+  const databases = 'MySQL, Oracle, Postgres, MongoDB';
   const accomplishmentsPA = [
     'Implemented web framework for UBC’s new common look and feel using Oracle PL/SQL, HTML5, CSS3, Bootstrap and JavaScript.',
     'Developed SQL queries for reporting sales data; Performed ad hoc reporting using Oracle SQL.',
@@ -73,6 +75,11 @@ const Resume = props => {
     <Fragment>
       <div className='row'>
         <div className='col s3'>
+          <h4>
+            <i className='fa fa-id-card'></i>
+            {` `}
+            Contact Info
+          </h4>
           <ResumeBlock
             heading='Adnan Reza'
             subheading='Vancouver, BC'
@@ -89,7 +96,13 @@ const Resume = props => {
           </h4>
           <TechnicalSkillsBlock
             heading='Languages and Frameworks'
-            body={accomplishmentsPA}
+            body={langFramework}
+            icon='code'
+          ></TechnicalSkillsBlock>
+          <TechnicalSkillsBlock
+            heading='Databases'
+            body={databases}
+            icon='database'
           ></TechnicalSkillsBlock>
 
           <h4>

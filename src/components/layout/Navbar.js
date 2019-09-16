@@ -51,7 +51,7 @@ const Navbar = () => {
 };
 
 const style = {
-  'background-color': '#3D3B3B'
+  backgroundColor: '#3D3B3B'
 };
 
 export default Navbar;

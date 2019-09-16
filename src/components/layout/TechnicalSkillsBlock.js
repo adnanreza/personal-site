@@ -1,14 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const TechnicalSkillsBlock = ({ body, heading }) => {
+const TechnicalSkillsBlock = ({ body, heading, icon }) => {
   return (
     <div style={style} class='card darken-1'>
-      <div class='card-content white-text'>
+      <div style={cardContentStyle} class='card-content white-text'>
         <div className='row'>
           <div className='col s1'>
             <span className='center-align'>
-              <i className='fa fa-code fa-2x'></i>
+              <i
+                className={`fa fa-${icon} fa-2x`}
+                style={{ paddingTop: '0.22rem', paddingLeft: '0.8rem' }}
+              ></i>
             </span>
           </div>
           <div className='col s11'>
@@ -22,7 +25,11 @@ const TechnicalSkillsBlock = ({ body, heading }) => {
 };
 
 const style = {
-  'background-color': '#627C85'
+  backgroundColor: '#627C85'
+};
+
+const cardContentStyle = {
+  padding: '0.2rem'
 };
 
 TechnicalSkillsBlock.propTypes = {
