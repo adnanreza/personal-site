@@ -5,7 +5,7 @@ const ResumeBlock = ({ heading, subheading, buttons, body, list, links }) => {
   const array = Array.from(body);
 
   return (
-    <div className='card blue-grey darken-1'>
+    <div style={style} className='card darken-1'>
       <div className='card-content white-text'>
         <span className='card-title'>{heading}</span>
         <span>{subheading}</span>
@@ -34,6 +34,10 @@ const ResumeBlock = ({ heading, subheading, buttons, body, list, links }) => {
       )}
     </div>
   );
+};
+
+const style = {
+  'background-color': '#627C85'
 };
 
 ResumeBlock.propTypes = {};

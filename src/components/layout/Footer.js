@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className='page-footer black'>
+    <footer style={style} className='page-footer'>
       <div className='container'>
         <div className='row'>
           <div className='col l6 s12'>
@@ -49,6 +49,10 @@ const Footer = () => {
       </div>
     </footer>
   );
+};
+
+const style = {
+  'background-color': '#3D3B3B'
 };
 
 export default Footer;

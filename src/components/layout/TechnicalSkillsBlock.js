@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const TechnicalSkillsBlock = ({ body, heading }) => {
   return (
-    <div class='card blue-grey darken-1'>
+    <div style={style} class='card darken-1'>
       <div class='card-content white-text'>
         <div className='row'>
           <div className='col s1'>
@@ -19,6 +19,10 @@ const TechnicalSkillsBlock = ({ body, heading }) => {
       </div>
     </div>
   );
+};
+
+const style = {
+  'background-color': '#627C85'
 };
 
 TechnicalSkillsBlock.propTypes = {

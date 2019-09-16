@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav>
-      <div className='nav-wrapper black'>
+    <nav style={style}>
+      <div className='nav-wrapper'>
         <Link to='/' className='brand-logo' style={{ padding: '0 20px' }}>
           Adnan Reza
         </Link>
@@ -48,6 +48,10 @@ const Navbar = () => {
       </div>
     </nav>
   );
+};
+
+const style = {
+  'background-color': '#3D3B3B'
 };
 
 export default Navbar;
