@@ -5,9 +5,27 @@ import ResumeBlock from '../layout/ResumeBlock';
 
 const Resume = props => {
   const buttonsContact = (
-    <button className='btn'>
-      <i className='fab fa-linkedin'></i>
-    </button>
+    <Fragment>
+      <a
+        href='https://www.linkedin.com/in/adnanreza'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        <button className='btn' style={buttonStyle}>
+          <i className='fab fa-linkedin'></i>
+        </button>
+      </a>
+      {` `}
+      <a
+        href='https://github.com/adnanreza'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        <button className='btn' style={buttonStyle}>
+          <i className='fab fa-github'></i>
+        </button>
+      </a>
+    </Fragment>
   );
   const summary =
     'Full stack software engineer with 2 years of professional experience in several programming languages, frameworks, and environments. Skilled in translating business requirements into robust technical solutions that are delivered on time. Currently seeking a position working with the latest JavaScript web stack, including React/Redux/GraphQL Node.js, Express, MongoDB, PostgreSQL/MySQL.';
@@ -119,6 +137,10 @@ const Resume = props => {
       </div>
     </Fragment>
   );
+};
+
+const buttonStyle = {
+  padding: '0 10px'
 };
 
 Resume.propTypes = {};

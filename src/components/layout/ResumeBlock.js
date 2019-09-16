@@ -11,7 +11,11 @@ const ResumeBlock = ({ heading, subheading, buttons, body, list, links }) => {
         <span>{subheading}</span>
         <br />
         <br />
-        {buttons && <span>{buttons}</span>}
+        {buttons && (
+          <div className='row' style={buttonsRow}>
+            {buttons}
+          </div>
+        )}
         {list ? (
           <ul className='accomplishments'>
             {array.map((item, index) => (
@@ -38,6 +42,10 @@ const ResumeBlock = ({ heading, subheading, buttons, body, list, links }) => {
 
 const style = {
   'background-color': '#627C85'
+};
+
+const buttonsRow = {
+  padding: '0 10px'
 };
 
 ResumeBlock.propTypes = {};
