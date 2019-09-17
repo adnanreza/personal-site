@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const TechnicalSkillsBlock = ({ body, heading, icon }) => {
   return (
     <div style={style} class='card darken-1'>
-      <div style={cardContentStyle} class='card-content white-text'>
+      <div style={cardContentStyle} class='card-content'>
         <div className='row'>
           <div className='col s1'>
             <span className='center-align'>
@@ -25,7 +25,7 @@ const TechnicalSkillsBlock = ({ body, heading, icon }) => {
 };
 
 const style = {
-  backgroundColor: '#627C85'
+  backgroundColor: 'rgba(243, 246, 247, 1)'
 };
 
 const cardContentStyle = {

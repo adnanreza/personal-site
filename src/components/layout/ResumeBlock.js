@@ -6,7 +6,7 @@ const ResumeBlock = ({ heading, subheading, buttons, body, list, links }) => {
 
   return (
     <div style={style} className='card darken-1'>
-      <div className='card-content white-text'>
+      <div className='card-content'>
         <span className='card-title'>{heading}</span>
         <span>{subheading}</span>
         <br />
@@ -41,7 +41,7 @@ const ResumeBlock = ({ heading, subheading, buttons, body, list, links }) => {
 };
 
 const style = {
-  'background-color': '#627C85'
+  backgroundColor: 'rgba(243, 246, 247, 1)'
 };
 
 const buttonsRow = {

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
-const BasicCard = ({ title, text, cardColor, links, linkSet, linkText }) => {
+const BasicCard = ({ title, text, links, linkSet, linkText }) => {
   const array = Array.from(linkSet);
 
   return (
