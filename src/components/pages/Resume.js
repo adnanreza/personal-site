@@ -29,8 +29,10 @@ const Resume = props => {
   );
   const summary =
     'Full stack software engineer with 2 years of professional experience in several programming languages, frameworks, and environments. Skilled in translating business requirements into robust technical solutions that are delivered on time. Currently seeking a position working with the latest JavaScript web stack, including React/Redux/GraphQL Node.js, Express, MongoDB, PostgreSQL/MySQL.';
-  const langFramework = 'HTML5, CSS3, JavaScript ES6, React, Redux, Node';
+  const clientSide = 'JavaScript ES6, React, Redux, HTML5, CSS3, SASS';
+  const serverSide = 'Java, PHP, Python, Node.js, Express.js, REST, MVC';
   const databases = 'MySQL, Oracle, Postgres, MongoDB';
+  const tools = 'Git, AWS, GCP, Heroku, Netlify';
   const accomplishmentsPA = [
     'Implemented web framework for UBC’s new common look and feel using Oracle PL/SQL, HTML5, CSS3, Bootstrap and JavaScript.',
     'Developed SQL queries for reporting sales data; Performed ad hoc reporting using Oracle SQL.',
@@ -95,14 +97,24 @@ const Resume = props => {
             Technical Skills
           </h4>
           <TechnicalSkillsBlock
-            heading='Languages and Frameworks'
-            body={langFramework}
-            icon='code'
+            heading='Client Side'
+            body={clientSide}
+            icon='desktop'
+          ></TechnicalSkillsBlock>
+          <TechnicalSkillsBlock
+            heading='Server Side'
+            body={serverSide}
+            icon='server'
           ></TechnicalSkillsBlock>
           <TechnicalSkillsBlock
             heading='Databases'
             body={databases}
             icon='database'
+          ></TechnicalSkillsBlock>
+          <TechnicalSkillsBlock
+            heading='Build and Deployment'
+            body={tools}
+            icon='tools'
           ></TechnicalSkillsBlock>
 
           <h4>
