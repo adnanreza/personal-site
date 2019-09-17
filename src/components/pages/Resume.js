@@ -89,6 +89,23 @@ const Resume = props => {
             body={summary}
             list={false}
           ></ResumeBlock>
+          <h4>
+            <i className='fa fa-university'></i>
+            {` `}
+            Education
+          </h4>
+          <ResumeBlock
+            heading='MSc in Computer Science'
+            subheading='University of British Columbia | Vancouver, BC'
+            body=''
+            list={false}
+          ></ResumeBlock>
+          <ResumeBlock
+            heading='BSc in Computer Science, Economics'
+            subheading='BRAC University | Dhaka, Bangladesh'
+            body=''
+            list={false}
+          ></ResumeBlock>
         </div>
         <div className='col s9'>
           <h4>
