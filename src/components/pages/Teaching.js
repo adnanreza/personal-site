@@ -28,34 +28,36 @@ const Teaching = () => {
 
   return (
     <Fragment>
-      <div className='row'>
-        <div className='col s12'>
-          <h4>
-            <i class='fas fa-chalkboard-teacher'></i>
-            {` `}
-            Teaching Experience
-          </h4>
+      <div className='container'>
+        <div className='row'>
+          <div className='col s12'>
+            <h4>
+              <i class='fas fa-chalkboard-teacher'></i>
+              {` `}
+              Teaching Experience
+            </h4>
 
-          <ResumeBlock
-            heading='Graduate Teaching Assistant - UBC Computer Science Department'
-            subheading='September 2015 - April 2018'
-            body={accomplishmentsGTA}
-            list={true}
-          ></ResumeBlock>
+            <ResumeBlock
+              heading='Graduate Teaching Assistant - UBC Computer Science Department'
+              subheading='September 2015 - April 2018'
+              body={accomplishmentsGTA}
+              list={true}
+            ></ResumeBlock>
 
-          <ResumeBlock
-            heading='Academic Guide - UBC Extended Learning'
-            subheading='January 2017 - December 2017'
-            body={accomplishmentsAG}
-            list={true}
-          ></ResumeBlock>
+            <ResumeBlock
+              heading='Academic Guide - UBC Extended Learning'
+              subheading='January 2017 - December 2017'
+              body={accomplishmentsAG}
+              list={true}
+            ></ResumeBlock>
 
-          <ResumeBlock
-            heading='Teaching Assistant - BRAC University'
-            subheading='January 2013 - July 2015'
-            body={accomplishmentsTABRAC}
-            list={true}
-          ></ResumeBlock>
+            <ResumeBlock
+              heading='Teaching Assistant - BRAC University'
+              subheading='January 2013 - July 2015'
+              body={accomplishmentsTABRAC}
+              list={true}
+            ></ResumeBlock>
+          </div>
         </div>
       </div>
     </Fragment>
