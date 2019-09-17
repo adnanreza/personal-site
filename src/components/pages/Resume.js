@@ -165,7 +165,8 @@ const Resume = props => {
 };
 
 const buttonStyle = {
-  padding: '0 10px'
+  padding: '0 10px',
+  backgroundColor: 'black'
 };
 
 Resume.propTypes = {};
