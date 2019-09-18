@@ -1,8 +1,10 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
+import ContactContext from '../../context/contact/contactContext';
 import PropTypes from 'prop-types';
 
 const Contact = props => {
+  const contactContext = useContext(ContactContext);
   const [formData, setFormData] = useState({
     fname: '',
     lname: '',
