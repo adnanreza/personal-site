@@ -6,15 +6,15 @@ const TechnicalSkillsBlock = ({ body, heading, icon }) => {
     <div style={style} class='card darken-1'>
       <div style={cardContentStyle} class='card-content'>
         <div className='row'>
-          <div className='col s1'>
+          <div className='col s2'>
             <span className='center-align'>
               <i
                 className={`fa fa-${icon} fa-2x`}
-                style={{ paddingTop: '0.22rem', paddingLeft: '0.8rem' }}
+                style={{ padding: '0.22rem 0.8rem' }}
               ></i>
             </span>
           </div>
-          <div className='col s11'>
+          <div className='col s10'>
             <span class='card-title'>{heading}</span>
             <ul>{body}</ul>
           </div>

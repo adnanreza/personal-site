@@ -96,13 +96,13 @@ const Resume = props => {
           </h4>
           <ResumeBlock
             heading='MSc in Computer Science'
-            subheading='University of British Columbia | Vancouver, BC'
+            subheading={`University of British Columbia${'\n'}Vancouver, BC`}
             body=''
             list={false}
           ></ResumeBlock>
           <ResumeBlock
             heading='BSc in Computer Science, Economics'
-            subheading='BRAC University | Dhaka, Bangladesh'
+            subheading={`BRAC University${'\n'}Dhaka, Bangladesh`}
             body=''
             list={false}
           ></ResumeBlock>
@@ -113,27 +113,30 @@ const Resume = props => {
             {` `}
             Technical Skills
           </h4>
-          <TechnicalSkillsBlock
-            heading='Client Side'
-            body={clientSide}
-            icon='desktop'
-          ></TechnicalSkillsBlock>
-          <TechnicalSkillsBlock
-            heading='Server Side'
-            body={serverSide}
-            icon='server'
-          ></TechnicalSkillsBlock>
-          <TechnicalSkillsBlock
-            heading='Databases'
-            body={databases}
-            icon='database'
-          ></TechnicalSkillsBlock>
-          <TechnicalSkillsBlock
-            heading='Build and Deployment'
-            body={tools}
-            icon='tools'
-          ></TechnicalSkillsBlock>
-
+          <div className='col s6'>
+            <TechnicalSkillsBlock
+              heading='Client Side'
+              body={clientSide}
+              icon='desktop'
+            ></TechnicalSkillsBlock>
+            <TechnicalSkillsBlock
+              heading='Server Side'
+              body={serverSide}
+              icon='server'
+            ></TechnicalSkillsBlock>
+          </div>
+          <div className='col s6'>
+            <TechnicalSkillsBlock
+              heading='Databases'
+              body={databases}
+              icon='database'
+            ></TechnicalSkillsBlock>
+            <TechnicalSkillsBlock
+              heading='Build and Deployment'
+              body={tools}
+              icon='tools'
+            ></TechnicalSkillsBlock>
+          </div>
           <h4>
             <i className='fa fa-briefcase'></i>
             {` `}
