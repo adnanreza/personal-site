@@ -76,7 +76,7 @@ const Resume = props => {
   return (
     <Fragment>
       <div className='row'>
-        <div className='col s3'>
+        <div className='col s12 m3 l3'>
           <h4>
             <i className='fa fa-id-card'></i>
             {` `}
@@ -107,13 +107,13 @@ const Resume = props => {
             list={false}
           ></ResumeBlock>
         </div>
-        <div className='col s9'>
+        <div className='col s12 m9 l9'>
           <h4>
             <i className='fa fa-code'></i>
             {` `}
             Technical Skills
           </h4>
-          <div className='col s6'>
+          <div className='col s12 m6 l6'>
             <TechnicalSkillsBlock
               heading='Client Side'
               body={clientSide}
@@ -125,7 +125,7 @@ const Resume = props => {
               icon='server'
             ></TechnicalSkillsBlock>
           </div>
-          <div className='col s6'>
+          <div className='col s12 m6 l6'>
             <TechnicalSkillsBlock
               heading='Databases'
               body={databases}
