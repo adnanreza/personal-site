@@ -75,109 +75,119 @@ const Resume = props => {
 
   return (
     <Fragment>
-      <div className='row'>
-        <div className='col s12 m3 l3'>
-          <h4>
-            <i className='fa fa-id-card'></i>
-            {` `}
-            Contact Info
-          </h4>
-          <ResumeBlock
-            heading='Adnan Reza'
-            subheading='Vancouver, BC'
-            buttons={buttonsContact}
-            body={summary}
-            list={false}
-          ></ResumeBlock>
-          <h4>
-            <i className='fa fa-university'></i>
-            {` `}
-            Education
-          </h4>
-          <ResumeBlock
-            heading='MSc in Computer Science'
-            subheading={`University of British Columbia${'\n'}Vancouver, BC`}
-            body=''
-            list={false}
-          ></ResumeBlock>
-          <ResumeBlock
-            heading='BSc in Computer Science, Economics'
-            subheading={`BRAC University${'\n'}Dhaka, Bangladesh`}
-            body=''
-            list={false}
-          ></ResumeBlock>
-        </div>
-        <div className='col s12 m9 l9'>
-          <h4>
-            <i className='fa fa-code'></i>
-            {` `}
-            Technical Skills
-          </h4>
-          <div className='col s12 m6 l6'>
-            <TechnicalSkillsBlock
-              heading='Client Side'
-              body={clientSide}
-              icon='desktop'
-            ></TechnicalSkillsBlock>
-            <TechnicalSkillsBlock
-              heading='Server Side'
-              body={serverSide}
-              icon='server'
-            ></TechnicalSkillsBlock>
+      <div className='container' style={containerStyle}>
+        <div className='row'>
+          <div className='col s12 m3 l3'>
+            <h4>
+              <i className='fa fa-id-card'></i>
+              {` `}
+              Contact Info
+            </h4>
+            <ResumeBlock
+              heading='Adnan Reza'
+              subheading='Vancouver, BC'
+              buttons={buttonsContact}
+              body={summary}
+              list={false}
+            ></ResumeBlock>
+            <h4>
+              <i className='fa fa-university'></i>
+              {` `}
+              Education
+            </h4>
+            <ResumeBlock
+              heading='MSc in Computer Science'
+              subheading={`University of British Columbia${'\n'}Vancouver, BC`}
+              body=''
+              list={false}
+            ></ResumeBlock>
+            <ResumeBlock
+              heading='BSc in Computer Science, Economics'
+              subheading={`BRAC University${'\n'}Dhaka, Bangladesh`}
+              body=''
+              list={false}
+            ></ResumeBlock>
           </div>
-          <div className='col s12 m6 l6'>
-            <TechnicalSkillsBlock
-              heading='Databases'
-              body={databases}
-              icon='database'
-            ></TechnicalSkillsBlock>
-            <TechnicalSkillsBlock
-              heading='Build and Deployment'
-              body={tools}
-              icon='tools'
-            ></TechnicalSkillsBlock>
+          <div className='col s12 m9 l9'>
+            <div className='row'>
+              <div className='containerTechSkills'>
+                <h4>
+                  <i className='fa fa-code'></i>
+                  {` `}
+                  Technical Skills
+                </h4>
+                <div className='col s12 m6 l6'>
+                  <TechnicalSkillsBlock
+                    heading='Client Side'
+                    body={clientSide}
+                    icon='desktop'
+                  ></TechnicalSkillsBlock>
+                  <TechnicalSkillsBlock
+                    heading='Server Side'
+                    body={serverSide}
+                    icon='server'
+                  ></TechnicalSkillsBlock>
+                </div>
+                <div className='col s12 m6 l6'>
+                  <TechnicalSkillsBlock
+                    heading='Databases'
+                    body={databases}
+                    icon='database'
+                  ></TechnicalSkillsBlock>
+                  <TechnicalSkillsBlock
+                    heading='Build and Deployment'
+                    body={tools}
+                    icon='tools'
+                  ></TechnicalSkillsBlock>
+                </div>
+              </div>
+            </div>
+            <div className='row'>
+              <div className='containerWorkExp'>
+                <h4>
+                  <i className='fa fa-briefcase'></i>
+                  {` `}
+                  Work Experience
+                </h4>
+                <ResumeBlock
+                  heading='Programmer Analyst - University of British Columbia IT'
+                  subheading='June 2018 - July 2019'
+                  body={accomplishmentsPA}
+                  list={true}
+                ></ResumeBlock>
+                <ResumeBlock
+                  heading='Graduate Teaching Assistant - UBC Computer Science Department'
+                  subheading='September 2015 - April 2018'
+                  body={accomplishmentsGTA}
+                  list={true}
+                ></ResumeBlock>
+                <ResumeBlock
+                  heading='Web Developer - UBC Health'
+                  subheading='January 2017 - April 2017'
+                  body={accomplishmentsWDUBC}
+                  list={true}
+                ></ResumeBlock>
+                <ResumeBlock
+                  heading='Academic Guide - UBC Extended Learning'
+                  subheading='January 2017 - December 2017'
+                  body={accomplishmentsAG}
+                  list={true}
+                ></ResumeBlock>
+                <ResumeBlock
+                  heading='Full Stack Web Developer - Matroid Technologies'
+                  subheading='January 2014 - August 2015'
+                  body={accomplishmentsMT}
+                  list={true}
+                ></ResumeBlock>
+                <ResumeBlock
+                  heading='Teaching Assistant - BRAC University'
+                  subheading='January 2013 - July 2015'
+                  body={accomplishmentsTABRAC}
+                  list={true}
+                ></ResumeBlock>
+              </div>
+            </div>
           </div>
-          <h4>
-            <i className='fa fa-briefcase'></i>
-            {` `}
-            Work Experience
-          </h4>
-          <ResumeBlock
-            heading='Programmer Analyst - University of British Columbia IT'
-            subheading='June 2018 - July 2019'
-            body={accomplishmentsPA}
-            list={true}
-          ></ResumeBlock>
-          <ResumeBlock
-            heading='Graduate Teaching Assistant - UBC Computer Science Department'
-            subheading='September 2015 - April 2018'
-            body={accomplishmentsGTA}
-            list={true}
-          ></ResumeBlock>
-          <ResumeBlock
-            heading='Web Developer - UBC Health'
-            subheading='January 2017 - April 2017'
-            body={accomplishmentsWDUBC}
-            list={true}
-          ></ResumeBlock>
-          <ResumeBlock
-            heading='Academic Guide - UBC Extended Learning'
-            subheading='January 2017 - December 2017'
-            body={accomplishmentsAG}
-            list={true}
-          ></ResumeBlock>
-          <ResumeBlock
-            heading='Full Stack Web Developer - Matroid Technologies'
-            subheading='January 2014 - August 2015'
-            body={accomplishmentsMT}
-            list={true}
-          ></ResumeBlock>
-          <ResumeBlock
-            heading='Teaching Assistant - BRAC University'
-            subheading='January 2013 - July 2015'
-            body={accomplishmentsTABRAC}
-            list={true}
-          ></ResumeBlock>
         </div>
       </div>
     </Fragment>
@@ -187,6 +197,14 @@ const Resume = props => {
 const buttonStyle = {
   padding: '0 10px',
   backgroundColor: 'black'
+};
+
+const containerStyle = {
+  width: '97%'
+};
+
+const styleTechSkills = {
+  display: 'flex'
 };
 
 Resume.propTypes = {};
