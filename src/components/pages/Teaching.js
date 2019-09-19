@@ -6,6 +6,10 @@ import UBCCS from '../layout/ubccs.png';
 import ResumeBlock from '../layout/ResumeBlock';
 
 const Teaching = () => {
+  const accomplishmentsCC = [
+    'Designed and taught an introductory CS course for non-CS majors',
+    'Designed, reviewed and graded assignments, projects and exams'
+  ];
   const accomplishmentsGTA = [
     'Designed, ran and managed laboratory and tutorial sessions',
     'Designed, reviewed and graded assignments, projects and exams',
@@ -18,12 +22,17 @@ const Teaching = () => {
     'Advised on CS graduate school course selection',
     'Guided students in post-degree career options'
   ];
-  const accomplishmentsTABRAC = [
+  const accomplishmentsTABRACECON = [
     'Graded programs, quizzes and assignments.',
     'Conducted tutorial sessions on an individual and group basis',
     'Helped students with course material during office hours.',
     'Identified weak students and held extra sessions to improve their performance',
     'Discussed advanced topics not covered in lectures'
+  ];
+  const accomplishmentsTABRACCSE = [
+    'Held office hours and conducted tutorial sessions on an individual and group basis',
+    'Assigned problem sets and provided feedback on performance',
+    'Identified weak students and held extra sessions to improve their performance'
   ];
 
   return (
@@ -36,6 +45,13 @@ const Teaching = () => {
               {` `}
               Teaching Experience
             </h4>
+
+            <ResumeBlock
+              heading='Computer Science Instructor - Columbia College'
+              subheading='September 2019 - Present'
+              body={accomplishmentsCC}
+              list={true}
+            ></ResumeBlock>
 
             <ResumeBlock
               heading='Graduate Teaching Assistant - UBC Computer Science Department'
@@ -52,9 +68,16 @@ const Teaching = () => {
             ></ResumeBlock>
 
             <ResumeBlock
-              heading='Teaching Assistant - BRAC University'
-              subheading='January 2013 - July 2015'
-              body={accomplishmentsTABRAC}
+              heading='Teaching Assistant (Economics) - BRAC University'
+              subheading='February 2014 - July 2015'
+              body={accomplishmentsTABRACECON}
+              list={true}
+            ></ResumeBlock>
+
+            <ResumeBlock
+              heading='Teaching Assistant (Computer Science) - BRAC University'
+              subheading='January 2013 - December 2014'
+              body={accomplishmentsTABRACCSE}
               list={true}
             ></ResumeBlock>
           </div>
