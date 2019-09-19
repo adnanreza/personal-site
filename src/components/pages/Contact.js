@@ -36,7 +36,7 @@ const Contact = props => {
             <div className='input-field col s6'>
               <input
                 placeholder='First Name'
-                id='first_name'
+                name='first_name'
                 type='text'
                 className='validate'
                 value={fname}
@@ -48,7 +48,7 @@ const Contact = props => {
             <div className='input-field col s6'>
               <input
                 placeholder='Last Name'
-                id='last_name'
+                name='last_name'
                 type='text'
                 className='validate'
                 value={lname}
@@ -61,7 +61,7 @@ const Contact = props => {
             <div className='input-field col s8'>
               <input
                 placeholder='Email'
-                id='email'
+                name='email'
                 type='email'
                 className='validate'
                 value={email}
@@ -73,7 +73,7 @@ const Contact = props => {
 
             <div className='input-field col s12'>
               <textarea
-                id='textarea1'
+                name='textarea1'
                 maxLength='250'
                 className='materialize-textarea'
                 value={message}
