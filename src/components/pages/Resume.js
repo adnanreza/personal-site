@@ -97,13 +97,13 @@ const Resume = props => {
                 </h4>
                 <ResumeBlock
                   heading='MSc in Computer Science'
-                  subheading={`University of British Columbia${'\n'}Vancouver, BC`}
+                  subheading='University of British Columbia, Vancouver, BC'
                   body=''
                   list={false}
                 ></ResumeBlock>
                 <ResumeBlock
                   heading='BSc in Computer Science, Economics'
-                  subheading={`BRAC University${'\n'}Dhaka, Bangladesh`}
+                  subheading='BRAC University, Dhaka, Bangladesh'
                   body=''
                   list={false}
                 ></ResumeBlock>
