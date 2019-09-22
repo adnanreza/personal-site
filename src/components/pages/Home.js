@@ -7,9 +7,9 @@ import ProjectImage from '../layout/3.jpg';
 import ResearchImage from '../layout/2.jpg';
 
 const experienceText =
-  "I'm currently working as a Programmer Analyst at UBC IT. I've recently worked as a Web Developer for PCPE, UBC Health where I was responsible for designing the Patients In Education website. I've also worked as a Web Developer for CALP at UBC. Previously, I co-founded Matroid Tech, where I focued on Full Stack Web Development.";
+  "My most recent full-time industry role was as a Programmer Analyst at UBC IT. I've also worked as a Web Developer for PCPE, UBC Health where I was responsible for designing the Patients In Education website. I've also worked as a Web Developer for CALP at UBC.";
 const teachingText =
-  "I worked as a Graduate Teaching Assistant in CS at the University of British Columbia from 2015-18. I received a teaching award from UBC CS in May 2017. Previously, I've served as TA for both the departments of Computer Science and Economics at BRAC University from 2013-15.";
+  "I'm currently a Computer Science Instructor at Columbia College in Vancouver, BC. I previously worked as a Graduate Teaching Assistant at the University of British Columbia from 2015-18. I received a teaching award from UBC CS in May 2017. Previously, I've served as TA for both the departments of Computer Science and Economics at BRAC University from 2013-15.";
 const projectsText =
   "I've completed several projects as part of my coursework during my BSc at BRAC University, and during my MSc at the University of British Columbia. You can find more about them here.";
 const researchText =
@@ -83,7 +83,7 @@ const Home = () => (
             title='Research'
             text={researchText}
             img={ResearchImage}
-            link='/Research'
+            link='#'
           ></RevealCard>
         </div>
       </div>
