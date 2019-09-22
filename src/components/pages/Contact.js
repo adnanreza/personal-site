@@ -3,28 +3,12 @@ import React, { Component, Fragment } from 'react';
 export default class Contact extends Component {
   constructor(props) {
     super(props);
-    this.state = { fname: '', lname: '', email: '', message: '' };
+    this.state = { subject: '', message: '' };
     this.onChange = this.onChange.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
   }
 
   onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
-  }
-
-  onSubmit(event) {
-    alert(
-      'Hi' +
-        ' ' +
-        this.state.fname +
-        ' ' +
-        this.state.lname +
-        '. Thank you for you message. Your email is ' +
-        this.state.email +
-        ' and your message is ' +
-        this.state.message
-    );
-    event.preventDefault();
   }
 
   render() {
@@ -33,39 +17,17 @@ export default class Contact extends Component {
         <div className='container'>
           <div className='row'>
             <form className='col s12' onSubmit={this.onSubmit}>
-              <h3>Leave a message.</h3>
+              <h3>Send Adnan an email.</h3>
               <br />
               <br />
-              <div className='input-field col s6'>
-                <input
-                  placeholder='First Name'
-                  name='fname'
-                  type='text'
-                  className='validate'
-                  value={this.fname}
-                  onChange={this.onChange}
-                  required
-                />
-              </div>
-              <div className='input-field col s6'>
-                <input
-                  placeholder='Last Name'
-                  name='lname'
-                  type='text'
-                  className='validate'
-                  value={this.lname}
-                  onChange={this.onChange}
-                  required
-                />
-              </div>
 
-              <div className='input-field col s8'>
+              <div className='input-field col s6'>
                 <input
-                  placeholder='Email'
-                  name='email'
-                  type='email'
+                  placeholder='Subject'
+                  name='subject'
+                  type='text'
                   className='validate'
-                  value={this.email}
+                  value={this.subject}
                   onChange={this.onChange}
                   required
                 />
@@ -79,18 +41,20 @@ export default class Contact extends Component {
                   value={this.message}
                   placeholder='Message'
                   onChange={e => this.onChange(e)}
+                  required
                 ></textarea>
               </div>
 
               <div className='input-field col s6'>
-                <button
+                <a
                   className='btn waves-effect waves-light'
                   type='submit'
                   value='Submit'
+                  href={`mailto:adnan.reza@outlook.com?subject=${this.state.subject}&body=${this.state.message}`}
                 >
-                  Submit
+                  Send Email
                   <i className='material-icons right'>send</i>
-                </button>
+                </a>
               </div>
             </form>
           </div>
