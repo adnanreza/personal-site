@@ -30,12 +30,16 @@ const Experience = () => {
     'Recommended ways to simplify the process of maintaining their websites via on-site training.'
   ];
 
+  const headingStyle = {
+    padding: '0.5rem 1rem 1rem 0'
+  };
+
   return (
     <Fragment>
       <div className='container'>
         <div className='row'>
           <div className='col s12'>
-            <h4>
+            <h4 style={headingStyle}>
               <i className='fa fa-briefcase'></i>
               {` `}
               Software Development Experience

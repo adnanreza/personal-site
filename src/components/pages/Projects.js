@@ -17,11 +17,16 @@ const Projects = () => {
   const bgt = [
     'In multi-agent settings, we often assume that agents will adopt Nash equilibrium strategies. However, studies in experimental economics demonstrate that Nash equilibrium is a poor indicator of human players’ initial behavior in normal-form games.[1] We study ways of improving the best performing behavioral models.'
   ];
+
+  const headingStyle = {
+    padding: '0.5rem 1rem 1rem 0'
+  };
+
   return (
     <Fragment>
       <div className='container'>
         <div class='row'>
-          <h4>
+          <h4 style={headingStyle}>
             <i class='fas fa-project-diagram'></i>
             {` `}
             Projects

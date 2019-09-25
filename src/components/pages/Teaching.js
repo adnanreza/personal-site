@@ -35,12 +35,16 @@ const Teaching = () => {
     'Identified weak students and held extra sessions to improve their performance'
   ];
 
+  const headingStyle = {
+    padding: '0.5rem 1rem 1rem 0'
+  };
+
   return (
     <Fragment>
       <div className='container'>
         <div className='row'>
           <div className='col s12'>
-            <h4>
+            <h4 style={headingStyle}>
               <i class='fas fa-chalkboard-teacher'></i>
               {` `}
               Teaching Experience
