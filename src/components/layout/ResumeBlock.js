@@ -20,7 +20,7 @@ const ResumeBlock = ({ heading, subheading, buttons, body, list, links }) => {
           <ul className='accomplishments'>
             {array.map((item, index) => (
               <li key={index}>
-                <i className='fas fa-check'></i>
+                <i className='far fa-check-circle'></i>
                 {`  `}
                 {item}
               </li>
