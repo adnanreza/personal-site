@@ -11,19 +11,19 @@ const Resume = props => {
         target='_blank'
         rel='noopener noreferrer'
       >
-        <button className='btn' style={buttonStyle}>
-          <i className='fab fa-linkedin'></i>
-        </button>
+        <span style={{ color: 'black' }}>
+          <i class='fab fa-linkedin fa-3x' style={badgeStyle}></i>
+        </span>
       </a>
-      {` `}
+      <span>{` `}</span>
       <a
         href='https://github.com/adnanreza'
         target='_blank'
         rel='noopener noreferrer'
       >
-        <button className='btn' style={buttonStyle}>
-          <i className='fab fa-github'></i>
-        </button>
+        <span style={{ color: 'black' }}>
+          <i class='fab fa-github fa-3x' style={badgeStyle}></i>
+        </span>
       </a>
     </Fragment>
   );
@@ -196,13 +196,12 @@ const Resume = props => {
   );
 };
 
-const buttonStyle = {
-  padding: '0 10px',
-  backgroundColor: 'black'
-};
-
 const containerStyle = {
   width: '97%'
+};
+
+const badgeStyle = {
+  paddingRight: '0.5rem'
 };
 
 Resume.propTypes = {};
