@@ -115,12 +115,14 @@ const Resume = props => {
 
           {/**Mid Section: Tech Skills */}
           <div className='col s12 m12 l12'>
-            <div className='row containerTechSkills'>
-              <h4>
-                <i className='fa fa-code'></i>
-                {` `}
-                Technical Skills
-              </h4>
+            <div className='row'>
+              <div className='col s12 m12 l12'>
+                <h4>
+                  <i className='fa fa-code'></i>
+                  {` `}
+                  Technical Skills
+                </h4>
+              </div>
               <div className='col s12 m6 l6'>
                 <TechnicalSkillsBlock
                   heading='Client Side'
