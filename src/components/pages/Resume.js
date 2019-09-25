@@ -73,8 +73,9 @@ const Resume = props => {
     <Fragment>
       <div className='container' style={containerStyle}>
         <div className='row'>
+          {/**Top Section: Contact Info + Education */}
           <div className='col s12 m12 l12'>
-            <div className='row containerTechSkills'>
+            <div className='row'>
               <div className='col s12 m6 l6'>
                 <h4>
                   <i className='fa fa-id-card'></i>
@@ -110,7 +111,9 @@ const Resume = props => {
               </div>
             </div>
           </div>
+          {/**End Top Section: Contact Info + Education */}
 
+          {/**Mid Section: Tech Skills */}
           <div className='col s12 m12 l12'>
             <div className='row containerTechSkills'>
               <h4>
@@ -143,44 +146,48 @@ const Resume = props => {
                 ></TechnicalSkillsBlock>
               </div>
             </div>
-            <div className='row containerWorkExp'>
-              <h4>
-                <i className='fa fa-briefcase'></i>
-                {` `}
-                Work Experience
-              </h4>
-              <ResumeBlock
-                heading='Programmer Analyst - University of British Columbia IT'
-                subheading='June 2018 - July 2019'
-                body={accomplishmentsPA}
-                list={true}
-              ></ResumeBlock>
-              <ResumeBlock
-                heading='Graduate Teaching Assistant - UBC Computer Science Department'
-                subheading='September 2015 - April 2018'
-                body={accomplishmentsGTA}
-                list={true}
-              ></ResumeBlock>
-              <ResumeBlock
-                heading='Web Developer - UBC Health'
-                subheading='January 2017 - April 2017'
-                body={accomplishmentsWDUBC}
-                list={true}
-              ></ResumeBlock>
-              <ResumeBlock
-                heading='Full Stack Web Developer - Matroid Technologies'
-                subheading='January 2014 - August 2015'
-                body={accomplishmentsMT}
-                list={true}
-              ></ResumeBlock>
-              <ResumeBlock
-                heading='Teaching Assistant - BRAC University'
-                subheading='January 2013 - July 2015'
-                body={accomplishmentsTABRAC}
-                list={true}
-              ></ResumeBlock>
-            </div>
           </div>
+          {/**End Mid Section: Tech Skills */}
+
+          {/**End Section: Work Experience */}
+          <div className='col s12 m12 l12'>
+            <h4>
+              <i className='fa fa-briefcase'></i>
+              {` `}
+              Work Experience
+            </h4>
+            <ResumeBlock
+              heading='Programmer Analyst - University of British Columbia IT'
+              subheading='June 2018 - July 2019'
+              body={accomplishmentsPA}
+              list={true}
+            ></ResumeBlock>
+            <ResumeBlock
+              heading='Graduate Teaching Assistant - UBC Computer Science Department'
+              subheading='September 2015 - April 2018'
+              body={accomplishmentsGTA}
+              list={true}
+            ></ResumeBlock>
+            <ResumeBlock
+              heading='Web Developer - UBC Health'
+              subheading='January 2017 - April 2017'
+              body={accomplishmentsWDUBC}
+              list={true}
+            ></ResumeBlock>
+            <ResumeBlock
+              heading='Full Stack Web Developer - Matroid Technologies'
+              subheading='January 2014 - August 2015'
+              body={accomplishmentsMT}
+              list={true}
+            ></ResumeBlock>
+            <ResumeBlock
+              heading='Teaching Assistant - BRAC University'
+              subheading='January 2013 - July 2015'
+              body={accomplishmentsTABRAC}
+              list={true}
+            ></ResumeBlock>
+          </div>
+          {/**End Section: Work Experience */}
         </div>
       </div>
     </Fragment>
@@ -194,10 +201,6 @@ const buttonStyle = {
 
 const containerStyle = {
   width: '97%'
-};
-
-const styleTechSkills = {
-  display: 'flex'
 };
 
 Resume.propTypes = {};
