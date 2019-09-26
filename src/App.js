@@ -11,6 +11,7 @@ import Projects from './components/pages/Projects';
 import Experience from './components/pages/Experience';
 import Resume from './components/pages/Resume';
 import Contact from './components/pages/Contact';
+import NotFound from './components/layout/NotFound';
 
 const App = () => {
   useEffect(() => {
@@ -29,6 +30,7 @@ const App = () => {
           <Route exact path='/Projects' component={Projects}></Route>
           <Route exact path='/Resume' component={Resume}></Route>
           <Route exact path='/Contact' component={Contact}></Route>
+          <Route component={NotFound}></Route>
         </Switch>
         <Footer></Footer>
       </Fragment>
