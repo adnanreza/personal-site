@@ -18,8 +18,8 @@ const researchText =
 const Home = () => (
   <Fragment>
     <div className='container' style={{ width: '90%' }}>
-      <div className='section center-align'>
-        <h2>Adnan Reza</h2>
+      <div className='topSection section center-align' style={topSectionStyle}>
+        <h1>Adnan Reza</h1>
         <h5>Software Engineer and Computer Science Educator</h5>
         <br />
         <div className='row'>
@@ -91,5 +91,9 @@ const Home = () => (
     </div>
   </Fragment>
 );
+
+const topSectionStyle = {
+  margin: '5rem 0'
+};
 
 export default Home;
