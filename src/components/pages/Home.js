@@ -51,7 +51,7 @@ const Home = () => (
 
       {/**Cards */}
       <div className='row'>
-        <div className='col s6'>
+        <div className='col s12 m12 l6'>
           <RevealCard
             title='Experience'
             text={experienceText}
@@ -59,7 +59,7 @@ const Home = () => (
             link='/Experience'
           ></RevealCard>
         </div>
-        <div className='col s6'>
+        <div className='col col s12 m12 l6'>
           <RevealCard
             title='Teaching'
             text={teachingText}
@@ -67,10 +67,9 @@ const Home = () => (
             link='/Teaching'
           ></RevealCard>
         </div>
-        <div className='col s6'></div>
       </div>
       <div className='row'>
-        <div className='col s6'>
+        <div className='col s12 m12 l6'>
           <RevealCard
             title='Projects'
             text={projectsText}
@@ -78,7 +77,7 @@ const Home = () => (
             link='/Projects'
           ></RevealCard>
         </div>
-        <div className='col s6'>
+        <div className='col s12 m12 l6'>
           <RevealCard
             title='Research'
             text={researchText}
