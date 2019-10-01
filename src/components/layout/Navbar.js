@@ -5,10 +5,10 @@ const Navbar = () => {
   return (
     <Fragment>
       <div className='navbar-fixed'>
-        <nav style={style}>
+        <nav style={navStyle}>
           <div className='nav-wrapper'>
-            <Link to='/' className='brand-logo' style={{ padding: '0 20px' }}>
-              Adnan Reza
+            <Link to='/' className='brand-logo'>
+              AR
             </Link>
             <Link to='#' data-target='mobile-demo' className='sidenav-trigger'>
               <i className='material-icons'>menu</i>
@@ -56,8 +56,9 @@ const Navbar = () => {
   );
 };
 
-const style = {
-  backgroundColor: '#3D3B3B'
+const navStyle = {
+  backgroundColor: '#3D3B3B',
+  padding: '0 2rem'
 };
 
 export default Navbar;
