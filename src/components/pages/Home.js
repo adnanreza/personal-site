@@ -26,16 +26,21 @@ const Home = () => (
           <div style={buttonLink}>
             <a
               href='https://github.com/adnanreza'
-              className='waves-effect waves-light btn black'
+              className='waves-effect waves-light btn'
               target='_blank'
               rel='noopener noreferrer'
+              style={buttonStyle}
             >
               <i className='fab fa-github'></i>{' '}
               <span className='network-name'>Github</span>
             </a>
           </div>
           <div style={buttonLink}>
-            <Link to='/Resume' className='waves-effect waves-light btn black'>
+            <Link
+              to='/Resume'
+              className='waves-effect waves-light btn'
+              style={buttonStyle}
+            >
               <i className='far fa-file'></i>{' '}
               <span className='network-name'>Résumé</span>
             </Link>
@@ -44,9 +49,10 @@ const Home = () => (
           <div style={buttonLink}>
             <a
               href='https://www.linkedin.com/in/adnanreza'
-              className='waves-effect waves-light btn black'
+              className='waves-effect waves-light btn'
               target='_blank'
               rel='noopener noreferrer'
+              style={buttonStyle}
             >
               <i className='fab fa-linkedin'></i>{' '}
               <span className='network-name'>Linkedin</span>
@@ -109,7 +115,12 @@ const buttonLinkContainer = {
 };
 
 const buttonLink = {
-  padding: '0.5rem 0.5rem'
+  padding: '0.5rem 0.4rem'
+};
+
+const buttonStyle = {
+  borderRadius: '4px',
+  backgroundColor: 'rgb(61, 59, 59)'
 };
 
 export default Home;
