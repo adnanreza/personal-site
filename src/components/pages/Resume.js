@@ -12,7 +12,7 @@ const Resume = props => {
         rel='noopener noreferrer'
       >
         <span style={{ color: 'black' }}>
-          <i class='fab fa-linkedin fa-3x' style={badgeStyle}></i>
+          <i className='fab fa-linkedin fa-3x' style={badgeStyle}></i>
         </span>
       </a>
       <span>{` `}</span>
@@ -22,7 +22,7 @@ const Resume = props => {
         rel='noopener noreferrer'
       >
         <span style={{ color: 'black' }}>
-          <i class='fab fa-github fa-3x' style={badgeStyle}></i>
+          <i className='fab fa-github fa-3x' style={badgeStyle}></i>
         </span>
       </a>
     </Fragment>
@@ -36,6 +36,13 @@ const Resume = props => {
   const serverSide = 'Java, PHP, Python, Node.js, Express.js, REST, MVC';
   const databases = 'MySQL, Oracle, Postgres, MongoDB';
   const tools = 'Git, AWS, GCP, Heroku, Netlify';
+  const awards = [
+    'Implemented web framework for UBC’s new common look and feel using Oracle PL/SQL, HTML5, CSS3 and JavaScript.',
+    'Developed SQL queries for reporting sales data; Performed ad hoc reporting using Oracle SQL.',
+    'Extracted, transformed and loaded data into Oracle database using Excel and SQL.',
+    'Developed and maintained web pages using PHP, HTML5/CSS3, JavaScript (vanilla and jQuery).',
+    'Documented database schemas and business logic using ER diagrams and flowcharts.'
+  ];
   const accomplishmentsPA = [
     'Implemented web framework for UBC’s new common look and feel using Oracle PL/SQL, HTML5, CSS3 and JavaScript.',
     'Developed SQL queries for reporting sales data; Performed ad hoc reporting using Oracle SQL.',
@@ -190,6 +197,48 @@ const Resume = props => {
             ></ResumeBlock>
           </div>
           {/**End Section: Work Experience */}
+
+          {/**End Section: Honours & Awards */}
+          <div className='col s12 m12 l12'>
+            <div className='row'>
+              <div className='col s12 m12 l12'>
+                <h4>
+                  <i className='fa fa-award'></i>
+                  {` `}
+                  Honours and Awards
+                </h4>
+              </div>
+              <div className='col s12 m6 l6'>
+                <ResumeBlock
+                  heading='Graduate Teaching Assistant Award'
+                  subheading='University of British Columbia, Vancouver, BC'
+                  body=''
+                  list={false}
+                ></ResumeBlock>
+                <ResumeBlock
+                  heading={`Vice Chancellor's Medal`}
+                  subheading='BRAC University, Dhaka, Bangladesh'
+                  body=''
+                  list={false}
+                ></ResumeBlock>
+              </div>
+              <div className='col s12 m6 l6'>
+                <ResumeBlock
+                  heading={`Vice Chancellor's List (6 semesters)`}
+                  subheading='BRAC University, Dhaka, Bangladesh'
+                  body=''
+                  list={false}
+                ></ResumeBlock>
+                <ResumeBlock
+                  heading={`Dean's List (4 semesters)`}
+                  subheading='BRAC University, Dhaka, Bangladesh'
+                  body=''
+                  list={false}
+                ></ResumeBlock>
+              </div>
+            </div>
+          </div>
+          {/**End Honours & Awards*/}
         </div>
       </div>
     </Fragment>
