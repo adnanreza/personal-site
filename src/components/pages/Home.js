@@ -22,29 +22,36 @@ const Home = () => (
         <h2>Adnan Reza</h2>
         <h5>Software Engineer and Computer Science Educator</h5>
         <br />
-        <div className='row'>
-          <a
-            href='https://github.com/adnanreza'
-            className='waves-effect waves-light btn black'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <i className='fab fa-github'></i>{' '}
-            <span className='network-name'>Github</span>
-          </a>{' '}
-          <Link to='/Resume' className='waves-effect waves-light btn black'>
-            <i className='far fa-file'></i>{' '}
-            <span className='network-name'>Résumé</span>
-          </Link>{' '}
-          <a
-            href='https://www.linkedin.com/in/adnanreza'
-            className='waves-effect waves-light btn black'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <i className='fab fa-linkedin'></i>{' '}
-            <span className='network-name'>Linkedin</span>
-          </a>
+        <div className='row' style={buttonLinkContainer}>
+          <div style={buttonLink}>
+            <a
+              href='https://github.com/adnanreza'
+              className='waves-effect waves-light btn black'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <i className='fab fa-github'></i>{' '}
+              <span className='network-name'>Github</span>
+            </a>
+          </div>
+          <div style={buttonLink}>
+            <Link to='/Resume' className='waves-effect waves-light btn black'>
+              <i className='far fa-file'></i>{' '}
+              <span className='network-name'>Résumé</span>
+            </Link>
+          </div>
+
+          <div style={buttonLink}>
+            <a
+              href='https://www.linkedin.com/in/adnanreza'
+              className='waves-effect waves-light btn black'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <i className='fab fa-linkedin'></i>{' '}
+              <span className='network-name'>Linkedin</span>
+            </a>
+          </div>
         </div>
       </div>
       <hr />
@@ -93,6 +100,16 @@ const Home = () => (
 
 const topSectionStyle = {
   margin: '5rem 0'
+};
+
+const buttonLinkContainer = {
+  display: 'flex',
+  flexDirection: 'row',
+  justifyContent: 'center'
+};
+
+const buttonLink = {
+  padding: '0.5rem 0.5rem'
 };
 
 export default Home;
