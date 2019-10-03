@@ -36,13 +36,7 @@ const Resume = props => {
   const serverSide = 'Java, PHP, Python, Node.js, Express.js, REST, MVC';
   const databases = 'MySQL, Oracle, Postgres, MongoDB';
   const tools = 'Git, AWS, GCP, Heroku, Netlify';
-  const awards = [
-    'Implemented web framework for UBC’s new common look and feel using Oracle PL/SQL, HTML5, CSS3 and JavaScript.',
-    'Developed SQL queries for reporting sales data; Performed ad hoc reporting using Oracle SQL.',
-    'Extracted, transformed and loaded data into Oracle database using Excel and SQL.',
-    'Developed and maintained web pages using PHP, HTML5/CSS3, JavaScript (vanilla and jQuery).',
-    'Documented database schemas and business logic using ER diagrams and flowcharts.'
-  ];
+
   const accomplishmentsPA = [
     'Implemented web framework for UBC’s new common look and feel using Oracle PL/SQL, HTML5, CSS3 and JavaScript.',
     'Developed SQL queries for reporting sales data; Performed ad hoc reporting using Oracle SQL.',
