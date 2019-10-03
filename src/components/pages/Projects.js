@@ -1,8 +1,5 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
-import SampleImage from '../layout/office.jpg';
 import ResumeBlock from '../layout/ResumeBlock';
-import RevealCard from '../layout/RevealCard';
 
 const Projects = () => {
   const alphaGo = [
@@ -49,7 +46,7 @@ const Projects = () => {
           <ResumeBlock
             heading='Improving Human Behavior Prediction in Simultaneous-Move Games'
             subheading='CPSC 522: Artificial Intelligence II (Spring ‘16)'
-            body={ml}
+            body={bgt}
           ></ResumeBlock>
         </div>
       </div>

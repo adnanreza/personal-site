@@ -1,8 +1,4 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
-import CC from '../layout/columbia-college.png';
-import BU from '../layout/bracu.png';
-import UBCCS from '../layout/ubccs.png';
 import ResumeBlock from '../layout/ResumeBlock';
 
 const Teaching = () => {
@@ -45,7 +41,7 @@ const Teaching = () => {
         <div className='row'>
           <div className='col s12'>
             <h4 style={headingStyle}>
-              <i class='fas fa-chalkboard-teacher'></i>
+              <i className='fas fa-chalkboard-teacher'></i>
               {` `}
               Teaching Experience
             </h4>
