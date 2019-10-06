@@ -57,7 +57,7 @@ const Resume = props => {
     'Received a Graduate Teaching Assistant Award from the CS Department at UBC'
   ];
   const accomplishmentsMT = [
-    'Designed, developed and deployed websites using HTML5/CSS3, JavaScript, PHP and MySQL.',
+    'Designed, developed and deployed websites using HTML5/CSS3, JavaScript, PHP, MySQL, Apache.',
     'Communicated with clients, translated user requirements into working applications and ensured on-time delivery.',
     'Improved and modernized older websites.',
     'Recommended ways to simplify the process of maintaining their websites via on-site training.'
