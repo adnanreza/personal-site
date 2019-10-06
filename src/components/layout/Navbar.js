@@ -24,6 +24,9 @@ const Navbar = () => {
                 <Link to='/Projects'>Projects</Link>
               </li>
               <li>
+                <Link to='/Research'>Research</Link>
+              </li>
+              <li>
                 <Link to='/Resume'>Résumé</Link>
               </li>
               <li>
@@ -35,21 +38,24 @@ const Navbar = () => {
       </div>
       {/**Mobile Navigation*/}
       <ul className='sidenav' id='mobile-demo'>
-        <li>
-          <Link to='/Experience'>Experience</Link>
-        </li>
-        <li>
-          <Link to='/Teaching'>Teaching</Link>
-        </li>
-        <li>
-          <Link to='/Projects'>Projects</Link>
-        </li>
-        <li>
-          <Link to='/Resume'>Résumé</Link>
-        </li>
-        <li>
-          <Link to='/Contact'>Contact</Link>
-        </li>
+      <li>
+                <Link to='/Experience'>Experience</Link>
+              </li>
+              <li>
+                <Link to='/Teaching'>Teaching</Link>
+              </li>
+              <li>
+                <Link to='/Projects'>Projects</Link>
+              </li>
+              <li>
+                <Link to='/Research'>Research</Link>
+              </li>
+              <li>
+                <Link to='/Resume'>Résumé</Link>
+              </li>
+              <li>
+                <Link to='/Contact'>Contact</Link>
+              </li>
       </ul>
       {/**Mobile Navigation*/}
     </Fragment>

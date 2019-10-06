@@ -95,7 +95,7 @@ const Home = () => (
             title='Research'
             text={researchText}
             img={ResearchImage}
-            link='#'
+            link='/Research'
           ></RevealCard>
         </div>
       </div>
