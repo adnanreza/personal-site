@@ -1,7 +1,9 @@
 import React, { Fragment, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import ToggleCheckbox from './ToggleCheckbox';
 
 const Navbar = () => {
+
   return (
     <Fragment>
       <div className='navbar-fixed'>
@@ -10,6 +12,7 @@ const Navbar = () => {
             <Link to='/' className='brand-logo'>
               AR
             </Link>
+
             <Link to='#' data-target='mobile-demo' className='sidenav-trigger'>
               <i className='material-icons'>menu</i>
             </Link>
@@ -28,6 +31,9 @@ const Navbar = () => {
               </li>
               <li>
                 <Link to='/Contact'>Contact</Link>
+              </li>
+              <li>
+                <ToggleCheckbox></ToggleCheckbox>
               </li>
             </ul>
           </div>
