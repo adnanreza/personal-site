@@ -22,7 +22,7 @@ const Projects = () => {
   return (
     <Fragment>
       <div className='container'>
-        <div class='row'>
+        <div className='row'>
           <h4 style={headingStyle}>
             <i class='fas fa-project-diagram'></i>
             {` `}
@@ -50,6 +50,7 @@ const Projects = () => {
           ></ResumeBlock>
         </div>
       </div>
+      
     </Fragment>
   );
 };
