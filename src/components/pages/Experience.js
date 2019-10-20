@@ -11,17 +11,18 @@ const Experience = () => {
     'Documented database schemas and business logic using ER diagrams and flowcharts.'
   ];
   const accomplishmentsWDUBC = [
-    'Designed the Patients in Education (PIE) Website',
-    'Conducted needs assessment to identify features members want to see in the website',
+    'Designed and developed the Patients in Education (PIE) website using HTML5, CSS3 and JavaScript ES6.',
+    'Deployed website to shared hosting service and configured DNS settings.',
+    'Conducted needs assessment to identify features members want to see in the website.',
     'Created several design mock-ups, logos to get feedback from members.',
     'Implemented Google Analytics to track website statistics and audience behavior.',
     'Created documentation for easy website maintenance and updates in the future.'
   ];
   const accomplishmentsWDUBC2 = [
-    'Performed comprehensive internal assessment of existing CALP websites',
+    'Performed comprehensive internal assessment of existing CALP websites.',
     'Recommended ways to reduce hosting costs by streamlining the number of hosting providers based on the bandwidth and technology stack needs of each project.',
     'Developed online case studies based on designs provided by CALP researchers.',
-    'Maintained existing CALP websites'
+    'Maintained existing CALP websites.'
   ];
   const accomplishmentsMT = [
     'Designed, developed and deployed websites using HTML5/CSS3, JavaScript, PHP, MySQL, Apache.',

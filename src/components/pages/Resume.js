@@ -29,8 +29,7 @@ const Resume = props => {
   );
   const summary = [
     'Full stack software engineer with 2 years of professional experience in several programming languages, frameworks, and environments.',
-    'Skilled in translating business requirements into robust technical solutions that are delivered on time.',
-    'Currently seeking a position working with the latest JavaScript web stack, including React/Redux/GraphQL Node.js, Express, MongoDB, PostgreSQL/MySQL.'
+    'Skilled in translating business requirements into robust technical solutions that are delivered on time.'
   ];
   const clientSide = 'JavaScript ES6, React, Redux, HTML5, CSS3, SASS';
   const serverSide = 'Java, PHP, Python, Node.js, Express.js, REST, MVC';
@@ -45,16 +44,17 @@ const Resume = props => {
     'Documented database schemas and business logic using ER diagrams and flowcharts.'
   ];
   const accomplishmentsWDUBC = [
-    'Designed the Patients in Education (PIE) Website',
-    'Conducted needs assessment to identify features members want to see in the website',
+    'Designed and developed the Patients in Education (PIE) website using HTML5, CSS3 and JavaScript ES6.',
+    'Deployed website to shared hosting service and configured DNS settings.',
+    'Conducted needs assessment to identify features members want to see in the website.',
     'Created several design mock-ups, logos to get feedback from members.',
     'Implemented Google Analytics to track website statistics and audience behavior.',
     'Created documentation for easy website maintenance and updates in the future.'
   ];
   const accomplishmentsGTA = [
-    'Designed, ran and managed laboratory and tutorial sessions',
-    'Designed, reviewed and graded assignments, projects and exams',
-    'Received a Graduate Teaching Assistant Award from the CS Department at UBC'
+    'Designed, ran and managed laboratory and tutorial sessions.',
+    'Designed, reviewed and graded assignments, projects and exams.',
+    'Received a Graduate Teaching Assistant Award from the CS Department at UBC.'
   ];
   const accomplishmentsMT = [
     'Designed, developed and deployed websites using HTML5/CSS3, JavaScript, PHP, MySQL, Apache.',
@@ -64,10 +64,10 @@ const Resume = props => {
   ];
   const accomplishmentsTABRAC = [
     'Graded programs, quizzes and assignments.',
-    'Conducted tutorial sessions on an individual and group basis',
+    'Conducted tutorial sessions on an individual and group basis.',
     'Helped students with course material during office hours.',
-    'Identified weak students and held extra sessions to improve their performance',
-    'Discussed advanced topics not covered in lectures'
+    'Identified weak students and held extra sessions to improve their performance.',
+    'Discussed advanced topics not covered in lectures.'
   ];
 
   return (
