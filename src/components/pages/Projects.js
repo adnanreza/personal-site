@@ -118,18 +118,17 @@ const Projects = () => {
                 demoLink='https://adnanreza.github.io/calTracker/'
                 techStack={calTracterTechStack}
               ></ResumeBlock>
-
-              <div className='col s12 m12 l12'>
-                <ResumeBlock
-                  heading='chickenRun - Search Engine'
-                  subheading='Php, MySQL, JavaScript, jQuery, HTML5, CSS3'
-                  links={true}
-                  gitLink='https://github.com/adnanreza/ChickenRun'
-                  body={chickenRun}
-                  list={true}
-                  techStack={chickenRunTechStack}
-                ></ResumeBlock>
-              </div>
+            </div>
+            <div className='col s12 m12 l12'>
+              <ResumeBlock
+                heading='chickenRun - Search Engine'
+                subheading='Php, MySQL, JavaScript, jQuery, HTML5, CSS3'
+                links={true}
+                gitLink='https://github.com/adnanreza/ChickenRun'
+                body={chickenRun}
+                list={true}
+                techStack={chickenRunTechStack}
+              ></ResumeBlock>
             </div>
           </div>
 
