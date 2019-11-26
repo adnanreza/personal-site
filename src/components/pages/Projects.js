@@ -14,6 +14,43 @@ const Projects = () => {
   const bgt = [
     'In multi-agent settings, we often assume that agents will adopt Nash equilibrium strategies. However, studies in experimental economics demonstrate that Nash equilibrium is a poor indicator of human players’ initial behavior in normal-form games.[1] We study ways of improving the best performing behavioral models.'
   ];
+  const calTracker = [
+    'Designed Single Page App using JavaScript ES6 to track calories consumed',
+    'Used the module pattern to design the app',
+    'Implemented user interface using HTML5, Materialize CSS and CSS3'
+  ];
+  const calTracterTechStack = 'fab fa-js';
+  const contactOrg = [
+    'Designed, developed and deployed a contacts organizer web app using the MERN stack',
+    "Developed front-end using React and managed application state using React's ContextAPI",
+    'Designed UI using Bootstrap 4, CSS3 and HTML5',
+    'Developed REST API using Node.js/Express.js and MongoDB/Mongoose',
+    'Deployed web application to Heroku'
+  ];
+  const contactOrgTechStack = 'fab fa-react';
+
+  const devBook = [
+    'Designed, developed and deployed a social network for developers using the MERN stack',
+    'Developed front-end using React and managed application state using Redux',
+    'Designed UI using Bootstrap 4, CSS3 and HTML5',
+    'Developed REST API using Node.js/Express.js and MongoDB/Mongoose',
+    'Deployed web application to Heroku'
+  ];
+  const devBookTechStack = 'fab fa-react';
+  const chickenRun = [
+    'Designed and developed a web crawler using the LAMP stack',
+    'Developed front-end using HTML5, CSS3, jQuery, JavaScript ES6',
+    'Developed back-end using PHP and MySQL'
+  ];
+  const chickenRunTechStack = 'fab fa-php';
+
+  const GitHubProfileLocator = [
+    'Designed Single Page App using JavaScript ES6 to dynamically display Github User details based on search terms',
+    'Consumed Github API to display user repositories and public details',
+    'Implemented user interface using Bootstrap 4'
+  ];
+
+  const GitHubProfileLocatorTechStack = 'fab fa-js';
 
   const headingStyle = {
     padding: '0.5rem 1rem 1rem 0'
@@ -28,6 +65,76 @@ const Projects = () => {
             {` `}
             Projects
           </h4>
+          {/**Featured Projects */}
+
+          <div className='row'>
+            <div className='col s12 m12 l12'>
+              <ResumeBlock
+                heading='devBook - Professional Social Network'
+                subheading='React, Redux, Node.js, MongoDB'
+                body={devBook}
+                list={true}
+                links={true}
+                gitLink='https://github.com/adnanreza/devBook'
+                demoLink='https://rocky-caverns-21921.herokuapp.com/'
+                techStack={devBookTechStack}
+              ></ResumeBlock>
+            </div>
+
+            <div className='col s12 m12 l12'>
+              <ResumeBlock
+                heading='Contacts Organizer'
+                subheading='React, Redux, Node.js, MongoDB'
+                body={contactOrg}
+                list={true}
+                links={true}
+                gitLink='https://github.com/adnanreza/contactsOrganizer'
+                demoLink='https://immense-beach-76151.herokuapp.com/'
+                techStack={contactOrgTechStack}
+              ></ResumeBlock>
+            </div>
+
+            <div className='col s12 m12 l12'>
+              <ResumeBlock
+                heading='GitHub Profile Locator'
+                subheading='JavaScript ES6, HTML5, CSS3, Bootstrap'
+                body={GitHubProfileLocator}
+                list={true}
+                links={true}
+                gitLink='https://github.com/adnanreza/GitHubProfileLocator'
+                demoLink='https://adnanreza.github.io/GitHubProfileLocator/'
+                techStack={GitHubProfileLocatorTechStack}
+              ></ResumeBlock>
+            </div>
+
+            <div className='col s12 m12 l12'>
+              <ResumeBlock
+                heading='Calorie Tracker App'
+                subheading='JavaScript ES6, HTML5, CSS3, Materialize CSS'
+                body={calTracker}
+                list={true}
+                links={true}
+                gitLink='https://github.com/adnanreza/calTracker'
+                demoLink='https://adnanreza.github.io/calTracker/'
+                techStack={calTracterTechStack}
+              ></ResumeBlock>
+
+              <div className='col s12 m12 l12'>
+                <ResumeBlock
+                  heading='chickenRun - Search Engine'
+                  subheading='Php, MySQL, JavaScript, jQuery, HTML5, CSS3'
+                  links={true}
+                  gitLink='https://github.com/adnanreza/ChickenRun'
+                  body={chickenRun}
+                  list={true}
+                  techStack={chickenRunTechStack}
+                ></ResumeBlock>
+              </div>
+            </div>
+          </div>
+
+          {/**Featured Projects End*/}
+          {/** 
           <ResumeBlock
             heading='Demystifying AlphaGo'
             subheading='MSc Essay (Spring ‘18)'
@@ -47,7 +154,7 @@ const Projects = () => {
             heading='Improving Human Behavior Prediction in Simultaneous-Move Games'
             subheading='CPSC 522: Artificial Intelligence II (Spring ‘16)'
             body={bgt}
-          ></ResumeBlock>
+          ></ResumeBlock>*/}
         </div>
       </div>
     </Fragment>
