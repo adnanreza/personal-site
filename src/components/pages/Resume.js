@@ -62,12 +62,9 @@ const Resume = props => {
     'Improved and modernized older websites.',
     'Recommended ways to simplify the process of maintaining their websites via on-site training.'
   ];
-  const accomplishmentsTABRAC = [
-    'Graded programs, quizzes and assignments.',
-    'Conducted tutorial sessions on an individual and group basis.',
-    'Helped students with course material during office hours.',
-    'Identified weak students and held extra sessions to improve their performance.',
-    'Discussed advanced topics not covered in lectures.'
+  const accomplishmentsCC = [
+    'Designed, ran and managed lectures and laboratory sessions for a diverse student body',
+    'Designed, reviewed and graded assignments, projects and exams'
   ];
 
   return (
@@ -157,8 +154,14 @@ const Resume = props => {
             <h4>
               <i className='fa fa-briefcase'></i>
               {` `}
-              Work Experience
+              Recent Work Experience
             </h4>
+            <ResumeBlock
+              heading='Computer Science Instructor - Columbia College'
+              subheading='September 2019 - Present'
+              body={accomplishmentsCC}
+              list={true}
+            ></ResumeBlock>
             <ResumeBlock
               heading='Programmer Analyst - University of British Columbia IT'
               subheading='June 2018 - July 2019'
@@ -181,12 +184,6 @@ const Resume = props => {
               heading='Full Stack Web Developer - Matroid Technologies'
               subheading='January 2014 - August 2015'
               body={accomplishmentsMT}
-              list={true}
-            ></ResumeBlock>
-            <ResumeBlock
-              heading='Teaching Assistant - BRAC University'
-              subheading='January 2013 - July 2015'
-              body={accomplishmentsTABRAC}
               list={true}
             ></ResumeBlock>
           </div>
