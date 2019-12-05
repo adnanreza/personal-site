@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import ResumeBlock from '../layout/ResumeBlock';
 
 const Projects = () => {
+  /*
   const alphaGo = [
     'While Go programs have been around since the 1970s, their performance has not come close to achieving professional level playing let alone defeating Go champions. AlphaGo’s journey towards achieving superhuman-level performance in Go came into the spotlight in 2016 when it defeated Go world champion Lee Sedol. While it is easy to be carried away by the enormous hype surrounding AlphaGo’s achievement, it is a worthwhile exercise to delve deeper into how AlphaGo works and in the process demystify some of the hype surrounding this truly extraordinary achievement. This is the primary motivation of this essay. By looking deeper into AlphaGo’s architecture, we can see that it is indeed a combination of techniques, some of which have been developed by researchers in the early days of computer Go, aided with state of the art hardware.'
   ];
@@ -13,7 +14,7 @@ const Projects = () => {
   ];
   const bgt = [
     'In multi-agent settings, we often assume that agents will adopt Nash equilibrium strategies. However, studies in experimental economics demonstrate that Nash equilibrium is a poor indicator of human players’ initial behavior in normal-form games.[1] We study ways of improving the best performing behavioral models.'
-  ];
+  ];*/
   const calTracker = [
     'Designed Single Page App using JavaScript ES6 to track calories consumed',
     'Used the module pattern to design the app',
@@ -76,7 +77,7 @@ const Projects = () => {
                 list={true}
                 links={true}
                 gitLink='https://github.com/adnanreza/devBook'
-                demoLink='https://rocky-caverns-21921.herokuapp.com/'
+                demoLink='http://devbook.adnanreza.com/'
                 techStack={devBookTechStack}
               ></ResumeBlock>
             </div>
@@ -89,7 +90,7 @@ const Projects = () => {
                 list={true}
                 links={true}
                 gitLink='https://github.com/adnanreza/contactsOrganizer'
-                demoLink='https://immense-beach-76151.herokuapp.com/'
+                demoLink='http://corganizer.adnanreza.com/'
                 techStack={contactOrgTechStack}
               ></ResumeBlock>
             </div>
