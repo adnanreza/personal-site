@@ -12,7 +12,9 @@ const ResumeBlock = ({
   links,
   docLink,
   gitLink,
-  demoLink
+  demoLink,
+  editButton,
+  deleteButton
 }) => {
   const array = Array.from(body);
 
@@ -63,7 +65,6 @@ const ResumeBlock = ({
                 </a>
               </div>
             )}
-
             {demoLink && (
               <div style={buttonLink}>
                 <a
@@ -78,7 +79,6 @@ const ResumeBlock = ({
                 </a>
               </div>
             )}
-
             {docLink && (
               <div style={buttonLink}>
                 <a
@@ -91,6 +91,18 @@ const ResumeBlock = ({
                   <i class='fas fa-file-pdf'></i>{' '}
                   <span className='network-name'>DOCUMENTATION</span>
                 </a>
+              </div>
+            )}
+            {editButton && (
+              <div style={buttonLink}>
+                <i class='fas fa-edit'></i>{' '}
+                <span className='network-name'>EDIT</span>
+              </div>
+            )}
+            {deleteButton && (
+              <div style={buttonLink}>
+                <i class='fas fa-trash-alt'></i>{' '}
+                <span className='network-name'>DELETE</span>
               </div>
             )}
           </div>
