@@ -39,8 +39,8 @@ const ProjectItem = ({ project }) => {
           gitLink={gitLink}
           demoLink={demoLink}
           techStack={techStack}
-          editButton={true}
-          deleteButton={true}
+          editButton={false}
+          deleteButton={false}
           onDelete={onDelete}
           onEdit={onEdit}
         ></ResumeBlock>
