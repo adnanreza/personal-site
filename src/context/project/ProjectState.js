@@ -10,7 +10,8 @@ import {
   SET_LOADING,
   PROJECT_ERROR,
   SET_CURRENT,
-  CLEAR_CURRENT
+  CLEAR_CURRENT,
+  SET_ALERT
 } from '../types';
 
 const ProjectState = props => {
@@ -84,7 +85,8 @@ const ProjectState = props => {
         gitLink: 'https://github.com/adnanreza/ChickenRun',
         techStack: 'fab fa-php'
       }
-    ]
+    ],
+    current: null
   };
 
   const [state, dispatch] = useReducer(ProjectReducer, initialState);
@@ -100,6 +102,16 @@ const ProjectState = props => {
     dispatch({ type: DELETE_PROJECT, payload: id });
   };
 
+  // Set Current
+  const setCurrent = project => {
+    dispatch({ type: SET_CURRENT, payload: project });
+  };
+
+  // Clear Current
+  const clearCurrent = () => {
+    dispatch({ type: CLEAR_CURRENT });
+  };
+
   // Filter Projects
 
   // Clear filter
@@ -108,8 +120,11 @@ const ProjectState = props => {
     <ProjectContext.Provider
       value={{
         projects: state.projects,
+        current: state.current,
         addProject,
-        deleteProject
+        deleteProject,
+        setCurrent,
+        clearCurrent
       }}
     >
       {props.children}

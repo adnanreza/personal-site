@@ -101,7 +101,11 @@ const ProjectForm = () => {
       </div>
 
       <div>
-        <input type='submit' value='Add Project' />
+        <input
+          class='waves-effect waves-light btn'
+          type='submit'
+          value='Add Project'
+        />
       </div>
     </form>
   );

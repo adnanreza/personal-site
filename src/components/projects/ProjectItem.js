@@ -2,11 +2,12 @@ import React, { Fragment, useContext } from 'react';
 import ResumeBlock from '../layout/ResumeBlock';
 import PropTypes from 'prop-types';
 import ProjectContext from '../../context/project/projectContext';
+import { CLEAR_CURRENT } from '../../context/types';
 
 const ProjectItem = ({ project }) => {
   const projectContext = useContext(ProjectContext);
 
-  const { deleteProject } = projectContext;
+  const { deleteProject, setCurrent, clearCurrent } = projectContext;
 
   const {
     id,
@@ -20,6 +21,11 @@ const ProjectItem = ({ project }) => {
 
   const onDelete = () => {
     deleteProject(id);
+    clearCurrent();
+  };
+
+  const onEdit = () => {
+    setCurrent(project);
   };
 
   return (
@@ -37,6 +43,7 @@ const ProjectItem = ({ project }) => {
           editButton={true}
           deleteButton={true}
           onDelete={onDelete}
+          onEdit={onEdit}
         ></ResumeBlock>
       </div>
     </Fragment>
