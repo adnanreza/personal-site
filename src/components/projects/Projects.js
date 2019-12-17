@@ -3,12 +3,17 @@ import ProjectItem from './ProjectItem';
 import ProjectContext from '../../context/project/projectContext';
 
 import ProjectForm from './ProjectForm';
+import ProjectFilter from './ProjectFilter';
 
 export const Projects = () => {
   //Initialize context
   const projectContext = useContext(ProjectContext);
 
-  const { projects } = projectContext;
+  const { projects, filtered } = projectContext;
+
+  if (projects.length === 0) {
+    return <h4>No Projects added yet</h4>;
+  }
 
   return (
     <Fragment>
@@ -20,11 +25,16 @@ export const Projects = () => {
             {` `}
             Projects
           </h4>
+          <ProjectFilter></ProjectFilter>
           {/**Featured Projects */}
           <div className='row'>
-            {projects.map(project => (
-              <ProjectItem key={project.id} project={project}></ProjectItem>
-            ))}
+            {filtered !== null
+              ? filtered.map(project => (
+                  <ProjectItem key={project.id} project={project}></ProjectItem>
+                ))
+              : projects.map(project => (
+                  <ProjectItem key={project.id} project={project}></ProjectItem>
+                ))}
           </div>
         </div>
       </div>

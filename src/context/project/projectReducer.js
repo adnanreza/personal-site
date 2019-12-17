@@ -5,11 +5,7 @@ import {
   FILTER_PROJECTS,
   CLEAR_FILTER,
   SET_CURRENT,
-  CLEAR_CURRENT,
-  SET_LOADING,
-  SET_ALERT,
-  REMOVE_ALERT,
-  PROJECT_ERROR
+  CLEAR_CURRENT
 } from '../types';
 
 export default (state, action) => {
@@ -42,6 +38,21 @@ export default (state, action) => {
       return {
         ...state,
         current: null
+      };
+    case FILTER_PROJECTS:
+      return {
+        ...state,
+        filtered: state.projects.filter(project => {
+          const regex = new RegExp(`${action.payload}`, 'gi');
+          return (
+            project.heading.match(regex) || project.subheading.match(regex)
+          );
+        })
+      };
+    case CLEAR_FILTER:
+      return {
+        ...state,
+        filtered: null
       };
     default:
       return state;

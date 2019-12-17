@@ -2,7 +2,6 @@ import React, { Fragment, useContext } from 'react';
 import ResumeBlock from '../layout/ResumeBlock';
 import PropTypes from 'prop-types';
 import ProjectContext from '../../context/project/projectContext';
-import { CLEAR_CURRENT } from '../../context/types';
 
 const ProjectItem = ({ project }) => {
   const projectContext = useContext(ProjectContext);

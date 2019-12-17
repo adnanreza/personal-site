@@ -8,11 +8,8 @@ import {
   UPDATE_PROJECT,
   FILTER_PROJECTS,
   CLEAR_FILTER,
-  SET_LOADING,
-  PROJECT_ERROR,
   SET_CURRENT,
-  CLEAR_CURRENT,
-  SET_ALERT
+  CLEAR_CURRENT
 } from '../types';
 
 const ProjectState = props => {
@@ -87,7 +84,8 @@ const ProjectState = props => {
         techStack: 'fab fa-php'
       }
     ],
-    current: null
+    current: null,
+    filtered: null
   };
 
   const [state, dispatch] = useReducer(ProjectReducer, initialState);
@@ -118,19 +116,28 @@ const ProjectState = props => {
   };
 
   // Filter Projects
+  const filterProjects = text => {
+    dispatch({ type: FILTER_PROJECTS, payload: text });
+  };
 
   // Clear filter
+  const clearFilter = () => {
+    dispatch({ type: CLEAR_FILTER });
+  };
 
   return (
     <ProjectContext.Provider
       value={{
         projects: state.projects,
         current: state.current,
+        filtered: state.filtered,
         addProject,
         deleteProject,
         setCurrent,
         clearCurrent,
-        updateProject
+        updateProject,
+        filterProjects,
+        clearFilter
       }}
     >
       {props.children}
