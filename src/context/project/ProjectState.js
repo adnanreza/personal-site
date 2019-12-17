@@ -4,6 +4,7 @@ import ProjectReducer from './projectReducer';
 import uuid from 'uuid';
 import {
   ADD_PROJECT,
+  DELETE_PROJECT,
   FILTER_PROJECTS,
   CLEAR_FILTER,
   SET_LOADING,
@@ -94,6 +95,11 @@ const ProjectState = props => {
     dispatch({ type: ADD_PROJECT, payload: project });
   };
 
+  // Delete Project
+  const deleteProject = id => {
+    dispatch({ type: DELETE_PROJECT, payload: id });
+  };
+
   // Filter Projects
 
   // Clear filter
@@ -102,7 +108,8 @@ const ProjectState = props => {
     <ProjectContext.Provider
       value={{
         projects: state.projects,
-        addProject
+        addProject,
+        deleteProject
       }}
     >
       {props.children}

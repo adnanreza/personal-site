@@ -1,4 +1,5 @@
 export const ADD_PROJECT = 'ADD_PROJECT';
+export const DELETE_PROJECT = 'DELETE_PROJECT';
 export const FILTER_PROJECTS = 'FILTER_PROJECTS';
 export const CLEAR_FILTER = 'CLEAR_FILTER';
 export const SET_CURRENT = 'SET_CURRENT';

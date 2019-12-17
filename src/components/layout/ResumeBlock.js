@@ -14,7 +14,9 @@ const ResumeBlock = ({
   gitLink,
   demoLink,
   editButton,
-  deleteButton
+  deleteButton,
+  onEdit,
+  onDelete
 }) => {
   const array = Array.from(body);
 
@@ -95,14 +97,26 @@ const ResumeBlock = ({
             )}
             {editButton && (
               <div style={buttonLink}>
-                <i class='fas fa-edit'></i>{' '}
-                <span className='network-name'>EDIT</span>
+                <button
+                  className='waves-effect waves-light btn'
+                  style={buttonStyle}
+                  onClick={onEdit}
+                >
+                  <i class='fas fa-edit'></i>{' '}
+                  <span className='network-name'>EDIT</span>
+                </button>
               </div>
             )}
             {deleteButton && (
               <div style={buttonLink}>
-                <i class='fas fa-trash-alt'></i>{' '}
-                <span className='network-name'>DELETE</span>
+                <button
+                  className='waves-effect waves-light btn'
+                  style={buttonStyle}
+                  onClick={onDelete}
+                >
+                  <i class='fas fa-trash-alt'></i>{' '}
+                  <span className='network-name'>DELETE</span>
+                </button>
               </div>
             )}
           </div>

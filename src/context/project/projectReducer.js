@@ -1,5 +1,6 @@
 import {
   ADD_PROJECT,
+  DELETE_PROJECT,
   FILTER_PROJECTS,
   CLEAR_FILTER,
   SET_CURRENT,
@@ -16,6 +17,13 @@ export default (state, action) => {
       return {
         ...state,
         projects: [...state.projects, action.payload]
+      };
+    case DELETE_PROJECT:
+      return {
+        ...state,
+        projects: state.projects.filter(
+          project => project.id !== action.payload
+        )
       };
     default:
       return state;
