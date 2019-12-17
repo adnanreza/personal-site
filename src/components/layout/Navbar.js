@@ -25,9 +25,6 @@ const Navbar = ({ title }) => {
                 <Link to='/Projects'>Projects</Link>
               </li>
               <li>
-                <Link to='/NewProject'>Pv2</Link>
-              </li>
-              <li>
                 <Link to='/Resume'>Résumé</Link>
               </li>
               <li>

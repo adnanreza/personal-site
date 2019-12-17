@@ -7,8 +7,7 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Home from './components/pages/Home';
 import Teaching from './components/pages/Teaching';
-import Projects from './components/pages/Projects';
-import NewProject from './components/projects/Projects';
+import Projects from './components/projects/Projects';
 import Experience from './components/pages/Experience';
 import Resume from './components/pages/Resume';
 import Contact from './components/pages/Contact';
@@ -34,7 +33,6 @@ const App = () => {
             <Route exact path='/Projects' component={Projects}></Route>
             <Route exact path='/Resume' component={Resume}></Route>
             <Route exact path='/Contact' component={Contact}></Route>
-            <Route exact path='/NewProject' component={NewProject}></Route>
             <Route component={NotFound}></Route>
           </Switch>
           <Footer></Footer>
