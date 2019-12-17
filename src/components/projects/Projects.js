@@ -24,6 +24,7 @@ export const Projects = () => {
             Projects
           </h4>
           <ProjectFilter></ProjectFilter>
+          <br></br>
           {/**Featured Projects */}
           <div className='row'>
             {filtered !== null
