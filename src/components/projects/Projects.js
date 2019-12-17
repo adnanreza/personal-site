@@ -2,7 +2,6 @@ import React, { Fragment, useContext } from 'react';
 import ProjectItem from './ProjectItem';
 import ProjectContext from '../../context/project/projectContext';
 
-import ProjectForm from './ProjectForm';
 import ProjectFilter from './ProjectFilter';
 
 export const Projects = () => {
@@ -18,7 +17,6 @@ export const Projects = () => {
   return (
     <Fragment>
       <div className='container'>
-        <ProjectForm></ProjectForm>
         <div className='row'>
           <h4 style={headingStyle}>
             <i className='fas fa-project-diagram'></i>
