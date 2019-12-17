@@ -8,10 +8,13 @@ import Footer from './components/layout/Footer';
 import Home from './components/pages/Home';
 import Teaching from './components/pages/Teaching';
 import Projects from './components/pages/Projects';
+import NewProject from './components/projects/Projects';
 import Experience from './components/pages/Experience';
 import Resume from './components/pages/Resume';
 import Contact from './components/pages/Contact';
 import NotFound from './components/layout/NotFound';
+
+import ProjectState from './context/project/ProjectState';
 
 const App = () => {
   useEffect(() => {
@@ -20,21 +23,24 @@ const App = () => {
   });
 
   return (
-    <Router>
-      <Fragment>
-        <Navbar></Navbar>
-        <Switch>
-          <Route exact path='/' component={Home}></Route>
-          <Route exact path='/Teaching' component={Teaching}></Route>
-          <Route exact path='/Experience' component={Experience}></Route>
-          <Route exact path='/Projects' component={Projects}></Route>
-          <Route exact path='/Resume' component={Resume}></Route>
-          <Route exact path='/Contact' component={Contact}></Route>
-          <Route component={NotFound}></Route>
-        </Switch>
-        <Footer></Footer>
-      </Fragment>
-    </Router>
+    <ProjectState>
+      <Router>
+        <Fragment>
+          <Navbar title='AR'></Navbar>
+          <Switch>
+            <Route exact path='/' component={Home}></Route>
+            <Route exact path='/Teaching' component={Teaching}></Route>
+            <Route exact path='/Experience' component={Experience}></Route>
+            <Route exact path='/Projects' component={Projects}></Route>
+            <Route exact path='/Resume' component={Resume}></Route>
+            <Route exact path='/Contact' component={Contact}></Route>
+            <Route exact path='/NewProject' component={NewProject}></Route>
+            <Route component={NotFound}></Route>
+          </Switch>
+          <Footer></Footer>
+        </Fragment>
+      </Router>
+    </ProjectState>
   );
 };
 

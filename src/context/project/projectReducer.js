@@ -1,23 +1,21 @@
-import { SEARCH_PROJECTS, SET_LOADING, PROJECTS_ERROR } from '../types';
+import {
+  ADD_PROJECT,
+  FILTER_PROJECTS,
+  CLEAR_FILTER,
+  SET_CURRENT,
+  CLEAR_CURRENT,
+  SET_LOADING,
+  SET_ALERT,
+  REMOVE_ALERT,
+  PROJECT_ERROR
+} from '../types';
 
 export default (state, action) => {
   switch (action.type) {
-    case SEARCH_PROJECTS:
+    case ADD_PROJECT:
       return {
         ...state,
-        projects: action.payload,
-        loading: false
-      };
-    case SET_LOADING:
-      return {
-        ...state,
-        loading: true
-      };
-    case PROJECTS_ERROR:
-      console.error(action.payload);
-      return {
-        ...state,
-        error: action.payload
+        projects: [...state.projects, action.payload]
       };
     default:
       return state;
