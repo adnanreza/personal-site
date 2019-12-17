@@ -1,8 +1,25 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import ProjectContext from '../../context/project/projectContext';
 
 const ProjectForm = () => {
   const projectContext = useContext(ProjectContext);
+
+  const { addProject, updateProject, clearCurrent, current } = projectContext;
+
+  useEffect(() => {
+    if (current !== null) {
+      setProject(current);
+    } else {
+      setProject({
+        heading: '',
+        subheading: '',
+        body: '',
+        gitLink: '',
+        demoLink: '',
+        techStack: 'fab fa-js'
+      });
+    }
+  }, [projectContext, current]);
 
   const [project, setProject] = useState({
     heading: '',
@@ -24,7 +41,12 @@ const ProjectForm = () => {
 
   const onSubmit = e => {
     e.preventDefault();
-    projectContext.addProject(project);
+    if (current === null) {
+      addProject(project);
+    } else {
+      updateProject(project);
+    }
+
     setProject({
       heading: '',
       subheading: '',
@@ -35,9 +57,13 @@ const ProjectForm = () => {
     });
   };
 
+  const clearAll = () => {
+    clearCurrent();
+  };
+
   return (
     <form onSubmit={onSubmit}>
-      <h2>Add Project</h2>
+      <h2>{current ? 'Edit Project' : 'Add Project'}</h2>
       <input
         type='text'
         name='heading'
@@ -104,9 +130,16 @@ const ProjectForm = () => {
         <input
           class='waves-effect waves-light btn'
           type='submit'
-          value='Add Project'
+          value={current ? 'Update Project' : 'Add Project'}
         />
       </div>
+      {current && (
+        <div>
+          <button className='waves-effect waves-light btn' onClick={clearAll}>
+            Clear All
+          </button>
+        </div>
+      )}
     </form>
   );
 };

@@ -5,6 +5,7 @@ import uuid from 'uuid';
 import {
   ADD_PROJECT,
   DELETE_PROJECT,
+  UPDATE_PROJECT,
   FILTER_PROJECTS,
   CLEAR_FILTER,
   SET_LOADING,
@@ -102,6 +103,10 @@ const ProjectState = props => {
     dispatch({ type: DELETE_PROJECT, payload: id });
   };
 
+  // Update Project
+  const updateProject = project => {
+    dispatch({ type: UPDATE_PROJECT, payload: project });
+  };
   // Set Current
   const setCurrent = project => {
     dispatch({ type: SET_CURRENT, payload: project });
@@ -124,7 +129,8 @@ const ProjectState = props => {
         addProject,
         deleteProject,
         setCurrent,
-        clearCurrent
+        clearCurrent,
+        updateProject
       }}
     >
       {props.children}
