@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import 'materialize-css/dist/css/materialize.min.css';
@@ -24,7 +24,7 @@ const App = () => {
   return (
     <ProjectState>
       <Router>
-        <Fragment>
+        <div id='main'>
           <Navbar title='AR'></Navbar>
           <Switch>
             <Route exact path='/' component={Home}></Route>
@@ -35,8 +35,8 @@ const App = () => {
             <Route exact path='/Contact' component={Contact}></Route>
             <Route component={NotFound}></Route>
           </Switch>
-          <Footer></Footer>
-        </Fragment>
+        </div>
+        <Footer></Footer>
       </Router>
     </ProjectState>
   );

@@ -1,10 +1,15 @@
 /*style for sticky footer*/
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+html {
+  height: 100%;
 }
-
-main {
-  flex: 1 0 auto;
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+#main {
+  flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+}
+footer {
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
 }
