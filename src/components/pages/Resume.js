@@ -140,7 +140,7 @@ const Resume = props => {
                   icon='database'
                 ></TechnicalSkillsBlock>
                 <TechnicalSkillsBlock
-                  heading='Build and Deployment'
+                  heading='Deployment and Tooling'
                   body={tools}
                   icon='tools'
                 ></TechnicalSkillsBlock>
