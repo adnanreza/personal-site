@@ -70,6 +70,8 @@ const Home = () => (
             text={experienceText}
             img={ExpImage}
             link='/Experience'
+            moreBtn={true}
+            btnLink='/Experience'
           ></RevealCard>
         </div>
         <div className='col col s12 m6 l6'>
@@ -78,6 +80,8 @@ const Home = () => (
             text={teachingText}
             img={TeachingImage}
             link='/Teaching'
+            moreBtn={true}
+            btnLink='/Teaching'
           ></RevealCard>
         </div>
       </div>
@@ -87,6 +91,7 @@ const Home = () => (
             title='Projects'
             text={projectsText}
             img={ProjectImage}
+            link='/Projects'
             moreBtn={true}
             btnLink='/Projects'
           ></RevealCard>
