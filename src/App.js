@@ -12,6 +12,7 @@ import Experience from './components/pages/Experience';
 import Resume from './components/pages/Resume';
 import Contact from './components/pages/Contact';
 import NotFound from './components/layout/NotFound';
+import ScrollToTop from './components/layout/ScrollToTop';
 
 import ProjectState from './context/project/ProjectState';
 
@@ -24,6 +25,7 @@ const App = () => {
   return (
     <ProjectState>
       <Router>
+        <ScrollToTop></ScrollToTop>
         <div id='main'>
           <Navbar title='AR'></Navbar>
           <Switch>
