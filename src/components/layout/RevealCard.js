@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const RevealCard = ({ title, text, img, link }) => {
+const RevealCard = ({ title, text, img, link, moreBtn, btnLink }) => {
   return (
     <div className='card'>
       <div className='card-image waves-effect waves-block waves-light'>
@@ -23,9 +23,30 @@ const RevealCard = ({ title, text, img, link }) => {
           <i className='material-icons right'>close</i>
         </span>
         <p>{text}</p>
+        {moreBtn && (
+          <div style={buttonLink}>
+            <Link
+              to={btnLink}
+              className='waves-effect waves-light btn'
+              style={buttonStyle}
+            >
+              <span className='network-name'>More...</span>
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );
+};
+
+const buttonLink = {
+  padding: '0.5rem 0.4rem',
+  flexShrink: 1
+};
+
+const buttonStyle = {
+  borderRadius: '4px',
+  backgroundColor: 'rgb(61, 59, 59)'
 };
 
 RevealCard.propTypes = {};

@@ -9,9 +9,9 @@ import ResearchImage from '../layout/2.jpg';
 const experienceText =
   "My most recent full-time industry role was as a Programmer Analyst at UBC IT. I've also worked as a Web Developer for PCPE, UBC Health where I was responsible for designing the Patients In Education website. I've also worked as a Web Developer for CALP at UBC.";
 const teachingText =
-  "I'm currently a Computer Science Instructor at Columbia College in Vancouver, BC. I previously worked as a Graduate Teaching Assistant at the University of British Columbia from 2015-18. I received a teaching award from UBC CS in May 2017. Previously, I've served as TA for both the departments of Computer Science and Economics at BRAC University from 2013-15.";
+  "I currently teach Computer Science at Columbia College and Langara College in Vancouver, BC. I previously worked as a Graduate Teaching Assistant at the University of British Columbia from 2015-18. Previously, I've served as TA for both the departments of Computer Science and Economics at BRAC University from 2013-15.";
 const projectsText =
-  "I've completed several projects as part of my coursework during my BSc at BRAC University, and during my MSc at the University of British Columbia. You can find more about them here.";
+  'I developed a few web apps recently (front-end: vanilla JS, React; full-stack: MERN stack, LAMP stack). You can find more about them by clicking the button below.';
 const researchText =
   "My primary research interests lie at the interface between Computer Science and Microeconomics: Algorithmic Game Theory & Mechanism Design. I'm also interested in Reinforcement Learning and Applied Cryptography.";
 
@@ -87,7 +87,8 @@ const Home = () => (
             title='Projects'
             text={projectsText}
             img={ProjectImage}
-            link='/Projects'
+            moreBtn={true}
+            btnLink='/Projects'
           ></RevealCard>
         </div>
         <div className='col s12 m6 l6'>
