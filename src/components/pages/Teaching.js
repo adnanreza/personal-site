@@ -2,9 +2,13 @@ import React, { Fragment } from 'react';
 import ResumeBlock from '../layout/ResumeBlock';
 
 const Teaching = () => {
+  const accomplishmentsLC = [
+    'I will be teaching an intermediate web-development course'
+  ];
   const accomplishmentsCC = [
-    'Designed and taught an introductory CS course for non-CS majors',
-    'Designed, reviewed and graded assignments, projects and exams'
+    'Designed and taught an introductory CS course for a diverse student body (CS + Non CS majors)',
+    'Designed, reviewed and graded assignments, projects and exams',
+    'I will be teaching an introductory web-development course in Winter 2020'
   ];
   const accomplishmentsGTA = [
     'Designed, ran and managed laboratory and tutorial sessions',
@@ -47,6 +51,13 @@ const Teaching = () => {
             </h4>
 
             <ResumeBlock
+              heading='Computer Science Instructor - Langara College'
+              subheading='January 2020 - Present'
+              body={accomplishmentsLC}
+              list={true}
+            ></ResumeBlock>
+
+            <ResumeBlock
               heading='Computer Science Instructor - Columbia College'
               subheading='September 2019 - Present'
               body={accomplishmentsCC}
@@ -62,7 +73,7 @@ const Teaching = () => {
 
             <ResumeBlock
               heading='Academic Guide - UBC Extended Learning'
-              subheading='January 2017 - December 2017'
+              subheading='January 2017 - December 2017; September 2019 - Present'
               body={accomplishmentsAG}
               list={true}
             ></ResumeBlock>
