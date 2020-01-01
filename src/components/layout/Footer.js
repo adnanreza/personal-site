@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='footer-copyright'>
-        <div className='container'>© 2019 Adnan Reza</div>
+        <div className='container'>© 2020 Adnan Reza</div>
       </div>
     </footer>
   );
