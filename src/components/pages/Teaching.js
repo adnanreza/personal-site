@@ -3,12 +3,12 @@ import ResumeBlock from '../layout/ResumeBlock';
 
 const Teaching = () => {
   const accomplishmentsLC = [
-    'I will be teaching an intermediate web-development course'
+    'I will be teaching an intermediate web development course'
   ];
   const accomplishmentsCC = [
     'Designed and taught an introductory CS course for a diverse student body (CS + Non CS majors)',
     'Designed, reviewed and graded assignments, projects and exams',
-    'I will be teaching an introductory web-development course in Winter 2020'
+    'I will be teaching an introductory web development course in Winter 2020'
   ];
   const accomplishmentsGTA = [
     'Designed, ran and managed laboratory and tutorial sessions',
