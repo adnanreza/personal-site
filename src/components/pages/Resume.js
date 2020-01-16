@@ -25,6 +25,16 @@ const Resume = props => {
           <i className='fab fa-github fa-3x' style={badgeStyle}></i>
         </span>
       </a>
+      <span>{` `}</span>
+      <a
+        href='mailto:adnan.reza@outlook.com'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        <span style={{ color: 'black' }}>
+          <i className='far fa-envelope fa-3x' style={badgeStyle}></i>
+        </span>
+      </a>
     </Fragment>
   );
   const summary = [
