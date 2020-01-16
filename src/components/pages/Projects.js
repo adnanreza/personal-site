@@ -77,7 +77,7 @@ const Projects = () => {
                 list={true}
                 links={true}
                 gitLink='https://github.com/adnanreza/devBook'
-                demoLink='https://devbook.adnanreza.com/'
+                demoLink='http://devbook.adnanreza.com/'
                 techStack={devBookTechStack}
               ></ResumeBlock>
             </div>
