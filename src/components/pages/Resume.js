@@ -32,7 +32,7 @@ const Resume = props => {
         rel='noopener noreferrer'
       >
         <span style={{ color: 'black' }}>
-          <i className='far fa-envelope fa-3x' style={badgeStyle}></i>
+          <i className='fas fa-envelope fa-3x' style={badgeStyle}></i>
         </span>
       </a>
     </Fragment>
