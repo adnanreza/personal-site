@@ -27,7 +27,7 @@ const ProjectState = props => {
           'Deployed web application to Heroku'
         ],
         gitLink: 'https://github.com/adnanreza/devBook',
-        demoLink: 'https://devbook.adnanreza.com/',
+        demoLink: 'http://devbook.adnanreza.com/',
         techStack: 'fab fa-react'
       },
       {
