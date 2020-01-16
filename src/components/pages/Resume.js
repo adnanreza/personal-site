@@ -28,8 +28,9 @@ const Resume = props => {
     </Fragment>
   );
   const summary = [
-    'Full stack software engineer with 2 years of professional experience in several programming languages, frameworks, and environments.',
-    'Skilled in translating business requirements into robust technical solutions that are delivered on time.'
+    'Full stack software engineer with 2+ years of professional experience in several programming languages, frameworks, and environments.',
+    'Skilled in translating business requirements into robust technical solutions that are delivered on time.',
+    'Computer Science Instructor with 5+ years of experience teaching at the undergraduate level'
   ];
   const clientSide = 'JavaScript ES6, React, Redux, HTML5, CSS3, SASS';
   const serverSide = 'Java, PHP, Python, Node.js, Express.js, REST, MVC';
