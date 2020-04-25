@@ -1,9 +1,8 @@
 import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
 import TechnicalSkillsBlock from '../layout/TechnicalSkillsBlock';
 import ResumeBlock from '../layout/ResumeBlock';
 
-const Resume = props => {
+const Resume = (props) => {
   const buttonsContact = (
     <Fragment>
       <a
@@ -40,7 +39,7 @@ const Resume = props => {
   const summary = [
     'Full stack software engineer with 2+ years of professional experience in several programming languages, frameworks, and environments.',
     'Skilled in translating business requirements into robust technical solutions that are delivered on time.',
-    'Computer Science Instructor with 5+ years of experience teaching at the undergraduate level'
+    'Computer Science Instructor with 5+ years of experience teaching at the undergraduate level',
   ];
   const clientSide = 'JavaScript ES6, React, Redux, HTML5, CSS3, SASS';
   const serverSide = 'Java, PHP, Python, Node.js, Express.js, REST, MVC';
@@ -52,7 +51,7 @@ const Resume = props => {
     'Developed SQL queries for reporting sales data; Performed ad hoc reporting using Oracle SQL.',
     'Extracted, transformed and loaded data into Oracle database using Excel and SQL.',
     'Developed and maintained web pages using PHP, HTML5/CSS3, JavaScript (vanilla and jQuery).',
-    'Documented database schemas and business logic using ER diagrams and flowcharts.'
+    'Documented database schemas and business logic using ER diagrams and flowcharts.',
   ];
   const accomplishmentsWDUBC = [
     'Designed and developed the Patients in Education (PIE) website using HTML5, CSS3 and JavaScript ES6.',
@@ -60,22 +59,22 @@ const Resume = props => {
     'Conducted needs assessment to identify features members want to see in the website.',
     'Created several design mock-ups, logos to get feedback from members.',
     'Implemented Google Analytics to track website statistics and audience behavior.',
-    'Created documentation for easy website maintenance and updates in the future.'
+    'Created documentation for easy website maintenance and updates in the future.',
   ];
   const accomplishmentsGTA = [
     'Designed, ran and managed laboratory and tutorial sessions.',
     'Designed, reviewed and graded assignments, projects and exams.',
-    'Received a Graduate Teaching Assistant Award from the CS Department at UBC.'
+    'Received a Graduate Teaching Assistant Award from the CS Department at UBC.',
   ];
   const accomplishmentsMT = [
     'Designed, developed and deployed websites using HTML5/CSS3, JavaScript, PHP, MySQL, Apache.',
     'Communicated with clients, translated user requirements into working applications and ensured on-time delivery.',
     'Improved and modernized older websites.',
-    'Recommended ways to simplify the process of maintaining their websites via on-site training.'
+    'Recommended ways to simplify the process of maintaining their websites via on-site training.',
   ];
   const accomplishmentsCC = [
     'Designed, ran and managed lectures and laboratory sessions for a diverse student body',
-    'Designed, reviewed and graded assignments, projects and exams'
+    'Designed, reviewed and graded assignments, projects and exams',
   ];
 
   return (
@@ -248,13 +247,11 @@ const Resume = props => {
 };
 
 const containerStyle = {
-  width: '97%'
+  width: '97%',
 };
 
 const badgeStyle = {
-  paddingRight: '0.5rem'
+  paddingRight: '0.5rem',
 };
-
-Resume.propTypes = {};
 
 export default Resume;

@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
 import ResumeBlock from '../layout/ResumeBlock';
 
 const Experience = () => {
@@ -8,7 +7,7 @@ const Experience = () => {
     'Developed SQL queries for reporting sales data; Performed ad hoc reporting using Oracle SQL.',
     'Extracted, transformed and loaded data into Oracle database using Excel and SQL.',
     'Developed and maintained web pages using PHP, HTML5/CSS3, JavaScript (vanilla and jQuery).',
-    'Documented database schemas and business logic using ER diagrams and flowcharts.'
+    'Documented database schemas and business logic using ER diagrams and flowcharts.',
   ];
   const accomplishmentsWDUBC = [
     'Designed and developed the Patients in Education (PIE) website using HTML5, CSS3 and JavaScript ES6.',
@@ -16,23 +15,23 @@ const Experience = () => {
     'Conducted needs assessment to identify features members want to see in the website.',
     'Created several design mock-ups, logos to get feedback from members.',
     'Implemented Google Analytics to track website statistics and audience behavior.',
-    'Created documentation for easy website maintenance and updates in the future.'
+    'Created documentation for easy website maintenance and updates in the future.',
   ];
   const accomplishmentsWDUBC2 = [
     'Performed comprehensive internal assessment of existing CALP websites.',
     'Recommended ways to reduce hosting costs by streamlining the number of hosting providers based on the bandwidth and technology stack needs of each project.',
     'Developed online case studies based on designs provided by CALP researchers.',
-    'Maintained existing CALP websites.'
+    'Maintained existing CALP websites.',
   ];
   const accomplishmentsMT = [
     'Designed, developed and deployed websites using HTML5/CSS3, JavaScript, PHP, MySQL, Apache.',
     'Communicated with clients, translated user requirements into working applications and ensured on-time delivery.',
     'Improved and modernized older websites.',
-    'Recommended ways to simplify the process of maintaining their websites via on-site training.'
+    'Recommended ways to simplify the process of maintaining their websites via on-site training.',
   ];
 
   const headingStyle = {
-    padding: '0.5rem 1rem 1rem 0'
+    padding: '0.5rem 1rem 1rem 0',
   };
 
   return (

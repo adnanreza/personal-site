@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 
 const ResumeBlock = ({
   heading,
@@ -16,7 +14,7 @@ const ResumeBlock = ({
   editButton,
   deleteButton,
   onEdit,
-  onDelete
+  onDelete,
 }) => {
   const array = Array.from(body);
 
@@ -127,29 +125,27 @@ const ResumeBlock = ({
 };
 
 const style = {
-  backgroundColor: 'rgba(243, 246, 247, 1)'
+  backgroundColor: 'rgba(243, 246, 247, 1)',
 };
 
 const buttonLinkContainer = {
   display: 'flex',
   flexDirection: 'row',
-  justifyContent: 'left'
+  justifyContent: 'left',
 };
 
 const buttonsRow = {
-  padding: '0 10px'
+  padding: '0 10px',
 };
 
 const buttonLink = {
   padding: '0.5rem 0.4rem',
-  flexShrink: 1
+  flexShrink: 1,
 };
 
 const buttonStyle = {
   borderRadius: '4px',
-  backgroundColor: 'rgb(61, 59, 59)'
+  backgroundColor: 'rgb(61, 59, 59)',
 };
-
-ResumeBlock.propTypes = {};
 
 export default ResumeBlock;

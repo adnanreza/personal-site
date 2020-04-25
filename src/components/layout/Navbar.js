@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
@@ -59,11 +59,11 @@ const Navbar = ({ title }) => {
 
 const navStyle = {
   backgroundColor: '#3D3B3B',
-  padding: '0 2rem'
+  padding: '0 2rem',
 };
 
 Navbar.propTypes = {
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
 };
 
 export default Navbar;
