@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 
-const RevealCard = ({ title, text, img, link, moreBtn, btnLink }) => {
+const RevealCard = ({ title, text, img, link, moreBtn, btnLink, altText }) => {
   return (
     <div className='card'>
       <div className='card-image waves-effect waves-block waves-light'>
-        <img className='activator' src={img} alt='' />
+        <img className='activator' src={img} alt={altText} />
       </div>
       <div className='card-content'>
         <span className='card-title activator grey-text text-darken-4'>
@@ -41,14 +40,12 @@ const RevealCard = ({ title, text, img, link, moreBtn, btnLink }) => {
 
 const buttonLink = {
   padding: '0.5rem 0.4rem',
-  flexShrink: 1
+  flexShrink: 1,
 };
 
 const buttonStyle = {
   borderRadius: '4px',
-  backgroundColor: 'rgb(61, 59, 59)'
+  backgroundColor: 'rgb(61, 59, 59)',
 };
-
-RevealCard.propTypes = {};
 
 export default RevealCard;

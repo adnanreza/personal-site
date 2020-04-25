@@ -72,6 +72,7 @@ const Home = () => (
             link='/Experience'
             moreBtn={true}
             btnLink='/Experience'
+            altText='Experience'
           ></RevealCard>
         </div>
         <div className='col col s12 m6 l6'>
@@ -82,6 +83,7 @@ const Home = () => (
             link='/Teaching'
             moreBtn={true}
             btnLink='/Teaching'
+            altText='Board'
           ></RevealCard>
         </div>
       </div>
@@ -94,6 +96,7 @@ const Home = () => (
             link='/Projects'
             moreBtn={true}
             btnLink='/Projects'
+            altText='code'
           ></RevealCard>
         </div>
         <div className='col s12 m6 l6'>
@@ -102,6 +105,7 @@ const Home = () => (
             text={researchText}
             img={ResearchImage}
             link='#'
+            altText='Research'
           ></RevealCard>
         </div>
       </div>
@@ -111,22 +115,22 @@ const Home = () => (
 );
 
 const topSectionStyle = {
-  margin: '5rem 0'
+  margin: '5rem 0',
 };
 
 const buttonLinkContainer = {
   display: 'flex',
   flexDirection: 'row',
-  justifyContent: 'center'
+  justifyContent: 'center',
 };
 
 const buttonLink = {
-  padding: '0.5rem 0.4rem'
+  padding: '0.5rem 0.4rem',
 };
 
 const buttonStyle = {
   borderRadius: '4px',
-  backgroundColor: 'rgb(61, 59, 59)'
+  backgroundColor: 'rgb(61, 59, 59)',
 };
 
 export default Home;
