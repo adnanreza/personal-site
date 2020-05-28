@@ -53,3 +53,9 @@ footer {
   transform: scale(1.015, 1.015);
   transition: transform 250ms ease-in-out !important;
 }
+
+/* Animation for buttons */
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+  transition: background-color 0.3s !important;
+}

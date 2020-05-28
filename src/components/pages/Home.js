@@ -131,6 +131,7 @@ const buttonLink = {
 const buttonStyle = {
   borderRadius: '4px',
   backgroundColor: 'rgb(61, 59, 59)',
+  transform: 'scale(1, 1)',
 };
 
 export default Home;
