@@ -1,4 +1,4 @@
-import React, { Fragment, useContext } from 'react';
+import React, { useContext } from 'react';
 import ResumeBlock from '../layout/ResumeBlock';
 import PropTypes from 'prop-types';
 import ProjectContext from '../../context/project/projectContext';
@@ -15,7 +15,7 @@ const ProjectItem = ({ project }) => {
     body,
     gitLink,
     demoLink,
-    techStack
+    techStack,
   } = project;
 
   const onDelete = () => {
@@ -28,29 +28,27 @@ const ProjectItem = ({ project }) => {
   };
 
   return (
-    <Fragment>
-      <div className='col s12 m12 l12'>
-        <ResumeBlock
-          heading={heading}
-          subheading={subheading}
-          body={body}
-          list={true}
-          links={true}
-          gitLink={gitLink}
-          demoLink={demoLink}
-          techStack={techStack}
-          editButton={false}
-          deleteButton={false}
-          onDelete={onDelete}
-          onEdit={onEdit}
-        ></ResumeBlock>
-      </div>
-    </Fragment>
+    <div className='col s12 m12 l12 item'>
+      <ResumeBlock
+        heading={heading}
+        subheading={subheading}
+        body={body}
+        list={true}
+        links={true}
+        gitLink={gitLink}
+        demoLink={demoLink}
+        techStack={techStack}
+        editButton={false}
+        deleteButton={false}
+        onDelete={onDelete}
+        onEdit={onEdit}
+      ></ResumeBlock>
+    </div>
   );
 };
 
 ProjectItem.propTypes = {
-  project: PropTypes.object.isRequired
+  project: PropTypes.object.isRequired,
 };
 
 export default ProjectItem;

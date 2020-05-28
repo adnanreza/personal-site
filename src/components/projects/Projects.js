@@ -1,6 +1,7 @@
 import React, { Fragment, useContext } from 'react';
 import ProjectItem from './ProjectItem';
 import ProjectContext from '../../context/project/projectContext';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 import ProjectFilter from './ProjectFilter';
 
@@ -26,14 +27,29 @@ export const Projects = () => {
           <ProjectFilter></ProjectFilter>
           <br></br>
           {/**Featured Projects */}
+
           <div className='row'>
-            {filtered !== null
-              ? filtered.map(project => (
-                  <ProjectItem key={project.id} project={project}></ProjectItem>
-                ))
-              : projects.map(project => (
-                  <ProjectItem key={project.id} project={project}></ProjectItem>
-                ))}
+            <TransitionGroup>
+              {filtered !== null
+                ? filtered.map((project) => (
+                    <CSSTransition
+                      key={project._id}
+                      timeout={500}
+                      classNames='item'
+                    >
+                      <ProjectItem key={project.id} project={project} />
+                    </CSSTransition>
+                  ))
+                : projects.map((project) => (
+                    <CSSTransition
+                      key={project._id}
+                      timeout={500}
+                      classNames='item'
+                    >
+                      <ProjectItem key={project.id} project={project} />
+                    </CSSTransition>
+                  ))}
+            </TransitionGroup>
           </div>
         </div>
       </div>
@@ -42,7 +58,7 @@ export const Projects = () => {
 };
 
 const headingStyle = {
-  padding: '0.5rem 1rem 1rem 0'
+  padding: '0.5rem 1rem 1rem 0',
 };
 
 export default Projects;
