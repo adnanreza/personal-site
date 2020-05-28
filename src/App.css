@@ -15,6 +15,16 @@ footer {
 }
 
 /* Animation for Project Items */
+.item {
+  transform: scale(1, 1);
+  transition: transform 250ms ease-in-out;
+}
+.item:hover {
+  transform: scale(1.02, 1.02);
+  transition: transform 250ms ease-in-out;
+}
+
+/*React transition group*/
 .item-enter {
   opacity: 0;
   transform: translateX(-100px);
