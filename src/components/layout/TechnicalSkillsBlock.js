@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const TechnicalSkillsBlock = ({ body, heading, icon }) => {
   return (
-    <div style={style} className='card darken-1'>
+    <div style={style} className='card darken-1 cardAnimation'>
       <div style={cardContentStyle} className='card-content'>
         <div className='row'>
           <div className='col s2'>
@@ -25,16 +25,16 @@ const TechnicalSkillsBlock = ({ body, heading, icon }) => {
 };
 
 const style = {
-  backgroundColor: 'rgba(243, 246, 247, 1)'
+  backgroundColor: 'rgba(243, 246, 247, 1)',
 };
 
 const cardContentStyle = {
-  padding: '0.2rem'
+  padding: '0.2rem',
 };
 
 TechnicalSkillsBlock.propTypes = {
   heading: PropTypes.string.isRequired,
-  body: PropTypes.string
+  body: PropTypes.string,
 };
 
 export default TechnicalSkillsBlock;

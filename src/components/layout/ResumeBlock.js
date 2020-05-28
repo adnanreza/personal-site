@@ -19,7 +19,7 @@ const ResumeBlock = ({
   const array = Array.from(body);
 
   return (
-    <div style={style} className='card darken-1'>
+    <div style={style} className='card darken-1 cardAnimation'>
       <div className='card-content'>
         <span className='card-title'>
           {heading}

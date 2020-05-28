@@ -17,11 +17,11 @@ footer {
 /* Animation for Project Items */
 .item {
   transform: scale(1, 1);
-  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-out;
 }
 .item:hover {
-  transform: scale(1.02, 1.02);
-  transition: transform 250ms ease-in-out;
+  transform: scale(1.01, 1.01);
+  transition: transform 250ms ease-in;
 }
 
 /*React transition group*/
@@ -42,4 +42,14 @@ footer {
   opacity: 0;
   transform: translateX(100px);
   transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+
+/* Animation for Resume and TechnicalSkills Block */
+.cardAnimation {
+  transform: scale(1, 1);
+  transition: transform 350ms ease-in-out;
+}
+.cardAnimation:hover {
+  transform: scale(1.015, 1.015);
+  transition: transform 250ms ease-in-out !important;
 }
