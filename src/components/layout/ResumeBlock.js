@@ -74,7 +74,7 @@ const ResumeBlock = ({
                   rel='noopener noreferrer'
                   style={buttonStyle}
                 >
-                  <i class='fas fa-desktop'></i>{' '}
+                  <i className='fas fa-desktop'></i>{' '}
                   <span className='network-name'>DEMO</span>
                 </a>
               </div>
@@ -88,7 +88,7 @@ const ResumeBlock = ({
                   rel='noopener noreferrer'
                   style={buttonStyle}
                 >
-                  <i class='fas fa-file-pdf'></i>{' '}
+                  <i className='fas fa-file-pdf'></i>{' '}
                   <span className='network-name'>DOCUMENTATION</span>
                 </a>
               </div>
@@ -100,7 +100,7 @@ const ResumeBlock = ({
                   style={buttonStyle}
                   onClick={onEdit}
                 >
-                  <i class='fas fa-edit'></i>{' '}
+                  <i className='fas fa-edit'></i>{' '}
                   <span className='network-name'>EDIT</span>
                 </button>
               </div>
