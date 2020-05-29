@@ -8,7 +8,10 @@ const ResumeBlock = ({
   body,
   list,
   links,
-  docLink,
+  docLink1,
+  docLink2,
+  docLink1Name,
+  docLink2Name,
   gitLink,
   demoLink,
   editButton,
@@ -79,17 +82,31 @@ const ResumeBlock = ({
                 </a>
               </div>
             )}
-            {docLink && (
+            {docLink1 && (
               <div style={buttonLink}>
                 <a
-                  href={docLink}
+                  href={docLink1}
                   className='waves-effect waves-light btn'
                   target='_blank'
                   rel='noopener noreferrer'
                   style={buttonStyle}
                 >
-                  <i className='fas fa-file-pdf'></i>{' '}
-                  <span className='network-name'>DOCUMENTATION</span>
+                  <i className='fas fa-file'></i>{' '}
+                  <span className='network-name'>{docLink1Name}</span>
+                </a>
+              </div>
+            )}
+            {docLink2 && (
+              <div style={buttonLink}>
+                <a
+                  href={docLink2}
+                  className='waves-effect waves-light btn'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  style={buttonStyle}
+                >
+                  <i className='fas fa-file'></i>{' '}
+                  <span className='network-name'>{docLink2Name}</span>
                 </a>
               </div>
             )}

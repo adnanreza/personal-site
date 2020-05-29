@@ -9,10 +9,10 @@ import {
   FILTER_PROJECTS,
   CLEAR_FILTER,
   SET_CURRENT,
-  CLEAR_CURRENT
+  CLEAR_CURRENT,
 } from '../types';
 
-const ProjectState = props => {
+const ProjectState = (props) => {
   const initialState = {
     projects: [
       {
@@ -24,11 +24,14 @@ const ProjectState = props => {
           'Developed front-end using React and managed application state using Redux',
           'Designed UI using Bootstrap 4, CSS3 and HTML5',
           'Developed REST API using Node.js/Express.js and MongoDB/Mongoose',
-          'Deployed web application to Heroku'
+          'Deployed web application to Heroku',
         ],
         gitLink: 'https://github.com/adnanreza/devBook',
-        demoLink: 'http://devbook.adnanreza.com/',
-        techStack: 'fab fa-react'
+        demoLink: 'https://devbook.adnanreza.com/',
+        techStack: 'fab fa-react',
+        docLink1:
+          'https://app.diagrams.net/?lightbox=1&highlight=0000ff&layers=1&nav=1&title=devbook_redux.svg#R7Z1fk6K6EsA%2FjVWzD05BAoqP%2Fps5U8fdmdKZPWfvy1aEqJxB4wXc0f30N4EEgQSvOyPC1mFrqlYaDNj5dafTdKAFh%2Bv9vY%2B2q8%2FEwV4LaM6%2BBUctAKBpmvQ%2FJjnEEr1nccnSdx0uOwpm7k%2FMhRqX7lwHB5kDQ0K80N1mhTbZbLAdZmTI98lb9rAF8bJn3aIllgQzG3my9C%2FXCVextKdpR%2Fkf2F2uxJk7Ys8c2a9Ln%2Bw2%2FHwtABfRv3j3Gom2%2BPHBCjnkLSWC4xYc%2BoSE8af1fog9plyhtvh7dwV7k%2Bv28SY85wuwp5satgxroZuWodlt3sIP5O2w%2BAkdj7Y1WNFdnSX7NMWI6hxoQ7Lekg09U0A3bvp26JINE%2FsYhcQPPolv0tMfv8x%2Fd3gQuv6B%2FdClqu977nJDRSHZ0sMQ37Jp89ingmCLbHezfGZ7R9ZRMMEL9kvBUTLlHaNHshXashPZuzlmmzFqlDM4cFwfx9cMRwHZsZ4ZLMgmnPFrM9iPDtceO55%2BjHoVM71pcbtxx7ENm6xdm3%2F20Bx7gwSDIfEIvfzRhiqKfS30yWvClM7PeIfWrsds5Sv2HbRB4kL4xQK5V0U3Ud3hfUrEe%2FkekzUO%2FQM9hO81BXHCJCHffjvy3RGyVYptU6CNuE0tk7aPXNEPHK0zMQNnYBYDFTQU1YciHXSyGBldU8LIsBQYWd0LYLRzv%2F0H%2Fjlzv%2B0Xxj%2BHNgw7rtXuWme5LGdnY78IJn44FJKb4c6P1AS0WYhC3AL02rQYSOrWtOg0HbRmjPEmtC%2F47Xi4hugIwI67e0IHjyAnfWLYUPxRiiVkFWAX%2B8JezhfquuwMlRQbANyaJXGsa51ikMER5KUbMApSPIFCnlJd5vhk%2B4z8JQ5551xAkVZOkUChR12lx15ZzkDXugol5rSS2IGIX6g2%2FsFheBAsWkKQBHnGuQo71bXFblXSGlAoTch87KHQ%2FZENVVWa5Od7Im7kyfjJ2qCb6bRutgGyWASUkXxHJBf9kb454akThidk6W5qSTdUhEzXprtXS7qthu62ngxNarpTXdT5747N7wZrCixlHfbpXm27j%2BKFQTRLZPJ2NPizfZ3UPto7YZsHBGwfjwmSNvMxzVwInnyycOkFHC1rnj%2F2tLWJKMSLgowBoagsvGjYp%2B162figDHPs6PBWRJu%2FOt7oWmmjtg7raJIxjHUxSSPTa8b1TFLlLmtkkiQIg9%2FXIK38XLAjzwWT%2BWLGGmFp1iiQrZk19hprpH0je8pkUNIeQryWeqrsEQV2b3MDimHIAwpIjsrkxTqlMWzUkeG49%2BrCcFVBHjBlhqkXvyP%2B1elNMmpcCaYqGNIVnVBaJk4HqgxG9eSaDblUC3JihJFbhd%2FVNa1%2B6KpyE9Wj223QbetQNSDWJ4wfkvU6ulfwuwbyplm%2FQB7KA20N7DEmsS72WFUgD2VfyW2gijjIzE1DkxvW%2F28wsUobTGAt07SwSdNSLRhyhoDDW8kU1JKSmjXg11BVAVXOr6GdVOW%2FhV9Vvrk%2BwdAIBas5Qb7z%2B4ZDihsN0FTYpLrMpbz6AKOWeSGjVnmhqkKi7gmrlOqMWD2L0lLZjnZclhMZZGSteZNjpUzMUGch8dO38%2BJWZUMrrplL2VG6xKZ3obgsG5Z1LdmEDNWwlsw0Lm9BXdmComJVloAW5avFOsoXZ81JGJJ1ixUyIT%2Fss7JjKiW0cSG7i%2FxV9GW8ccQRc4%2FYr%2BIQrnRL0QdUz%2F7hb7rV1m41rSMk35inuzWBLgSjPfd98dYhvfWEfZcqj1WNxcK9G%2F4dNQCikjC2%2FY2fQodccGyQbRxSG%2FnmYnVhR6qmlmoMA7LzbX5UUdFxKBy56hhwEjZ6%2FZAemCFOkVTqXMbP6EkpiBgf9Byz8c%2FlXztiK7eUxKMHEdTlWoqVIrVEYUKH1GFbdkBw4pKNfK0W7OQMKm4y9%2FVr%2BE45a%2By4wRaF9qpO5pgtV4S%2FQH8htcyuISyNUjOXZtWhkQtOzsZU6%2BZsyzBK4lS6aHGmGoAqp9Bftk48fPC63%2Frgmnj6lJfX0g6eulgaq6acPKt4Vbv5ZCTSbo0uTA9E%2Bq0GrfcMRO%2B3puxYcrIkPD2gnIrbThloxwQZHttGacOKYfZu9ezEQ4f5YsKzTZZ2by%2F9L9tuV6OTnF4pJgwMye30zrFgMZTn9FamQcuJzMSgv7qsnr8%2B9lzC8MOCpq4uz9AuhHPhDOBXUc6vXTJBbhi7FLim%2BjyVjzxAUVs6ZWsEgcYXtkikikTAmjg7Jhvksiq5FSNaS7HMRL0aJbsa4zIZl7zHAEayziLFJVTdgwKXWJ9WoHV5uthnS2POnEdfSjn51SrAUilHmSI2y9ONfH%2Bu79GfeWXlWGYtlSPPaFitRdXgwE63BrpR1KGIKsBq0amDehR3DrcF2gne3LWHopV06ZV6%2Bvme3F65njNBB7JjP4sGIPar2BqsiO%2F%2BpM0i0QPp%2BAR0MkfM2Dd5XO9jlr98Er2g50Sf0T5z4AQFInNvE89D28CdJz8jvkEx4IHVxaqPgJWLsTVFvYOhWgtNB6qS%2Bl1xV7IF2I0YGtfwtajcSm4%2Bxcnh%2B%2FHz96fp493DZEy3Wt0h%2BwMaF30fT6ePU4kZdlsniSVzyzHZzZWcKBczqCnKRhJGS1p7amRv4qxcx8EbRgChc2YUdzfrWx6e0Qs1B%2FSPamSoUYM0R2z1rTnQj9v0jx3uh0Oyob8FuVHPY8rSGw7CczE5YYAyPCJr1jmXlLJAUa1v5KBwQgKByHAy7k8FJLM0JSl4Zg09V6NHpBKqo0dV5ZilZ3B4cG52AfYfnMbTVMiKyE1Ux4qqiImzcu%2BGq918irckiFjZoDVO0TIdPz02fuV6rOiavGxFCQssK241i%2BIXO7q%2FKmKXBfHXI6re%2BHkaKzcICTs528COGzYOp0qI4JkQleZxTFXZGYMIOc54v8W%2Bizd2AUQcnZenUf953NBzfXpEbq46elTlUYIeZ2cjVt%2FRwFNLeKyqp1WmarkBg8fBHg5xyvu4TkNLxXNwcTekOlpU6xxTtCTepoGlclhg1fMoxZLhrepmQJPPvVA%2B19IV6VygWMIPtLLSucqF0CLPwp76kcniPs6es7NlJmgcwjsdQtFy7xMZXCUcpfmDogwujVMn7qscYUwe%2FhxLfDR4lIOHKkV7VTxgkevw8ZoquSGkakJUiVklIaAsB1KUxI%2BjTza%2BHAkZjSdjFnhSIBpArgOIrljAeeUhpih1T4eYCA%2BRBeGQ9EejhpBrElJ5EAJPBCF8OfQNm6U8OHGiTAHM8PHz5%2FGXhplrMVN9ZHJ63FFhY5N1cht5Ov78%2BHXcYHNlbM4OV0objORbg0hZKdokQN6ZAIG58ukuUNROa4qcl3ApJVR5FriKAIdRmbDIf8zGz9%2F7k%2FE04w%2B4p%2BDyxiP8qkcoeE5GcQJECUd544jsD1RV9f9Kd1BCnbMOjy%2BtEEkOxc3a5BEX2Qd8lVUwUpTlYO9KeQmwLxzEy2w8%2FT557I%2FGo7SL6L88%2F9GEDO90EAVrHk%2F4BxUbpfmHoqmJz199ElWcJUHl%2FcPsmSIyexkOx7NMEizZd9d%2FmDSYXBgTxXTkupjoRdMRj71BJA3J5PH%2B4YuKkHhHg0cJeCimHVfGoygHRvGgIUCOj8eXJtK8NAKqqtTrMgCUPuKjj2UCXdVjmRz8Y0DIK93fbsXLctlDmv4i%2FmvUlR95ThMHMbUc7lwmOVxUYB634tfGtaM1v28rN8QzKmenevPRthC%2F9Avf8lFq%2FJ434jvYz13A6TfAXSC6tbJTX8XDGQzVA8dKe5A0UJR7JMgZ5%2BClM7wiNAqetXcup4UNjejUZLmhvQm0OVNl39mgTQTtT0T%2Fu6GIa5%2FOINb4PYntVkusbuQe3K%2BbULVmOWH0gwtP6ebxfcLxEwmOb22G4%2F8B',
+        docLink1Name: 'Redux Workflow',
       },
       {
         id: 2,
@@ -39,11 +42,11 @@ const ProjectState = props => {
           "Developed front-end using React and managed application state using React's ContextAPI",
           'Designed UI using Bootstrap 4, CSS3 and HTML5',
           'Developed REST API using Node.js/Express.js and MongoDB/Mongoose',
-          'Deployed web application to Heroku'
+          'Deployed web application to Heroku',
         ],
         gitLink: 'https://github.com/adnanreza/contactsOrganizer',
         demoLink: 'http://corganizer.adnanreza.com/',
-        techStack: 'fab fa-react'
+        techStack: 'fab fa-react',
       },
       {
         id: 3,
@@ -52,11 +55,11 @@ const ProjectState = props => {
         body: [
           'Designed Single Page App using JavaScript ES6 to dynamically display Github User details based on search terms',
           'Consumed Github API to display user repositories and public details',
-          'Implemented user interface using Bootstrap 4'
+          'Implemented user interface using Bootstrap 4',
         ],
         gitLink: 'https://github.com/adnanreza/GitHubProfileLocator',
         demoLink: 'https://adnanreza.github.io/GitHubProfileLocator/',
-        techStack: 'fab fa-js'
+        techStack: 'fab fa-js',
       },
       {
         id: 4,
@@ -65,11 +68,11 @@ const ProjectState = props => {
         body: [
           'Designed Single Page App using JavaScript ES6 to track calories consumed',
           'Used the module pattern to design the app',
-          'Implemented user interface using HTML5, Materialize CSS and CSS3'
+          'Implemented user interface using HTML5, Materialize CSS and CSS3',
         ],
         gitLink: 'https://github.com/adnanreza/calTracker',
         demoLink: 'https://adnanreza.github.io/calTracker/',
-        techStack: 'fab fa-js'
+        techStack: 'fab fa-js',
       },
       {
         id: 5,
@@ -78,35 +81,35 @@ const ProjectState = props => {
         body: [
           'Designed and developed a web crawler using the LAMP stack',
           'Developed front-end using HTML5, CSS3, jQuery, JavaScript ES6',
-          'Developed back-end using PHP and MySQL'
+          'Developed back-end using PHP and MySQL',
         ],
         gitLink: 'https://github.com/adnanreza/ChickenRun',
-        techStack: 'fab fa-php'
-      }
+        techStack: 'fab fa-php',
+      },
     ],
     current: null,
-    filtered: null
+    filtered: null,
   };
 
   const [state, dispatch] = useReducer(ProjectReducer, initialState);
 
   // Add Project
-  const addProject = project => {
+  const addProject = (project) => {
     project.id = uuid.v4();
     dispatch({ type: ADD_PROJECT, payload: project });
   };
 
   // Delete Project
-  const deleteProject = id => {
+  const deleteProject = (id) => {
     dispatch({ type: DELETE_PROJECT, payload: id });
   };
 
   // Update Project
-  const updateProject = project => {
+  const updateProject = (project) => {
     dispatch({ type: UPDATE_PROJECT, payload: project });
   };
   // Set Current
-  const setCurrent = project => {
+  const setCurrent = (project) => {
     dispatch({ type: SET_CURRENT, payload: project });
   };
 
@@ -116,7 +119,7 @@ const ProjectState = props => {
   };
 
   // Filter Projects
-  const filterProjects = text => {
+  const filterProjects = (text) => {
     dispatch({ type: FILTER_PROJECTS, payload: text });
   };
 
@@ -137,7 +140,7 @@ const ProjectState = props => {
         clearCurrent,
         updateProject,
         filterProjects,
-        clearFilter
+        clearFilter,
       }}
     >
       {props.children}

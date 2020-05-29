@@ -16,6 +16,10 @@ const ProjectItem = ({ project }) => {
     gitLink,
     demoLink,
     techStack,
+    docLink1,
+    docLink1Name,
+    docLink2,
+    docLink2Name,
   } = project;
 
   const onDelete = () => {
@@ -37,6 +41,10 @@ const ProjectItem = ({ project }) => {
         links={true}
         gitLink={gitLink}
         demoLink={demoLink}
+        docLink1={docLink1}
+        docLink2={docLink2}
+        docLink1Name={docLink1Name}
+        docLink2Name={docLink2Name}
         techStack={techStack}
         editButton={false}
         deleteButton={false}
