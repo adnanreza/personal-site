@@ -92,7 +92,7 @@ const ResumeBlock = ({
                   style={buttonStyle}
                 >
                   <i className='fas fa-file'></i>{' '}
-                  <span className='network-name'>{docLink1Name}</span>
+                  <span className='network-name'>REDUX</span>
                 </a>
               </div>
             )}
