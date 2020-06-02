@@ -20,10 +20,11 @@ const ProjectState = (props) => {
         heading: 'devBook - Professional Social Network',
         subheading: 'React, Redux, Node.js, MongoDB',
         body: [
-          'Designed, developed and deployed a social network for developers using the MERN stack',
+          'Designed, developed, tested and deployed a social network for developers using the MERN stack',
           'Developed front-end using React and managed application state using Redux',
           'Designed UI using Bootstrap 4, CSS3 and HTML5',
           'Developed REST API using Node.js/Express.js and MongoDB/Mongoose',
+          'Tested API routes using Postman; Wrote unit tests using Jest',
           'Deployed web application to Heroku',
         ],
         gitLink: 'https://github.com/adnanreza/devBook',
