@@ -76,6 +76,11 @@ const Resume = (props) => {
     'Designed, ran and managed lectures and laboratory sessions for a diverse student body',
     'Designed, reviewed and graded assignments, projects and exams',
   ];
+  const accomplishmentsLC = [
+    'Designed and taught an intermediate level full-stack web development course (CPSC 2030)',
+    'Designed, reviewed and graded assignments, projects and exams',
+    'Successfully transitioned course from in-person to full online delivery during COVID-19',
+  ];
 
   return (
     <Fragment>
@@ -166,6 +171,12 @@ const Resume = (props) => {
               {` `}
               Recent Work Experience
             </h4>
+            <ResumeBlock
+              heading='Computer Science Instructor - Langara College'
+              subheading='January 2020 - Present'
+              body={accomplishmentsLC}
+              list={true}
+            ></ResumeBlock>
             <ResumeBlock
               heading='Computer Science Instructor - Columbia College'
               subheading='September 2019 - Present'
