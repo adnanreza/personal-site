@@ -3,40 +3,42 @@ import ResumeBlock from '../layout/ResumeBlock';
 
 const Teaching = () => {
   const accomplishmentsLC = [
-    'I will be teaching an intermediate web development course'
+    'Designed and taught an intermediate level full-stack web development course (CPSC 2030)',
+    'Designed, reviewed and graded assignments, projects and exams',
+    'Successfully transitioned course from in-person to full online delivery during COVID-19',
   ];
   const accomplishmentsCC = [
-    'Designed and taught an introductory CS course for a diverse student body (CS + Non CS majors)',
+    'Designed and taught introductory CS and web development for a diverse student body (CS + Non CS majors)',
     'Designed, reviewed and graded assignments, projects and exams',
-    'I will be teaching an introductory web development course in Winter 2020'
+    'Successfully transitioned course from in-person to full online delivery during COVID-19',
   ];
   const accomplishmentsGTA = [
     'Designed, ran and managed laboratory and tutorial sessions',
     'Designed, reviewed and graded assignments, projects and exams',
-    'Received a Graduate Teaching Assistant Award from the CS Department at UBC'
+    'Received a Graduate Teaching Assistant Award from the CS Department at UBC',
   ];
   const accomplishmentsAG = [
     'Mentored potential CS graduate students',
     'Held weekly one-on-one sessions focusing on the application process to CS graduate schools',
     'Conducted interview practice sessions and helped students improve their communication skills',
     'Advised on CS graduate school course selection',
-    'Guided students in post-degree career options'
+    'Guided students in post-degree career options',
   ];
   const accomplishmentsTABRACECON = [
     'Graded programs, quizzes and assignments.',
     'Conducted tutorial sessions on an individual and group basis',
     'Helped students with course material during office hours.',
     'Identified weak students and held extra sessions to improve their performance',
-    'Discussed advanced topics not covered in lectures'
+    'Discussed advanced topics not covered in lectures',
   ];
   const accomplishmentsTABRACCSE = [
     'Held office hours and conducted tutorial sessions on an individual and group basis',
     'Assigned problem sets and provided feedback on performance',
-    'Identified weak students and held extra sessions to improve their performance'
+    'Identified weak students and held extra sessions to improve their performance',
   ];
 
   const headingStyle = {
-    padding: '0.5rem 1rem 1rem 0'
+    padding: '0.5rem 1rem 1rem 0',
   };
 
   return (
