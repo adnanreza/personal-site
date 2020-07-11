@@ -44,7 +44,9 @@ const Resume = (props) => {
   const clientSide = 'JavaScript ES6, React, Redux, HTML5, CSS3, SASS';
   const serverSide = 'Java, PHP, Python, Node.js, Express.js, REST, MVC';
   const databases = 'MySQL, Oracle, Postgres, MongoDB';
-  const tools = 'Git, AWS, GCP, Heroku, Netlify';
+  const tools = 'Git, Docker, Kubernetes';
+  const cloud = 'AWS EC2, S3, CloudFront, CloudFormation, Lambda';
+  const testing = 'Jest, Enzyme, Postman';
 
   const accomplishmentsPA = [
     'Implemented web framework for UBC’s new common look and feel using Oracle PL/SQL, HTML5, CSS3 and JavaScript.',
@@ -147,6 +149,11 @@ const Resume = (props) => {
                   body={serverSide}
                   icon='server'
                 ></TechnicalSkillsBlock>
+                <TechnicalSkillsBlock
+                  heading='Testing'
+                  body={testing}
+                  icon='vials'
+                ></TechnicalSkillsBlock>
               </div>
               <div className='col s12 m6 l6'>
                 <TechnicalSkillsBlock
@@ -155,7 +162,12 @@ const Resume = (props) => {
                   icon='database'
                 ></TechnicalSkillsBlock>
                 <TechnicalSkillsBlock
-                  heading='Deployment and Tooling'
+                  heading='Cloud Computing'
+                  body={cloud}
+                  icon='cloud'
+                ></TechnicalSkillsBlock>
+                <TechnicalSkillsBlock
+                  heading='Tools'
                   body={tools}
                   icon='tools'
                 ></TechnicalSkillsBlock>
