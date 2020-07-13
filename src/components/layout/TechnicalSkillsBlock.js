@@ -7,9 +7,9 @@ const TechnicalSkillsBlock = ({ body, heading, icon }) => {
       <div style={cardContentStyle} className='card-content'>
         <div className='row'>
           <div className='col s2'>
-            <span className='center-align'>
+            <span className='center-align' style={{ position: 'relative' }}>
               <i
-                className={`fa fa-${icon} fa-2x`}
+                className={`fa fa-${icon} fa-2x iconPos`}
                 style={{ padding: '0.22rem 0.8rem' }}
               ></i>
             </span>

@@ -49,3 +49,31 @@ footer {
   background-color: rgba(0, 0, 0, 0.85) !important;
   transition: background-color 0.5s !important;
 }
+
+/* Styles for positioning skills block */
+@media only screen and (min-width: 400px) {
+  .iconPos {
+    position: absolute;
+    top: 1.2rem;
+    left: 0.5rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .iconPos {
+    display: none;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .iconPos {
+    position: absolute;
+    top: 1.2rem;
+    left: 0.4rem;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .iconPos {
+    position: absolute;
+    top: 1.2rem;
+    left: 1rem;
+  }
+}
