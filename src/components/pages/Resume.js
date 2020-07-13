@@ -152,7 +152,7 @@ const Resume = (props) => {
                 <TechnicalSkillsBlock
                   heading='Testing'
                   body={testing}
-                  icon='vials'
+                  icon='hammer'
                 ></TechnicalSkillsBlock>
               </div>
               <div className='col s12 m6 l6'>
