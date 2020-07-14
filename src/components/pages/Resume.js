@@ -45,7 +45,7 @@ const Resume = (props) => {
   const serverSide = 'Java, PHP, Python, Node.js, Express.js, REST, MVC';
   const databases = 'MySQL, Oracle, Postgres, MongoDB';
   const tools = 'Git, Docker, Kubernetes';
-  const cloud = 'AWS EC2, S3, CloudFront, CloudFormation, Lambda';
+  const cloud = 'AWS EC2, S3, RDS, CloudFront, Elastic Beanstalk, Lambda, IAM';
   const testing = 'Jest, Enzyme, Postman';
 
   const accomplishmentsPA = [
