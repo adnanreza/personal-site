@@ -4,12 +4,14 @@ import ResumeBlock from '../layout/ResumeBlock';
 const Teaching = () => {
   const accomplishmentsLC = [
     'Designed and taught an intermediate level full-stack web development course (CPSC 2030)',
-    'Designed, reviewed and graded assignments, projects and exams',
+    'Designed, reviewed and graded assignments, projects and exams; Class size: 30-38',
+    'Technologies used: CSS3 (Grid, Flexbox, Animations), JavaScript, jQuery, PHP, MySQL, WordPress, AJAX',
     'Successfully transitioned course from in-person to full online delivery during COVID-19',
   ];
   const accomplishmentsCC = [
     'Designed and taught introductory CS and web development for a diverse student body (CS + Non CS majors)',
-    'Designed, reviewed and graded assignments, projects and exams',
+    'Designed, reviewed and graded assignments, projects and exams; Class size: 30-35',
+    'Technologies used: HTML5, CSS3, JavaScript ES6, jQuery, PHP, MS Excel',
     'Successfully transitioned course from in-person to full online delivery during COVID-19',
   ];
   const accomplishmentsGTA = [
