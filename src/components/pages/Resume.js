@@ -76,11 +76,13 @@ const Resume = (props) => {
   ];
   const accomplishmentsCC = [
     'Designed, ran and managed lectures and laboratory sessions for a diverse student body',
-    'Designed, reviewed and graded assignments, projects and exams',
+    'Designed, reviewed and graded assignments, projects and exams; Class size: 30-35',
+    'Technologies used: HTML5, CSS3, JavaScript ES6, jQuery, PHP, MS Excel',
   ];
   const accomplishmentsLC = [
     'Designed and taught an intermediate level full-stack web development course (CPSC 2030)',
-    'Designed, reviewed and graded assignments, projects and exams',
+    'Designed, reviewed and graded assignments, projects and exams; Class size: 30-38',
+    'Technologies used: CSS3 (Grid, Flexbox, Animations), JavaScript, jQuery, PHP, MySQL, WordPress, AJAX',
     'Successfully transitioned course from in-person to full online delivery during COVID-19',
   ];
 
