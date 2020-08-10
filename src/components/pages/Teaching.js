@@ -2,6 +2,9 @@ import React, { Fragment } from 'react';
 import ResumeBlock from '../layout/ResumeBlock';
 
 const Teaching = () => {
+  const accomplishmentsBCIT = [
+    "I will be teaching courses for BCIT's full stack web development program",
+  ];
   const accomplishmentsLC = [
     'Designed and taught an intermediate level full-stack web development course (CPSC 2030)',
     'Designed, reviewed and graded assignments, projects and exams; Class size: 30-38',
@@ -53,6 +56,13 @@ const Teaching = () => {
               {` `}
               Teaching Experience
             </h4>
+
+            <ResumeBlock
+              heading='Instructor, Full Stack Web Development - BCIT'
+              subheading='August 2020 - Present'
+              body={accomplishmentsBCIT}
+              list={true}
+            ></ResumeBlock>
 
             <ResumeBlock
               heading='Instructor, Web Development - Langara College'
