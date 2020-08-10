@@ -55,15 +55,15 @@ const Teaching = () => {
             </h4>
 
             <ResumeBlock
-              heading='Computer Science Instructor - Langara College'
-              subheading='January 2020 - Present'
+              heading='Instructor, Web Development - Langara College'
+              subheading='January 2020 - August 2020'
               body={accomplishmentsLC}
               list={true}
             ></ResumeBlock>
 
             <ResumeBlock
-              heading='Computer Science Instructor - Columbia College'
-              subheading='September 2019 - Present'
+              heading='Instructor, Computer Science - Columbia College'
+              subheading='September 2019 - August 2020'
               body={accomplishmentsCC}
               list={true}
             ></ResumeBlock>
