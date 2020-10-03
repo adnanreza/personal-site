@@ -3,7 +3,7 @@ import ResumeBlock from '../layout/ResumeBlock';
 
 const Teaching = () => {
   const accomplishmentsBCIT = [
-    "I will be teaching courses for BCIT's full stack web development program",
+    "I will be teaching web development courses for BCIT's FSWD and CIT programs",
   ];
   const accomplishmentsLC = [
     'Designed and taught an intermediate level full-stack web development course (CPSC 2030)',
@@ -58,7 +58,7 @@ const Teaching = () => {
             </h4>
 
             <ResumeBlock
-              heading='Instructor, Full Stack Web Development - BCIT'
+              heading='Instructor, Web Development - BCIT'
               subheading='August 2020 - Present'
               body={accomplishmentsBCIT}
               list={true}
