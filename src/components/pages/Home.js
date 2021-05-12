@@ -9,7 +9,7 @@ import ResearchImage from '../layout/2.jpg';
 const experienceText =
   "My most recent full-time industry role was as a Programmer Analyst at UBC IT. I've also worked as a Web Developer for PCPE, UBC Health where I was responsible for designing the Patients In Education website. I've also worked as a Web Developer for CALP at UBC.";
 const teachingText =
-  "I currently teach Computer Science at Columbia College and Langara College in Vancouver, BC. I previously worked as a Graduate Teaching Assistant at the University of British Columbia from 2015-18. Previously, I've served as TA for both the departments of Computer Science and Economics at BRAC University from 2013-15.";
+  "I currently teach Computer Science at Langara College in Vancouver, BC. I've also taught Web Development at the British Columbia Institute of Technology and Columbia College. I previously worked as a CS Graduate Teaching Assistant at the University of British Columbia.";
 const projectsText =
   'I developed a few web apps recently (front-end: vanilla JS, React; full-stack: MERN stack, LAMP stack). You can find more about them by clicking the button below.';
 const researchText =
