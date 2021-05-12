@@ -37,12 +37,12 @@ const Resume = (props) => {
     </Fragment>
   );
   const summary = [
-    'Full stack software engineer with 2+ years of professional experience in several programming languages, frameworks, and environments.',
+    'Full stack software engineer with multiple years of professional experience in several programming languages, frameworks, and environments.',
     'Skilled in translating business requirements into robust technical solutions that are delivered on time.',
     'Computer Science Instructor with 5+ years of experience teaching at the undergraduate level',
   ];
   const clientSide = 'JavaScript ES6, React, Redux, HTML5, CSS3, SASS';
-  const serverSide = 'Java, PHP, Python, Node.js, Express.js, REST, MVC';
+  const serverSide = 'Java, PHP, Python, Node.js, Express.js, REST APIs, GraphQL';
   const databases = 'MySQL, Oracle, Postgres, MongoDB';
   const tools = 'Git, Docker, Kubernetes';
   const cloud = 'AWS EC2, S3, RDS, CloudFront, Elastic Beanstalk, Lambda, IAM';
@@ -79,10 +79,15 @@ const Resume = (props) => {
     'Designed, reviewed and graded assignments, projects and exams; Class size: 30-35',
     'Technologies used: HTML5, CSS3, JavaScript ES6, jQuery, PHP, MS Excel',
   ];
+  const accomplishmentsBCIT = [
+    'Designed and taught introductory and intermediate level full-stack web development courses for class sizes of 30-38 students',
+    'Designed, reviewed and graded assignments, projects and exams',
+    'Technologies used: HTML5, CSS3, JavaScript, jQuery, PHP, React, Node.js, Express, Redux, MySQL, MongoDB, Figma',
+  ];
   const accomplishmentsLC = [
-    'Designed and taught an intermediate level full-stack web development course (CPSC 2030)',
-    'Designed, reviewed and graded assignments, projects and exams; Class size: 30-38',
-    'Technologies used: CSS3 (Grid, Flexbox, Animations), JavaScript, jQuery, PHP, MySQL, WordPress, AJAX',
+    'Designed and taught intermediate level full-stack web development courses for class sizes of 30-38 students',
+    'Designed, reviewed and graded assignments, projects and exams',
+    'Technologies used: CSS3 (Grid, Flexbox, Animations), JavaScript, jQuery, PHP, React, Node.js, Express, Redux, MySQL, MongoDB, WordPress',
     'Successfully transitioned course from in-person to full online delivery during COVID-19',
   ];
 
@@ -178,7 +183,7 @@ const Resume = (props) => {
           </div>
           {/**End Mid Section: Tech Skills */}
 
-          {/**End Section: Work Experience */}
+          {/**Start Section: Work Experience */}
           <div className='col s12 m12 l12'>
             <h4>
               <i className='fa fa-briefcase'></i>
@@ -187,8 +192,14 @@ const Resume = (props) => {
             </h4>
             <ResumeBlock
               heading='Instructor, Web Development - Langara College'
-              subheading='January 2020 - August 2020'
+              subheading='January 2020 - Present'
               body={accomplishmentsLC}
+              list={true}
+            ></ResumeBlock>
+            <ResumeBlock
+              heading='Instructor, Web Development - British Columbia Institute of Technology'
+              subheading='August 2020 - April 2021'
+              body={accomplishmentsBCIT}
               list={true}
             ></ResumeBlock>
             <ResumeBlock
@@ -224,7 +235,7 @@ const Resume = (props) => {
           </div>
           {/**End Section: Work Experience */}
 
-          {/**End Section: Honours & Awards */}
+          {/**Start Section: Honours & Awards */}
           <div className='col s12 m12 l12'>
             <div className='row'>
               <div className='col s12 m12 l12'>
