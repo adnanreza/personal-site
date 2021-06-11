@@ -26,6 +26,16 @@ const Resume = (props) => {
       </a>
       <span>{` `}</span>
       <a
+        href='https://blog.adnanreza.com/'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        <span style={{ color: 'black' }}>
+          <i className='fas fa-blog fa-3x' style={badgeStyle}></i>
+        </span>
+      </a>
+      <span>{` `}</span>
+      <a
         href='mailto:adnan.reza@outlook.com'
         target='_blank'
         rel='noopener noreferrer'
