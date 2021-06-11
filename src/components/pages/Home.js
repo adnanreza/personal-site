@@ -58,6 +58,19 @@ const Home = () => (
               <span className='network-name'>Linkedin</span>
             </a>
           </div>
+
+          <div style={buttonLink}>
+            <a
+              href='https://blog.adnanreza.com/'
+              className='waves-effect waves-light btn'
+              target='_blank'
+              rel='noopener noreferrer'
+              style={buttonStyle}
+            >
+              <i className="fas fa-blog"></i>{' '}
+              <span className='network-name'>Blog</span>
+            </a>
+          </div>
         </div>
       </div>
       <hr />
