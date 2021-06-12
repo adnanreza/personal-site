@@ -90,7 +90,7 @@ const Resume = (props) => {
     'Technologies used: HTML5, CSS3, JavaScript ES6, jQuery, PHP, MS Excel',
   ];
   const accomplishmentsBCIT = [
-    'Designed and taught introductory and intermediate level full-stack web development courses for class sizes of 30-38 students',
+    'Designed and taught introductory and intermediate level full-stack web development courses for class sizes of 23-27 students',
     'Designed, reviewed and graded assignments, projects and exams',
     'Technologies used: HTML5, CSS3, JavaScript, jQuery, PHP, React, Node.js, Express, Redux, MySQL, MongoDB, Figma',
   ];

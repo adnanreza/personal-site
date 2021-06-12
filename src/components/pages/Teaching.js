@@ -3,7 +3,7 @@ import ResumeBlock from '../layout/ResumeBlock';
 
 const Teaching = () => {
   const accomplishmentsBCIT = [
-    'Designed and taught introductory and intermediate level full-stack web development courses for class sizes of 30-38 students',
+    'Designed and taught introductory and intermediate level full-stack web development courses for class sizes of 23-27 students',
     'Designed, reviewed and graded assignments, projects and exams',
     'Technologies used: HTML5, CSS3, JavaScript, jQuery, PHP, React, Node.js, Express, Redux, MySQL, MongoDB, Figma',
   ];
@@ -15,7 +15,7 @@ const Teaching = () => {
   ];
   const accomplishmentsCC = [
     'Designed and taught introductory CS and web development for a diverse student body (CS + Non CS majors)',
-    'Designed, reviewed and graded assignments, projects and exams; Class size: 30-35',
+    'Designed, reviewed and graded assignments, projects and exams; Class size: 30-38',
     'Technologies used: HTML5, CSS3, JavaScript ES6, jQuery, PHP, MS Excel',
     'Successfully transitioned course from in-person to full online delivery during COVID-19',
   ];
