@@ -2,8 +2,25 @@ import React, { Fragment, useContext } from 'react';
 import ProjectItem from './ProjectItem';
 import ProjectContext from '../../context/project/projectContext';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { motion } from 'framer-motion'
 
 import ProjectFilter from './ProjectFilter';
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { duration: 1 }
+  },
+  exit: {
+    x: '-100vw',
+    transition: {
+      ease: 'easeInOut'
+    }
+  }
+}
 
 export const Projects = () => {
   //Initialize context
@@ -17,7 +34,7 @@ export const Projects = () => {
 
   return (
     <Fragment>
-      <div className='container'>
+      <motion.div className='container' variants={containerVariants} initial='hidden' animate='visible' exit='exit'>
         <div className='row'>
           <h4 style={headingStyle}>
             <i className='fas fa-project-diagram'></i>
@@ -52,7 +69,7 @@ export const Projects = () => {
             </TransitionGroup>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Fragment>
   );
 };

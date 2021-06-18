@@ -1,4 +1,21 @@
 import React, { Component, Fragment } from 'react';
+import { motion } from 'framer-motion'
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { duration: 1 }
+  },
+  exit: {
+    x: '-100vw',
+    transition: {
+      ease: 'easeInOut'
+    }
+  }
+}
 
 export default class Contact extends Component {
   constructor(props) {
@@ -10,11 +27,12 @@ export default class Contact extends Component {
   onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
   }
+  
 
   render() {
     return (
       <Fragment>
-        <div className='container'>
+        <motion.div className='container' variants={containerVariants} initial='hidden' animate='visible' exit='exit'>
           <div className='row'>
             <form className='col s12' onSubmit={this.onSubmit}>
               <h3>Send Adnan an email.</h3>
@@ -58,7 +76,7 @@ export default class Contact extends Component {
               </div>
             </form>
           </div>
-        </div>
+        </motion.div>
       </Fragment>
     );
   }

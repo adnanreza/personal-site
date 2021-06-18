@@ -5,6 +5,7 @@ import ExpImage from '../layout/4.png';
 import TeachingImage from '../layout/1.jpg';
 import ProjectImage from '../layout/3.jpg';
 import ResearchImage from '../layout/2.jpg';
+import { motion } from 'framer-motion'
 
 const experienceText =
   "My most recent full-time industry role was as a Programmer Analyst at UBC IT. I've also worked as a Web Developer for PCPE, UBC Health where I was responsible for designing the Patients In Education website. I've also worked as a Web Developer for CALP at UBC.";
@@ -15,9 +16,25 @@ const projectsText =
 const researchText =
   "My primary research interests lie at the interface between Computer Science and Microeconomics: Algorithmic Game Theory & Mechanism Design. I'm also interested in Reinforcement Learning and Applied Cryptography.";
 
-const Home = () => (
+  const containerVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: { duration: 1 }
+    },
+    exit: {
+      x: '-100vw',
+      transition: {
+        ease: 'easeInOut'
+      }
+    }
+  }
+
+  const Home = () => (
   <Fragment>
-    <div className='container' style={{ width: '90%' }}>
+    <motion.div className='container' style={{ width: '90%' }} variants={containerVariants} initial='hidden' animate='visible' exit='exit'>
       <div className='topSection section center-align' style={topSectionStyle}>
         <h2>Adnan Reza</h2>
         <h5>Software Engineer and Computer Science Educator</h5>
@@ -110,7 +127,7 @@ const Home = () => (
         </div>
       </div>
       {/**End Cards */}
-    </div>
+    </motion.div>
   </Fragment>
 );
 

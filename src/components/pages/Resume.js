@@ -1,6 +1,23 @@
 import React, { Fragment } from 'react';
 import TechnicalSkillsBlock from '../layout/TechnicalSkillsBlock';
 import ResumeBlock from '../layout/ResumeBlock';
+import { motion } from 'framer-motion';
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.75 }
+  },
+  exit: {
+    x: '-100vw',
+    transition: {
+      ease: 'easeInOut'
+    }
+  }
+}
 
 const Resume = (props) => {
   const buttonsContact = (
@@ -103,7 +120,7 @@ const Resume = (props) => {
 
   return (
     <Fragment>
-      <div className='container' style={containerStyle}>
+      <motion.div className='container' style={containerStyle} variants={containerVariants} initial='hidden' animate='visible' exit='exit'>
         <div className='row'>
           {/**Top Section: Contact Info + Education */}
           <div className='col s12 m12 l12'>
@@ -287,7 +304,7 @@ const Resume = (props) => {
           </div>
           {/**End Honours & Awards*/}
         </div>
-      </div>
+      </motion.div>
     </Fragment>
   );
 };
