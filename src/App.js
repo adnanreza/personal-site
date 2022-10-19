@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import './App.css';
 import 'materialize-css/dist/css/materialize.min.css';
@@ -26,6 +26,8 @@ const App = () => {
     M.AutoInit();
   });
 
+  const [dark, setDark] = useState(false);
+
   const containerVariants = {
     hidden: {
       opacity: 0,
@@ -46,7 +48,7 @@ const App = () => {
     <ProjectState>
         <ScrollToTop></ScrollToTop>
         <motion.div id='main' variants={containerVariants} initial='hidden' animate='visible' exit='exit'>
-          <Navbar title='AR'></Navbar>
+          <Navbar title='AR' dark={dark} setDark={setDark}></Navbar>
           <AnimatePresence>
             <Switch location={location} key={location.key}>
               <Route exact path='/' component={Home}></Route>

@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import ThemeToggle from './ThemeToggle';
 
-const Navbar = ({ title }) => {
+const Navbar = ({ title, dark, setDark }) => {
   return (
     <Fragment>
       <div className='navbar-fixed'>
@@ -29,6 +30,9 @@ const Navbar = ({ title }) => {
               </li>
               <li>
                 <Link to='/Contact'>Contact</Link>
+              </li>
+              <li>
+                <ThemeToggle dark={dark} setDark={setDark}/>
               </li>
             </ul>
           </div>
