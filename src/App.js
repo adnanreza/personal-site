@@ -25,17 +25,8 @@ const App = () => {
     // Init Materialize JS
     M.AutoInit();
   });
-
-  const [dark, setDark] = useState(false);
-
-  useEffect(()=>{
-    const theme = localStorage.getItem('theme');
-    if(theme === true) {
-      setDark(theme);
-    } else {
-      setDark(theme);
-    }
-  }, [])
+  const themeLS = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+  const [dark, setDark] = useState(themeLS!== null ? themeLS : false );
 
   useEffect(()=>{
     localStorage.setItem('theme', dark);
