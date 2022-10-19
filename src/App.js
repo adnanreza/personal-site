@@ -28,6 +28,19 @@ const App = () => {
 
   const [dark, setDark] = useState(false);
 
+  useEffect(()=>{
+    const theme = localStorage.getItem('theme');
+    if(theme === true) {
+      setDark(theme);
+    } else {
+      setDark(theme);
+    }
+  }, [])
+
+  useEffect(()=>{
+    localStorage.setItem('theme', dark);
+  }, [dark])
+
   const containerVariants = {
     hidden: {
       opacity: 0,

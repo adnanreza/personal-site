@@ -1,9 +1,12 @@
 import React from 'react'
 
 const ThemeToggle = ( {dark, setDark} ) => {
-  return (
+    const darkMode= 'DARK';
+    const lightMode = 'LIGHT';
+    
+    return (
     <div>
-        {dark ? 'DARK' : 'LIGHT'}
+        {dark ? darkMode : lightMode}
         <button onClick={()=>{setDark(!dark)}}>BTN</button>
     </div>
   )
