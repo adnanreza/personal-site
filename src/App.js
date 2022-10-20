@@ -25,13 +25,7 @@ const App = () => {
     // Init Materialize JS
     M.AutoInit();
   });
-  const themeLS = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-  const [dark, setDark] = useState(themeLS);
-  console.log("dark state: "+dark);
-
-  useEffect(()=>{
-    localStorage.setItem('theme', dark);
-  }, [dark])
+  const [dark, setDark] = useState(false);
 
   const containerVariants = {
     hidden: {
@@ -56,17 +50,27 @@ const App = () => {
           <Navbar title='AR' dark={dark} setDark={setDark}></Navbar>
           <AnimatePresence>
             <Switch location={location} key={location.key}>
-              <Route exact path='/' component={Home}></Route>
-              <Route exact path='/Teaching' component={Teaching}></Route>
-              <Route exact path='/Experience' component={Experience}></Route>
-              <Route exact path='/Projects' component={Projects}></Route>
-              <Route exact path='/Resume' component={Resume}></Route>
+              <Route exact path='/'>
+                <Home dark={dark}/>
+              </Route>
+              <Route exact path='/Teaching'>
+                <Teaching dark={dark}/>
+              </Route>
+              <Route exact path='/Experience'>
+                <Experience dark={dark}/>
+              </Route>
+              <Route exact path='/Projects'>
+                <Projects dark={dark}/>
+              </Route>
+              <Route exact path='/Resume'>
+                <Resume dark={dark}/>
+              </Route>
               <Route exact path='/Contact' component={Contact}></Route>
               <Route component={NotFound}></Route>
             </Switch>
           </AnimatePresence>
         </motion.div>
-        <Footer/>
+        <Footer dark={dark}/>
     </ProjectState>
   );
 };

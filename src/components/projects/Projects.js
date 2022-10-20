@@ -22,7 +22,7 @@ const containerVariants = {
   }
 }
 
-export const Projects = () => {
+export const Projects = ({dark}) => {
   //Initialize context
   const projectContext = useContext(ProjectContext);
 
@@ -54,7 +54,7 @@ export const Projects = () => {
                       timeout={500}
                       classNames='item'
                     >
-                      <ProjectItem key={project.id} project={project} />
+                      <ProjectItem key={project.id} project={project} dark={dark}/>
                     </CSSTransition>
                   ))
                 : projects.map((project) => (
@@ -63,7 +63,7 @@ export const Projects = () => {
                       timeout={500}
                       classNames='item'
                     >
-                      <ProjectItem key={project.id} project={project} />
+                      <ProjectItem key={project.id} project={project} dark={dark}/>
                     </CSSTransition>
                   ))}
             </TransitionGroup>

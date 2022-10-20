@@ -32,7 +32,7 @@ const researchText =
     }
   }
 
-  const Home = () => (
+  const Home = ({dark}) => (
   <Fragment>
     <motion.div className='container' style={{ width: '90%' }} variants={containerVariants} initial='hidden' animate='visible' exit='exit'>
       <div className='topSection section center-align' style={topSectionStyle}>
@@ -90,6 +90,7 @@ const researchText =
             moreBtn={true}
             btnLink='/Experience'
             altText='Experience'
+            dark={dark}
           ></RevealCard>
         </div>
         <div className='col col s12 m6 l6'>
@@ -101,6 +102,7 @@ const researchText =
             moreBtn={true}
             btnLink='/Teaching'
             altText='Board'
+            dark={dark}
           ></RevealCard>
         </div>
       </div>
@@ -114,6 +116,7 @@ const researchText =
             moreBtn={true}
             btnLink='/Projects'
             altText='code'
+            dark={dark}
           ></RevealCard>
         </div>
         <div className='col s12 m6 l6'>
@@ -123,6 +126,7 @@ const researchText =
             img={ResearchImage}
             link='#'
             altText='Research'
+            dark={dark}
           ></RevealCard>
         </div>
       </div>

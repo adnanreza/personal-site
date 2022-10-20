@@ -14,6 +14,38 @@ footer {
   flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
 }
 
+.navStyles {
+  background-color: #3D3B3B;
+  padding: 0 2rem;
+}
+
+.navStyles-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 39 47/var(--tw-bg-opacity));
+  padding: 0 2rem;
+  --tw-text-opacity: 1;
+  color: rgb(235 236 240/var(--tw-text-opacity));
+}
+
+.page-footer-dark {
+  padding: 20px 0;
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 39 47/var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(235 236 240/var(--tw-text-opacity));
+}
+.page-footer-light{
+  padding: 20px 0;
+  background-color: #3D3B3B;
+  --tw-text-opacity: 1;
+  color: rgb(235 236 240/var(--tw-text-opacity));
+}
+.rv-card-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(35 39 47/var(--tw-bg-opacity)) !important;
+  --tw-text-opacity: 1;
+  color: rgb(235 236 240/var(--tw-text-opacity)) !important;
+}
 /* Animation for Project Items */
 
 /*React transition group*/
@@ -42,6 +74,12 @@ footer {
 }
 .cardAnimation:hover {
   background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.cardAnimation-dark {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+.cardAnimation-dark:hover {
+  background-color: rgba(0, 0, 0, 0.35) !important;
 }
 
 /* Animation for buttons */

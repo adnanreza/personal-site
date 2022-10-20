@@ -18,11 +18,12 @@ const ResumeBlock = ({
   deleteButton,
   onEdit,
   onDelete,
+  dark,
 }) => {
   const array = Array.from(body);
 
   return (
-    <div style={style} className='card darken-1 cardAnimation'>
+    <div style={style} className={dark ? 'card darken-1 cardAnimation-dark': 'card darken-1 cardAnimation'}>
       <div className='card-content'>
         <span className='card-title'>
           {heading}

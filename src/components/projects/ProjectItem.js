@@ -3,7 +3,7 @@ import ResumeBlock from '../layout/ResumeBlock';
 import PropTypes from 'prop-types';
 import ProjectContext from '../../context/project/projectContext';
 
-const ProjectItem = ({ project }) => {
+const ProjectItem = ({ project, dark }) => {
   const projectContext = useContext(ProjectContext);
 
   const { deleteProject, setCurrent, clearCurrent } = projectContext;
@@ -50,6 +50,7 @@ const ProjectItem = ({ project }) => {
         deleteButton={false}
         onDelete={onDelete}
         onEdit={onEdit}
+        dark={dark}
       ></ResumeBlock>
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import ResumeBlock from '../layout/ResumeBlock';
 
-const Projects = () => {
+const Projects = ({dark}) => {
   /*
   const alphaGo = [
     'While Go programs have been around since the 1970s, their performance has not come close to achieving professional level playing let alone defeating Go champions. AlphaGo’s journey towards achieving superhuman-level performance in Go came into the spotlight in 2016 when it defeated Go world champion Lee Sedol. While it is easy to be carried away by the enormous hype surrounding AlphaGo’s achievement, it is a worthwhile exercise to delve deeper into how AlphaGo works and in the process demystify some of the hype surrounding this truly extraordinary achievement. This is the primary motivation of this essay. By looking deeper into AlphaGo’s architecture, we can see that it is indeed a combination of techniques, some of which have been developed by researchers in the early days of computer Go, aided with state of the art hardware.'

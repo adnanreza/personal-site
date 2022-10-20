@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import ResumeBlock from '../layout/ResumeBlock';
 import { motion } from 'framer-motion'
 
-const Teaching = () => {
+const Teaching = ({dark}) => {
   const accomplishmentsBCIT = [
     'Designed and taught introductory and intermediate level full-stack web development courses for class sizes of 23-27 students',
     'Designed, reviewed and graded assignments, projects and exams',
@@ -81,6 +81,7 @@ const Teaching = () => {
               subheading='January 2020 - Present'
               body={accomplishmentsLC}
               list={true}
+              dark={dark}
             ></ResumeBlock>
 
             <ResumeBlock
@@ -88,6 +89,7 @@ const Teaching = () => {
               subheading='August 2020 - April 2021'
               body={accomplishmentsBCIT}
               list={true}
+              dark={dark}
             ></ResumeBlock>
 
             <ResumeBlock
@@ -95,6 +97,7 @@ const Teaching = () => {
               subheading='September 2019 - August 2020'
               body={accomplishmentsCC}
               list={true}
+              dark={dark}
             ></ResumeBlock>
 
             <ResumeBlock
@@ -102,6 +105,7 @@ const Teaching = () => {
               subheading='September 2015 - April 2018'
               body={accomplishmentsGTA}
               list={true}
+              dark={dark}
             ></ResumeBlock>
 
             <ResumeBlock
@@ -109,6 +113,7 @@ const Teaching = () => {
               subheading='January 2017 - December 2017; September 2019 - Present'
               body={accomplishmentsAG}
               list={true}
+              dark={dark}
             ></ResumeBlock>
 
             <ResumeBlock
@@ -116,6 +121,7 @@ const Teaching = () => {
               subheading='February 2014 - July 2015'
               body={accomplishmentsTABRACECON}
               list={true}
+              dark={dark}
             ></ResumeBlock>
 
             <ResumeBlock
@@ -123,6 +129,7 @@ const Teaching = () => {
               subheading='January 2013 - December 2014'
               body={accomplishmentsTABRACCSE}
               list={true}
+              dark={dark}
             ></ResumeBlock>
           </div>
         </div>

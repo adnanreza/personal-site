@@ -137,6 +137,7 @@ const Resume = (props) => {
                   buttons={buttonsContact}
                   body={summary}
                   list={true}
+                  dark={props.dark}
                 ></ResumeBlock>
               </div>
               <div className='col s12 m6 l6'>
@@ -150,12 +151,14 @@ const Resume = (props) => {
                   subheading='University of British Columbia, Vancouver, BC'
                   body=''
                   list={false}
+                  dark={props.dark}
                 ></ResumeBlock>
                 <ResumeBlock
                   heading='BSc in Computer Science, Economics'
                   subheading='BRAC University, Dhaka, Bangladesh'
                   body=''
                   list={false}
+                  dark={props.dark}
                 ></ResumeBlock>
               </div>
             </div>
@@ -177,16 +180,19 @@ const Resume = (props) => {
                   heading='Client Side'
                   body={clientSide}
                   icon='desktop'
+                  dark={props.dark}
                 ></TechnicalSkillsBlock>
                 <TechnicalSkillsBlock
                   heading='Server Side'
                   body={serverSide}
                   icon='server'
+                  dark={props.dark}
                 ></TechnicalSkillsBlock>
                 <TechnicalSkillsBlock
                   heading='Testing'
                   body={testing}
                   icon='hammer'
+                  dark={props.dark}
                 ></TechnicalSkillsBlock>
               </div>
               <div className='col s12 m6 l6'>
@@ -194,16 +200,19 @@ const Resume = (props) => {
                   heading='Databases'
                   body={databases}
                   icon='database'
+                  dark={props.dark}
                 ></TechnicalSkillsBlock>
                 <TechnicalSkillsBlock
                   heading='Cloud Computing'
                   body={cloud}
                   icon='cloud'
+                  dark={props.dark}
                 ></TechnicalSkillsBlock>
                 <TechnicalSkillsBlock
                   heading='Tools'
                   body={tools}
                   icon='tools'
+                  dark={props.dark}
                 ></TechnicalSkillsBlock>
               </div>
             </div>
@@ -222,42 +231,49 @@ const Resume = (props) => {
               subheading='January 2020 - Present'
               body={accomplishmentsLC}
               list={true}
+              dark={props.dark}
             ></ResumeBlock>
             <ResumeBlock
               heading='Instructor, Web Development - British Columbia Institute of Technology'
               subheading='August 2020 - April 2021'
               body={accomplishmentsBCIT}
               list={true}
+              dark={props.dark}
             ></ResumeBlock>
             <ResumeBlock
               heading='Instructor, Computer Science - Columbia College'
               subheading='September 2019 - August 2020'
               body={accomplishmentsCC}
               list={true}
+              dark={props.dark}
             ></ResumeBlock>
             <ResumeBlock
               heading='Programmer Analyst - University of British Columbia IT'
               subheading='June 2018 - July 2019'
               body={accomplishmentsPA}
               list={true}
+              dark={props.dark}
             ></ResumeBlock>
             <ResumeBlock
               heading='Graduate Teaching Assistant - UBC Computer Science Department'
               subheading='September 2015 - April 2018'
               body={accomplishmentsGTA}
               list={true}
+              dark={props.dark}
             ></ResumeBlock>
             <ResumeBlock
               heading='Web Developer - UBC Health'
               subheading='January 2017 - April 2017'
               body={accomplishmentsWDUBC}
               list={true}
+              dark={props.dark}
             ></ResumeBlock>
             <ResumeBlock
               heading='Full Stack Web Developer - Matroid Technologies'
               subheading='January 2014 - August 2015'
               body={accomplishmentsMT}
               list={true}
+              dark={props.dark}
             ></ResumeBlock>
           </div>
           {/**End Section: Work Experience */}
@@ -278,12 +294,14 @@ const Resume = (props) => {
                   subheading='University of British Columbia, Vancouver, BC'
                   body=''
                   list={false}
+                  dark={props.dark}
                 ></ResumeBlock>
                 <ResumeBlock
                   heading={`Vice Chancellor's Medal`}
                   subheading='BRAC University, Dhaka, Bangladesh'
                   body=''
                   list={false}
+                  dark={props.dark}
                 ></ResumeBlock>
               </div>
               <div className='col s12 m6 l6'>
@@ -292,12 +310,14 @@ const Resume = (props) => {
                   subheading='BRAC University, Dhaka, Bangladesh'
                   body=''
                   list={false}
+                  dark={props.dark}
                 ></ResumeBlock>
                 <ResumeBlock
                   heading={`Dean's List (4 semesters)`}
                   subheading='BRAC University, Dhaka, Bangladesh'
                   body=''
                   list={false}
+                  dark={props.dark}
                 ></ResumeBlock>
               </div>
             </div>

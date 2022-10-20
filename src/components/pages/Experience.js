@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import ResumeBlock from '../layout/ResumeBlock';
 import { motion } from 'framer-motion'
 
-const Experience = () => {
+const Experience = ({dark}) => {
   const accomplishmentsPA = [
     'Implemented web framework for UBC’s new common look and feel using Oracle PL/SQL, HTML5, CSS3, Bootstrap and JavaScript.',
     'Developed SQL queries for reporting sales data; Performed ad hoc reporting using Oracle SQL.',
@@ -66,24 +66,28 @@ const Experience = () => {
               subheading='June 2018 - July 2019'
               body={accomplishmentsPA}
               list={true}
+              dark={dark}
             ></ResumeBlock>
             <ResumeBlock
               heading='Web Developer - UBC Health'
               subheading='January 2017 - April 2017'
               body={accomplishmentsWDUBC}
               list={true}
+              dark={dark}
             ></ResumeBlock>
             <ResumeBlock
               heading='Web Developer - UBC Forestry'
               subheading='April 2017 - May 2017'
               body={accomplishmentsWDUBC2}
               list={true}
+              dark={dark}
             ></ResumeBlock>
             <ResumeBlock
               heading='Full Stack Web Developer - Matroid Technologies'
               subheading='January 2014 - August 2015'
               body={accomplishmentsMT}
               list={true}
+              dark={dark}
             ></ResumeBlock>
           </div>
         </div>
