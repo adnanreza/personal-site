@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Footer = () => {
+const Footer = ({dark}) => {
   return (
-    <footer style={style} className='page-footer'>
+    <footer className={dark ? 'page-footer-dark': 'page-footer-light'}>
       <div className='container'>
         <div className='row'>
           <div className='col l6 s12'>
@@ -49,10 +49,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
-
-const style = {
-  backgroundColor: '#3D3B3B'
 };
 
 export default Footer;
