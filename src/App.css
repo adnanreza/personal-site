@@ -46,6 +46,13 @@ footer {
   --tw-text-opacity: 1;
   color: rgb(235 236 240/var(--tw-text-opacity)) !important;
 }
+
+.btnCdark {
+  background-color: transparent;
+}
+.btnClight {
+  color: black;
+}
 /* Animation for Project Items */
 
 /*React transition group*/

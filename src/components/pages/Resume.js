@@ -27,7 +27,7 @@ const Resume = (props) => {
         target='_blank'
         rel='noopener noreferrer'
       >
-        <span style={{ color: 'black' }}>
+        <span className={props.dark? 'btnCdark': 'btnClight'}>
           <i className='fab fa-linkedin fa-3x' style={badgeStyle}></i>
         </span>
       </a>
@@ -37,7 +37,7 @@ const Resume = (props) => {
         target='_blank'
         rel='noopener noreferrer'
       >
-        <span style={{ color: 'black' }}>
+        <span className={props.dark? 'btnCdark': 'btnClight'}>
           <i className='fab fa-github fa-3x' style={badgeStyle}></i>
         </span>
       </a>
@@ -47,7 +47,7 @@ const Resume = (props) => {
         target='_blank'
         rel='noopener noreferrer'
       >
-        <span style={{ color: 'black' }}>
+        <span className={props.dark? 'btnCdark': 'btnClight'}>
           <i className='fas fa-blog fa-3x' style={badgeStyle}></i>
         </span>
       </a>
@@ -57,7 +57,7 @@ const Resume = (props) => {
         target='_blank'
         rel='noopener noreferrer'
       >
-        <span style={{ color: 'black' }}>
+        <span className={props.dark? 'btnCdark': 'btnClight'}>
           <i className='fas fa-envelope fa-3x' style={badgeStyle}></i>
         </span>
       </a>
