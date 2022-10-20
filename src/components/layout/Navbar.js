@@ -33,16 +33,16 @@ const Navbar = ({ title, dark, setDark }) => {
                 <Link to='/Contact'>Contact</Link>
               </li>
               <li>
-                <ThemeToggle dark={dark} setDark={setDark}/>
+                <ThemeToggle dark={dark} setDark={setDark} mobile={false}/>
               </li>
             </ul>
           </div>
         </nav>
       </div>
       {/**Mobile Navigation*/}
-      <ul className="sidenav" id='mobile-demo'>
+      <ul className={`sidenav ${dark? 'sidenav-dark':''}`} id='mobile-demo'>
         <li className='mobileThemeToggleIcon'>
-          <ThemeToggle dark={dark} setDark={setDark}/>
+          <ThemeToggle dark={dark} setDark={setDark} mobile={true}/>
         </li>
         <li>
           <Link to='/Experience'>Experience</Link>
