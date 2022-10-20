@@ -54,7 +54,8 @@ footer {
   color: black;
 }
 .mobileThemeToggleIcon {
-  padding: 0 9rem;
+  max-width: 50px;
+  margin: auto;
 }
 /* Animation for Project Items */
 
