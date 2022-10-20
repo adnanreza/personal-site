@@ -8,7 +8,7 @@ const Navbar = ({ title, dark, setDark }) => {
   return (
     <Fragment>
       <div className='navbar-fixed'>
-        <nav style={navStyle}>
+        <nav className={dark ? 'navStyles-dark': 'navStyles'}>
           <div className='nav-wrapper'>
             <Link to='/' className='brand-logo'>
               {title}
@@ -60,11 +60,6 @@ const Navbar = ({ title, dark, setDark }) => {
       {/**Mobile Navigation*/}
     </Fragment>
   );
-};
-
-const navStyle = {
-  backgroundColor: '#3D3B3B',
-  padding: '0 2rem',
 };
 
 Navbar.propTypes = {
