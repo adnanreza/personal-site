@@ -40,7 +40,10 @@ const Navbar = ({ title, dark, setDark }) => {
         </nav>
       </div>
       {/**Mobile Navigation*/}
-      <ul className='sidenav' id='mobile-demo'>
+      <ul className="sidenav" id='mobile-demo'>
+        <li className='mobileThemeToggleIcon'>
+          <ThemeToggle dark={dark} setDark={setDark}/>
+        </li>
         <li>
           <Link to='/Experience'>Experience</Link>
         </li>

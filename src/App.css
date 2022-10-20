@@ -53,6 +53,9 @@ footer {
 .btnClight {
   color: black;
 }
+.mobileThemeToggleIcon {
+  padding: 0 9rem;
+}
 /* Animation for Project Items */
 
 /*React transition group*/
