@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import ThemeToggle from './ThemeToggle';
 
 const Navbar = ({ title, dark, setDark }) => {
+  
   return (
     <Fragment>
       <div className='navbar-fixed'>

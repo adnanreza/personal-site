@@ -26,7 +26,8 @@ const App = () => {
     M.AutoInit();
   });
   const themeLS = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-  const [dark, setDark] = useState(themeLS!== null ? themeLS : false );
+  const [dark, setDark] = useState(themeLS);
+  console.log("dark state: "+dark);
 
   useEffect(()=>{
     localStorage.setItem('theme', dark);

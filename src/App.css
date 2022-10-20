@@ -49,6 +49,14 @@ footer {
   background-color: rgba(0, 0, 0, 0.85) !important;
   transition: background-color 0.5s !important;
 }
+.toggleTheme, .toggleTheme:hover, .toggleTheme:active, .toggleTheme:focus {
+  border: none;
+  background: rgba(0, 0, 0, 0);
+} 
+
+.theme-icon {
+  margin-top: 1rem;
+}
 
 /* Styles for positioning skills block */
 @media only screen and (min-width: 400px) {
