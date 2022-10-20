@@ -59,6 +59,13 @@ footer {
   margin-left: 0.5rem;
 }
 
+.dark-theme {
+    --tw-text-opacity: 1;
+    color: rgb(235 236 240/var(--tw-text-opacity));
+    --tw-bg-opacity: 1;
+    background-color: rgb(35 39 47/var(--tw-bg-opacity));
+}
+
 /* Styles for positioning skills block */
 @media only screen and (min-width: 400px) {
   .iconPos {

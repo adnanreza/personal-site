@@ -52,7 +52,7 @@ const App = () => {
   return (
     <ProjectState>
         <ScrollToTop></ScrollToTop>
-        <motion.div id='main' variants={containerVariants} initial='hidden' animate='visible' exit='exit'>
+        <motion.div id='main' className={dark? "dark-theme": ""} variants={containerVariants} initial='hidden' animate='visible' exit='exit'>
           <Navbar title='AR' dark={dark} setDark={setDark}></Navbar>
           <AnimatePresence>
             <Switch location={location} key={location.key}>
