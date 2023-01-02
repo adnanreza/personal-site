@@ -8,7 +8,7 @@ import {
   CLEAR_CURRENT
 } from '../types';
 
-export default (state, action) => {
+const ProjectReducer = (state, action) => {
   switch (action.type) {
     case ADD_PROJECT:
       return {
@@ -58,3 +58,4 @@ export default (state, action) => {
       return state;
   }
 };
+export default ProjectReducer;
