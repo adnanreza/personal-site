@@ -45,7 +45,7 @@ const Footer = ({dark}) => {
         </div>
       </div>
       <div className='footer-copyright'>
-        <div className='container'>© 2023 Adnan Reza</div>
+        <div className='container'>© 2024 Adnan Reza</div>
       </div>
     </footer>
   );
