@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = ({dark}) => {
+
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className={dark ? 'page-footer-dark': 'page-footer-light'}>
       <div className='container'>
@@ -45,7 +48,7 @@ const Footer = ({dark}) => {
         </div>
       </div>
       <div className='footer-copyright'>
-        <div className='container'>© 2024 Adnan Reza</div>
+        <div className='container'>© {currentYear} Adnan Reza</div>
       </div>
     </footer>
   );
