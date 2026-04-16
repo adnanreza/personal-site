@@ -5,6 +5,12 @@
 [build.environment]
   NODE_VERSION = "22"
 
+# Lighthouse audit after each deploy.
+# Declaring it here overrides the UI-installed version (which was pinned to
+# v4 and required Node <20). Netlify installs the latest compatible release.
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
 # SPA fallback: route all unknown paths to index.html so client-side routing works
 [[redirects]]
   from = "/*"
