@@ -1,0 +1,152 @@
+import React, { useReducer } from 'react';
+import ProjectContext from './projectContext';
+import ProjectReducer from './projectReducer';
+import { v4 as uuidv4 } from 'uuid';
+import {
+  ADD_PROJECT,
+  DELETE_PROJECT,
+  UPDATE_PROJECT,
+  FILTER_PROJECTS,
+  CLEAR_FILTER,
+  SET_CURRENT,
+  CLEAR_CURRENT,
+} from '../types';
+
+const ProjectState = (props) => {
+  const initialState = {
+    projects: [
+      {
+        id: 1,
+        heading: 'devBook - Professional Social Network',
+        subheading: 'React, Redux, Node.js, MongoDB',
+        body: [
+          'Designed, developed, tested and deployed a social network for developers using the MERN stack',
+          'Developed front-end using React and managed application state using Redux',
+          'Designed UI using Bootstrap 4, CSS3 and HTML5',
+          'Developed REST API using Node.js/Express.js and MongoDB/Mongoose',
+          'Tested API routes using Postman; Wrote unit tests using Jest',
+          'Deployed web application to Heroku',
+        ],
+        gitLink: 'https://github.com/adnanreza/devBook',
+        demoLink: 'https://devbook.adnanreza.com/',
+        techStack: 'fab fa-react',
+        docLink1:
+          'https://app.diagrams.net/?lightbox=1&highlight=0000ff&layers=1&nav=1&title=devbook_redux.svg',
+        docLink1Name: 'Redux Workflow',
+      },
+      {
+        id: 2,
+        heading: 'Contacts Organizer',
+        subheading: 'React, Redux, Node.js, MongoDB',
+        body: [
+          'Designed, developed and deployed a contacts organizer web app using the MERN stack',
+          "Developed front-end using React and managed application state using React's ContextAPI",
+          'Designed UI using Bootstrap 4, CSS3 and HTML5',
+          'Developed REST API using Node.js/Express.js and MongoDB/Mongoose',
+          'Deployed web application to Heroku',
+        ],
+        gitLink: 'https://github.com/adnanreza/contactsOrganizer',
+        demoLink: 'http://corganizer.adnanreza.com/',
+        techStack: 'fab fa-react',
+      },
+      {
+        id: 3,
+        heading: 'GitHub Profile Locator',
+        subheading: 'JavaScript ES6, HTML5, CSS3, Bootstrap',
+        body: [
+          'Designed Single Page App using JavaScript ES6 to dynamically display Github User details based on search terms',
+          'Consumed Github API to display user repositories and public details',
+          'Implemented user interface using Bootstrap 4',
+        ],
+        gitLink: 'https://github.com/adnanreza/GitHubProfileLocator',
+        demoLink: 'https://adnanreza.github.io/GitHubProfileLocator/',
+        techStack: 'fab fa-js',
+      },
+      {
+        id: 4,
+        heading: 'Calorie Tracker App',
+        subheading: 'JavaScript ES6, HTML5, CSS3, Materialize CSS',
+        body: [
+          'Designed Single Page App using JavaScript ES6 to track calories consumed',
+          'Used the module pattern to design the app',
+          'Implemented user interface using HTML5, Materialize CSS and CSS3',
+        ],
+        gitLink: 'https://github.com/adnanreza/calTracker',
+        demoLink: 'https://adnanreza.github.io/calTracker/',
+        techStack: 'fab fa-js',
+      },
+      {
+        id: 5,
+        heading: 'chickenRun - Search Engine',
+        subheading: 'Php, MySQL, JavaScript, jQuery, HTML5, CSS3',
+        body: [
+          'Designed and developed a web crawler using the LAMP stack',
+          'Developed front-end using HTML5, CSS3, jQuery, JavaScript ES6',
+          'Developed back-end using PHP and MySQL',
+        ],
+        gitLink: 'https://github.com/adnanreza/ChickenRun',
+        techStack: 'fab fa-php',
+      },
+    ],
+    current: null,
+    filtered: null,
+  };
+
+  const [state, dispatch] = useReducer(ProjectReducer, initialState);
+
+  // Add Project
+  const addProject = (project) => {
+    project.id = uuidv4();
+    dispatch({ type: ADD_PROJECT, payload: project });
+  };
+
+  // Delete Project
+  const deleteProject = (id) => {
+    dispatch({ type: DELETE_PROJECT, payload: id });
+  };
+
+  // Update Project
+  const updateProject = (project) => {
+    dispatch({ type: UPDATE_PROJECT, payload: project });
+  };
+  // Set Current
+  const setCurrent = (project) => {
+    dispatch({ type: SET_CURRENT, payload: project });
+  };
+
+  // Clear Current
+  const clearCurrent = () => {
+    dispatch({ type: CLEAR_CURRENT });
+  };
+
+  // Filter Projects
+  const filterProjects = (text) => {
+    dispatch({ type: FILTER_PROJECTS, payload: text });
+  };
+
+  // Clear filter
+  const clearFilter = () => {
+    dispatch({ type: CLEAR_FILTER });
+  };
+
+  return (
+    <ProjectContext.Provider
+      value={{
+        projects: state.projects,
+        current: state.current,
+        filtered: state.filtered,
+        addProject,
+        deleteProject,
+        setCurrent,
+        clearCurrent,
+        updateProject,
+        filterProjects,
+        clearFilter,
+      }}
+    >
+      {props.children}
+    </ProjectContext.Provider>
+  );
+};
+
+export default ProjectState;
